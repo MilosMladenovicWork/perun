@@ -1,0 +1,46 @@
+$sizes:(
+  'extrasmall':0.5rem,
+  'small':1rem,
+  'medium':2rem,
+  'large':3rem,
+  'extralarge':6rem,
+  'margin':15vw
+);
+
+@function sizes($size){
+  @if map-has-key($sizes, $size){
+    @return map-get($sizes, $size);
+  }
+  @warn 'Unknown `#{$size}` in $sizes.';
+  @return null; 
+};
+
+$colors:(
+  'text-color':#29023F,
+  'main-color':#ffffff,
+  'secondary-color':#F9F9F9,
+);
+
+@function colors($color){
+  @if map-has-key($colors, $color){
+    @return map-get($colors, $color);
+  }
+  @warn 'Unknown `#{$color}` in $sizes.';
+  @return null; 
+};
+
+$font-sizes:(
+  "extrasmall":0.75rem,
+  "small":1rem,
+  "medium":1.5rem,
+  "large":2rem,
+  "extralarge":3rem
+);
+
+@function font-sizes($size){
+  @if map-has-key($font-sizes, $size){
+    @return map-get($font-sizes, $size);
+  }
+  @warn 'Unknown `#{$size}` in $font-sizes.';
+  @return null;
+}
