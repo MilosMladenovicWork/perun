@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="185" height="65" viewBox="0 0 185 65">
-  <g id="Group_5215" data-name="Group 5215" transform="translate(-1041.5 -13952)">
+<svg xmlns="http://www.w3.org/2000/svg" width="184" height="64" viewBox="0 0 184 64">
+  <g id="Group_5215" data-name="Group 5215" transform="translate(-1042 -13952.5)">
     <g id="Group_5214" data-name="Group 5214">
-      <rect id="Rectangle_24" data-name="Rectangle 24" width="182" height="62" transform="translate(1043 13953.5)" stroke-width="3" stroke="#29023f" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-      <text id="Send" transform="translate(1070 13991)" fill="#29023f" font-size="20" font-family="Inter-Bold, Inter" font-weight="700"><tspan x="0" y="0">Send</tspan></text>
-      <path id="Path_10" data-name="Path 10" d="M-1911.5,1736h68" transform="translate(3046 12248.5)" fill="none" stroke="#29023f" stroke-linecap="round" stroke-width="3"/>
+      <rect id="Rectangle_24" data-name="Rectangle 24" width="182" height="62" transform="translate(1043 13953.5)" stroke-width="2" stroke="#29023f" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text id="Send" transform="translate(1070 13991)" fill="#29023f" font-size="18" font-family="Inter-Bold, Inter" font-weight="700"><tspan x="0" y="0">Send</tspan></text>
+      <path id="Path_10" data-name="Path 10" d="M-1911.5,1736h68" transform="translate(3046 12248.5)" fill="none" stroke="#29023f" stroke-linecap="round" stroke-width="2"/>
     </g>
   </g>
 </svg>

@@ -123,6 +123,22 @@ nav ul li img {
   width: 30px;
 }
 
+nav ul li:last-of-type a {
+  border: 2px solid #29023F;
+  padding: 15px 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav ul li:last-of-type a img {
+  display: none;
+}
+
+nav ul li:last-of-type:hover a {
+  background-color: #29023F;
+  color: white;
+}
+
 @media (max-width: 1200px) {
   nav ul {
     display: none;
@@ -223,6 +239,11 @@ nav #menu {
   color: #29023F;
 }
 
+#mobile-menu ul li:last-of-type a {
+  border: 2px solid #29023F;
+  padding: 15px 25px;
+}
+
 #logo {
   width: 4.85vw;
 }
@@ -292,7 +313,7 @@ nav #menu {
 }
 
 #hero-text {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
   font-weight: 300 !important;
   width: 30vw;
 }
@@ -306,7 +327,7 @@ nav #menu {
 @media (max-width: 1200px) {
   #hero-text {
     margin-top: 0;
-    margin-left: 15vw;
+    margin-left: 20.83vw;
     width: 55vw;
   }
 }
@@ -349,7 +370,7 @@ nav #menu {
 .social-links {
   visibility: hidden;
   z-index: 10;
-  width: 7.54vw;
+  width: 24.58vw;
   position: fixed;
   bottom: 6.48vh;
   left: 5.47vw;
@@ -469,7 +490,7 @@ nav #menu {
   transition: 0.2s;
   padding-top: 30vh;
   margin-bottom: 28.24vh;
-  margin-left: 15vw;
+  margin-left: 20.83vw;
   width: 39.8vw;
 }
 
@@ -493,7 +514,7 @@ nav #menu {
 }
 
 #about-button {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
   margin-bottom: 22.7vh;
   border: none;
   padding: 0;
@@ -529,7 +550,7 @@ nav #menu {
 }
 
 #ourtechnology-main {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,7 +768,7 @@ nav #menu {
   transition: 0.2s;
   margin: 0;
   margin-bottom: 19.44vh;
-  margin-right: 15vw;
+  margin-right: 20.83vw;
 }
 
 @media (max-width: 1200px) {
@@ -762,7 +783,7 @@ nav #menu {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-right: 15vw;
+    margin-right: 20.83vw;
     margin-bottom: 0;
   }
 }
@@ -771,7 +792,7 @@ nav #menu {
   #statechannels-text {
     width: 70vw;
     margin-right: 0;
-    margin-left: 15vw;
+    margin-left: 20.83vw;
     margin-bottom: 0;
     padding-top: 7vh;
   }
@@ -896,7 +917,7 @@ nav #menu {
 }
 
 #product {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
 }
 
 #product-text h1 {
@@ -930,7 +951,7 @@ nav #menu {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
-  padding-right: 15vw;
+  padding-right: 20.83vw;
 }
 
 #product-list .product-single {
@@ -1067,8 +1088,8 @@ nav #menu {
 }
 
 #academic-text {
-  margin-right: 15vw;
-  margin-left: 15vw;
+  margin-right: 20.83vw;
+  margin-left: 20.83vw;
 }
 
 #academic-text #academic-heading {
@@ -1204,8 +1225,8 @@ nav #menu {
   #academic-text {
     margin-right: 0;
     margin-left: 0;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 20.83vw;
+    padding-right: 20.83vw;
     width: 100%;
   }
 }
@@ -1269,7 +1290,7 @@ nav #menu {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 79.22vw;
+  width: 87.6vw;
 }
 
 #academic-main #academic-slider {
@@ -1280,7 +1301,9 @@ nav #menu {
 
 #academic-main #academic-slider #academic-scroll-right {
   background-color: transparent;
-  width: 10vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1297,11 +1320,10 @@ nav #menu {
   font-weight: 700;
 }
 
-#academic-main #academic-slider #academic-scroll-right p {
+#academic-main #academic-slider #academic-scroll-right svg {
   margin-left: auto;
-  width: auto;
   margin-bottom: 0;
-  margin-right: 2.1vw;
+  margin-right: 2.6vw;
 }
 
 #academic-main #academic-slider #academic-scroll-right img {
@@ -1314,7 +1336,7 @@ nav #menu {
 @media (max-width: 1200px) {
   #academic-main #academic-slider #academic-scroll-right {
     width: 30vw;
-    margin-top: 15vw;
+    margin-top: 20.83vw;
     margin-bottom: 19vh;
     margin-right: 0;
   }
@@ -1323,7 +1345,7 @@ nav #menu {
 @media (max-width: 767px) {
   #academic-main #academic-slider #academic-scroll-right {
     width: 60vw;
-    margin-top: 15vw;
+    margin-top: 20.83vw;
     margin-bottom: 22.2vh;
   }
   #academic-main #academic-slider #academic-scroll-right img {
@@ -1353,8 +1375,8 @@ nav #menu {
 }
 
 #whyuse-text {
-  margin-right: 15vw;
-  margin-left: 15vw;
+  margin-right: 20.83vw;
+  margin-left: 20.83vw;
 }
 
 #whyuse-text #whyuse-heading {
@@ -1442,8 +1464,8 @@ nav #menu {
   #whyuse-text {
     margin-right: 0;
     margin-left: 0;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 20.83vw;
+    padding-right: 20.83vw;
     width: 100%;
   }
 }
@@ -1516,7 +1538,7 @@ nav #menu {
 @media (max-width: 767px) {
   #whyuse-main #whyuse-slider #whyuse-scroll-right {
     width: 60vw;
-    margin-top: 15vw;
+    margin-top: 20.83vw;
     margin-bottom: 22.2vh;
   }
   #whyuse-main #whyuse-slider #whyuse-scroll-right img {
@@ -1542,7 +1564,7 @@ nav #menu {
 #whyuse-main #whyuse-circle {
   position: absolute;
   top: -26vh;
-  right: 15vw;
+  right: 20.83vw;
   -webkit-animation: rotate 25s infinite linear;
           animation: rotate 25s infinite linear;
 }
@@ -1621,7 +1643,7 @@ nav #menu {
 }
 
 #MS-text {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
 }
 
 #MS-text h1 {
@@ -1631,8 +1653,8 @@ nav #menu {
 #MS-text p {
   line-height: 2rem;
   width: 17vw;
-  margin-left: 15vw;
-  margin-bottom: 15vw;
+  margin-left: 20.83vw;
+  margin-bottom: 20.83vw;
 }
 
 @media (max-width: 767px) {
@@ -1663,7 +1685,7 @@ nav #menu {
 }
 
 #opensource-text {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
 }
 
 #opensource-text h1 {
@@ -1671,7 +1693,7 @@ nav #menu {
 }
 
 #opensource-text p {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
   width: 17vw;
   line-height: 2rem;
   margin-bottom: 3vh;
@@ -1684,11 +1706,11 @@ nav #menu {
 }
 
 #opensource-text a {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
 }
 
 #team-main {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1732,7 +1754,7 @@ nav #menu {
 @media (max-width: 1200px) {
   #team-section {
     margin-left: 0;
-    padding-right: 15vw;
+    padding-right: 20.83vw;
   }
 }
 
@@ -2021,12 +2043,20 @@ nav #menu {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 29vw;
+  margin-right: 0;
+  -webkit-transform: translateX(6.5vw);
+          transform: translateX(6.5vw);
 }
 
 .some-illustration-2 img {
+  height: auto;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  width: 34.01vw;
+  width: 29vw;
 }
 
 @media (max-width: 1200px) {
@@ -2066,7 +2096,7 @@ nav #menu {
   width: 50vw;
   padding-top: 32.4vh;
   margin-top: 10vh;
-  margin-left: 15vw;
+  margin-left: 20.83vw;
   margin-bottom: 19.4vh;
 }
 
@@ -2093,7 +2123,7 @@ nav #menu {
 }
 
 #joinus-positions {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
 }
 
 #joinus-positions h2 {
@@ -2151,7 +2181,7 @@ nav #menu {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 15vw;
+    margin-right: 20.83vw;
     margin-bottom: 6rem;
   }
 }
@@ -2226,7 +2256,7 @@ nav #menu {
 #partners-text {
   padding-top: 20vh;
   margin-bottom: 17.31vh;
-  margin-left: 15vw;
+  margin-left: 20.83vw;
 }
 
 #partners-text .partners-h1 {
@@ -2262,8 +2292,8 @@ nav #menu {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 17.6vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin-left: 20.83vw;
+  margin-right: 20.83vw;
 }
 
 @media (max-width: 1200px) {
@@ -2363,10 +2393,22 @@ nav #menu {
 }
 
 #contactus-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-bottom: 16.2vh;
+  position: relative;
   padding-top: 20vh;
-  margin-left: 15vw;
-  width: 41vw;
+  margin-left: 20.83vw;
+  width: auto;
+}
+
+#contactus-text h1 {
+  width: 40.83vw;
 }
 
 @media (max-width: 1200px) {
@@ -2544,7 +2586,7 @@ nav #menu {
 }
 
 #contactus-form-section {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2554,8 +2596,12 @@ nav #menu {
 }
 
 #contactus-form-section #contactus-form-illustration {
-  width: 22.4vw;
-  height: 22.4vw;
+  width: 35.73vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transform: translateX(-27.5vw) translateY(10vh);
+          transform: translateX(-27.5vw) translateY(10vh);
 }
 
 #contactus-form-section #contactus-form-illustration img {
@@ -2581,8 +2627,7 @@ nav #menu {
 #contactus-form-section #contactus-form {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  margin-right: 15vw;
-  margin-bottom: 7.5vh;
+  margin-right: 20.83vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2662,7 +2707,7 @@ nav #menu {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-bottom: 14vh;
-    margin-right: 15vw;
+    margin-right: 20.83vw;
   }
 }
 
@@ -2673,13 +2718,13 @@ nav #menu {
 }
 
 #contactus-contact {
-  margin-left: 15vw;
+  margin-left: 20.83vw;
 }
 
 .scroll-sign-up {
   color: #29023F;
   position: absolute;
-  right: 15vw;
+  right: 20.83vw;
   bottom: 9.72vh;
   z-index: 10;
 }

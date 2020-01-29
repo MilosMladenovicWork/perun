@@ -270,6 +270,18 @@ nav{
         width:30px;
       }
     }
+    li:last-of-type a{
+      border:2px solid colors(text-color);
+      padding:15px 25px;
+      img{
+        display:none;
+      }
+      transition:0.5s;
+    }
+    li:last-of-type:hover a{
+      background-color:colors(text-color);
+      color:white;
+    }
     @include respond-to(large){
       display:none;
     }
@@ -336,6 +348,10 @@ nav{
       a{
         color:colors(text-color);
       }
+    }
+    li:last-of-type a{
+      border:2px solid colors(text-color);
+      padding:15px 25px;
     }
   }
 }
@@ -429,7 +445,7 @@ nav{
 .social-links{
   visibility:hidden;
   z-index:10;
-  width:7.54vw;
+  width:24.58vw;
   position:fixed;
   bottom:6.48vh;
   left:5.47vw;
@@ -1052,13 +1068,13 @@ nav{
   display:flex;
   background-color:colors(secondary-color);
   align-items:flex-start; 
-  width:79.22vw;
+  width:87.6vw;
   #academic-slider{
     width:62.22vw;
     align-self:flex-end;
     #academic-scroll-right{
       background-color: transparent;
-      width:10vw;
+      width:fit-content;
       margin-left:auto;
       display:flex;
       justify-content: flex-end;
@@ -1067,11 +1083,10 @@ nav{
       margin-bottom:9.26vh;
       margin-top:6.5vh;
       font-weight:700;
-      p{
+      svg{
         margin-left:auto;
-        width:auto;
         margin-bottom:0;
-        margin-right:2.1vw;
+        margin-right:2.6vw;
       }
       img{
         margin-left:0;
@@ -1570,9 +1585,16 @@ nav{
 .some-illustration-2{
   display:flex;
   justify-content: flex-end;
+  position:absolute;
+  top:0;
+  right:0;
+  width:29vw;
+  margin-right:0;
+  transform:translateX(6.5vw);
   img{
+    height:auto;
     transition:0.2s;
-    width:34.01vw;
+    width:29vw;
     @include respond-to(large){
       width:50%;
     }
@@ -1798,10 +1820,16 @@ nav{
 }
 
 #contactus-text{
+  display:flex;
+  flex-direction: row;
   margin-bottom: 16.2vh;
+  position:relative;
   padding-top:20vh;
   margin-left:sizes(margin);
-  width:41vw;
+  width:auto;
+  h1{
+    width:40.83vw;
+  }
   @include respond-to(large){
     width:56vw;
     padding-top:16.3vh;
@@ -1917,8 +1945,9 @@ nav{
   display:flex;
   justify-content: space-between;
   #contactus-form-illustration{
-    width:22.4vw;
-    height:22.4vw;
+    width:35.73vw;
+    height:fit-content;
+    transform: translateX(-27.5vw) translateY(10vh);
     img{
       padding-top:0;
       width:100%;
@@ -1936,7 +1965,6 @@ nav{
   #contactus-form{
     transform:translateY(-50%);
     margin-right:sizes(margin);
-    margin-bottom:7.5vh;
     display:flex;
     flex-direction: column;
     width:37.5%;
