@@ -169,7 +169,7 @@ if(window.outerWidth >= 1200){
       teamMemberMoreDesc[index].style.top = '3.33vh';
       teamMemberMoreDesc[index].style.left = '3.33vh';
       teamMemberMoreDesc[index].style.width = '22.55vw';
-      teamMemberMoreDesc[index].style.maxHeight = '85.2vh';
+      teamMemberMoreDesc[index].style.maxHeight = '114vh';
       teamMemberMoreDescArrow[index].addEventListener('click', () => {
         teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
         teamMemberUnderlinePic[index].style.opacity = '0';
@@ -242,12 +242,14 @@ if(window.outerWidth < '1200'){
 
 
 const sectionCircle = document.querySelector('#section-circle')
+const followUsImage = document.querySelector('.social-links > img')
 
 
 const callbackHero = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       sectionCircle.style.transform = 'translateY(-310px)'
+      followUsImage.style.opacity = '1'
     }
   })
 }
@@ -273,6 +275,7 @@ const callbackAbout = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       sectionCircle.style.transform = 'translateY(-125px)'
+      followUsImage.style.opacity = '0'
     }
   })
 }
