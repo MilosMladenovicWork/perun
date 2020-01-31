@@ -1205,7 +1205,6 @@ nav{
   }
   h1:nth-child(2){
     border:none;
-    margin-left:6vw;
     margin-bottom:2.3vh;
     @include respond-to(large){
       width:60vw;
@@ -1217,7 +1216,6 @@ nav{
   }
   img:nth-child(3){
     margin-bottom:3.7vh;
-    margin-left:6vw;
     @include respond-to(large){
       margin-left:10.7vw;
     }
@@ -1228,7 +1226,6 @@ nav{
   p{
     width:27.7vw;
     line-height:font-sizes(large);
-    margin-left:6vw;
     margin-top:0;
     @include respond-to(large){
       width:60vw;
@@ -1248,7 +1245,6 @@ nav{
 }
 
 #whyuse-icon{
-  margin-left:6vw;
   margin-bottom:7.4vh;
   height:17.22vh;
   img{
@@ -1276,7 +1272,7 @@ nav{
   display:flex;
   align-items:flex-start; 
   #whyuse-slider{
-    width:64.1vw;
+    width:58.44vw;
     align-self:flex-end;
     #whyuse-scroll-right{
       margin-left:auto;
@@ -1313,7 +1309,7 @@ nav{
   }
   #whyuse-circle{
     position:absolute;
-    top:-40vh;
+    top:-25vh;
     right:-2vw;
     img{
       width:30.62vw;
