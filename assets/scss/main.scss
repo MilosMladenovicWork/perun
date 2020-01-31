@@ -222,6 +222,10 @@ h1{
   font-weight:500;
 }
 
+.bold{
+  font-weight:700;
+}
+
 h2{
   font-size:36px !important;
   line-height: 48px !important;
@@ -1181,6 +1185,7 @@ nav{
   margin-right:sizes(margin);
   margin-left:sizes(margin);
   #whyuse-heading{
+    padding-top:21.2vh;
     margin-bottom:13.9vh;
     @include respond-to(large){
       margin-bottom:0;
@@ -2238,6 +2243,107 @@ footer{
   list-style: none;
   padding: 0;
   z-index: 1;
+}
+
+.swiper-container-ourproduct{
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+#ourproduct-main{
+  margin-left:sizes(margin);
+  margin-right:sizes(margin);
+  #ourproduct-illustration{
+    position:absolute;
+    top:29.1vh;
+    left:50%;
+    transform:translateX(-50%);
+    stroke-dasharray: 0;
+    animation:circleSplice 10s infinite;
+  }
+  #github-link{
+    margin:auto;
+    width:fit-content;
+    margin-bottom:11.76vh;
+  }
+  #github-link:hover{
+    rect{
+      fill:#29023f;
+      transition:0.5s;
+    }
+    text{
+      fill:white;
+      transition:0.5s;
+    }
+    path{
+      stroke:white;
+      transition:0.5s;
+    }
+  }
+  p{
+    margin:0;
+  }
+  #ourproduct-text{
+    > .right-aligned{
+      width:25.21vw;
+      transform:translate(-25px, 0);
+      margin-bottom:13.33vh;
+    }
+  }
+  #ourproduct-heading{
+    width:100%;
+    text-align:center;
+    margin-bottom:8.15vh;
+    padding-top:15.74vh;
+  }
+  .swiper-container-ourproduct{
+    width:58.33vw;
+    #ourproduct-button-slide{
+      position:absolute;
+      bottom:0;
+      left:142px;
+      transition:0.5s;
+      z-index:10;
+    }
+    .swiper-slide{
+      .semi-bold{
+        margin-bottom:10.83vh;
+      }
+      ul{
+        font-size:20px;
+        margin-bottom:5vh;
+      }
+      .slide-number{
+        position:absolute;
+        bottom:30px;
+        left:0;
+      }
+    }
+
+    .right-aligned{
+      width:25.21vw;
+      p{
+        margin-bottom:3.7vh;
+        transform:translate(-50px, 0);
+      }
+      li{
+        margin-bottom:2vh;
+      }
+    }
+  }
+}
+
+@keyframes circleSplice{
+  50%{
+    stroke-dasharray: 200px;
+  }
+
+  100%{
+    stroke-dasharray: 0;
+  }
 }
 
 #impressum{

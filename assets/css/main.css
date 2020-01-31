@@ -60,6 +60,10 @@ h1 {
   font-weight: 500;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 h2 {
   font-size: 36px !important;
   line-height: 48px !important;
@@ -1444,6 +1448,7 @@ nav #menu {
 }
 
 #whyuse-text #whyuse-heading {
+  padding-top: 21.2vh;
   margin-bottom: 13.9vh;
 }
 
@@ -3030,6 +3035,134 @@ footer > p {
   list-style: none;
   padding: 0;
   z-index: 1;
+}
+
+.swiper-container-ourproduct {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+#ourproduct-main {
+  margin-left: 20.83vw;
+  margin-right: 20.83vw;
+}
+
+#ourproduct-main #ourproduct-illustration {
+  position: absolute;
+  top: 29.1vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  stroke-dasharray: 0;
+  -webkit-animation: circleSplice 10s infinite;
+          animation: circleSplice 10s infinite;
+}
+
+#ourproduct-main #github-link {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 11.76vh;
+}
+
+#ourproduct-main #github-link:hover rect {
+  fill: #29023f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#ourproduct-main #github-link:hover text {
+  fill: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#ourproduct-main #github-link:hover path {
+  stroke: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#ourproduct-main p {
+  margin: 0;
+}
+
+#ourproduct-main #ourproduct-text > .right-aligned {
+  width: 25.21vw;
+  -webkit-transform: translate(-25px, 0);
+          transform: translate(-25px, 0);
+  margin-bottom: 13.33vh;
+}
+
+#ourproduct-main #ourproduct-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8.15vh;
+  padding-top: 15.74vh;
+}
+
+#ourproduct-main .swiper-container-ourproduct {
+  width: 58.33vw;
+}
+
+#ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide {
+  position: absolute;
+  bottom: 0;
+  left: 142px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+#ourproduct-main .swiper-container-ourproduct .swiper-slide .semi-bold {
+  margin-bottom: 10.83vh;
+}
+
+#ourproduct-main .swiper-container-ourproduct .swiper-slide ul {
+  font-size: 20px;
+  margin-bottom: 5vh;
+}
+
+#ourproduct-main .swiper-container-ourproduct .swiper-slide .slide-number {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+
+#ourproduct-main .swiper-container-ourproduct .right-aligned {
+  width: 25.21vw;
+}
+
+#ourproduct-main .swiper-container-ourproduct .right-aligned p {
+  margin-bottom: 3.7vh;
+  -webkit-transform: translate(-50px, 0);
+          transform: translate(-50px, 0);
+}
+
+#ourproduct-main .swiper-container-ourproduct .right-aligned li {
+  margin-bottom: 2vh;
+}
+
+@-webkit-keyframes circleSplice {
+  50% {
+    stroke-dasharray: 200px;
+  }
+  100% {
+    stroke-dasharray: 0;
+  }
+}
+
+@keyframes circleSplice {
+  50% {
+    stroke-dasharray: 200px;
+  }
+  100% {
+    stroke-dasharray: 0;
+  }
 }
 
 #impressum {

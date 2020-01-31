@@ -23,6 +23,32 @@ const swiper = new Swiper('.swiper-container', {
   }
 });
 
+const ourProductRightArrow = document.querySelector('#ourproduct-button-slide')
+
+const swiperOurProduct = new Swiper('.swiper-container-ourproduct', {
+  grabCursor:true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  initialSlide:0,
+  centeredSlides: true,
+  on:{
+    reachBeginning:() => {
+      ourProductRightArrow.style.transform = 'rotate(0deg)';
+    },
+    reachEnd:() => {
+      ourProductRightArrow.style.transform = 'rotate(180deg)';
+    }
+  }
+});
+
+ourProductRightArrow.addEventListener('click', () => {
+  if(ourProductRightArrow.style.transform === 'rotate(180deg)'){
+    swiperOurProduct.slidePrev();
+  }else{
+    swiperOurProduct.slideNext();
+  }
+})
+
 scrollRight.addEventListener('click', () => {
   if(scrollRightArrow.style.transform === 'rotate(180deg)'){
     swiper.slidePrev();
