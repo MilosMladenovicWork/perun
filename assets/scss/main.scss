@@ -503,6 +503,8 @@ nav{
   right:4.05vw;
   bottom:6.48vh;
   z-index:10;
+  background:rgba(255, 255, 255, 0.35);
+  padding:15px;
   svg{
     position:relative;
   }
@@ -518,8 +520,8 @@ nav{
 #section-circle{
   position:absolute;
   transition:1s;
-  top:235px;
-  left:0;
+  top:250px;
+  left:15px;
   z-index:10;
   visibility: hidden;
   transform:translate(0,-125px);
@@ -1413,18 +1415,32 @@ nav{
     margin-right:sizes(margin);
     padding-top:31vh;
     padding-bottom:31vh;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    a{
+      display:inline-block;
+    }
     h1{
       color:white;
       display:block;
       text-align: center;
       margin-bottom:6vh;
     }
-    svg{
-      display:block;
-      margin:auto;
+    svg:hover{
+      rect{
+        fill:white;
+      }
+      text{
+        fill:colors(text-color);
+      }
+      path{
+        stroke:colors(text-color)
+      }
     }
   }
 }
+
 
 #team-main{
   margin-left:sizes(margin);
@@ -1497,8 +1513,12 @@ nav{
 //   margin-left:2.5vw;
 // }
 
+.paddingTop{
+  padding-top:calc(20vw + 90px) !important;
+}
+
 .team-member-more-description{
-  padding-top:48vh;
+  padding-top:32vh;
   padding-bottom:12.7vh;
   background-color:white;
   max-height:20vh;
@@ -1512,13 +1532,13 @@ nav{
   transition:1s;
   z-index:-1;
   border:3px solid colors(text-color);
+  z-index:1;
   p{
     transition:1s;
     opacity:0;
     font-size:24px !important;
     width:14.8vw;
     font-weight:500;
-    height:50vh;
     overflow-y:auto;
     margin:auto;
     @include respond-to(large){
@@ -1588,7 +1608,6 @@ nav{
   img{
     margin-left:3.13vw;
     margin-right:15.63vw;
-    z-index:10;
   }
 }
 
@@ -1598,6 +1617,8 @@ nav{
   img{
     cursor:pointer;
     width:15.8vw;
+    position:sticky;
+    z-index:10;
     @include respond-to(large){
       padding-top:0;
       width:100%;
@@ -1607,6 +1628,8 @@ nav{
     }
   }
   >img:nth-of-type(2){
+    position:sticky;
+    z-index:10;
     transition:1s;
     opacity:0;
     width:7.55vw;
@@ -1630,6 +1653,8 @@ nav{
 }
 
 .team-member-description{
+  position:sticky;
+  z-index:10;
   transition:1s;
   font-weight: 300;
   margin-left:0vw;
@@ -1642,6 +1667,8 @@ nav{
 }
 
 .team-member-name{
+  position:sticky;
+  z-index:10;
   transition:1s;
   margin-left:0vw;
   margin-top:4.2vh;
@@ -1860,6 +1887,22 @@ nav{
   }
   @include respond-to(small){
     margin-bottom:6.2vh;
+  }
+}
+
+#partners-fund{
+  width:32.81vw;
+  margin:auto;
+  h2{
+    font-size:48px !important;
+    margin-bottom:10.46vh;
+  }
+  .partners-single{
+    margin:auto;
+    margin-bottom:11.11vh;
+    img{
+      width:11.88vw;
+    }
   }
 }
 

@@ -446,6 +446,8 @@ nav #menu {
   right: 4.05vw;
   bottom: 6.48vh;
   z-index: 10;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 15px;
 }
 
 .scroll-sign svg {
@@ -469,8 +471,8 @@ nav #menu {
   position: absolute;
   -webkit-transition: 1s;
   transition: 1s;
-  top: 235px;
-  left: 0;
+  top: 250px;
+  left: 15px;
   z-index: 10;
   visibility: hidden;
   -webkit-transform: translate(0, -125px);
@@ -1795,6 +1797,20 @@ nav #menu {
   margin-right: 20.83vw;
   padding-top: 31vh;
   padding-bottom: 31vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#call-to-action #call-to-action-main a {
+  display: inline-block;
 }
 
 #call-to-action #call-to-action-main h1 {
@@ -1804,9 +1820,16 @@ nav #menu {
   margin-bottom: 6vh;
 }
 
-#call-to-action #call-to-action-main svg {
-  display: block;
-  margin: auto;
+#call-to-action #call-to-action-main svg:hover rect {
+  fill: white;
+}
+
+#call-to-action #call-to-action-main svg:hover text {
+  fill: #29023F;
+}
+
+#call-to-action #call-to-action-main svg:hover path {
+  stroke: #29023F;
 }
 
 #team-main {
@@ -1888,8 +1911,12 @@ nav #menu {
   opacity: 1 !important;
 }
 
+.paddingTop {
+  padding-top: calc(20vw + 90px) !important;
+}
+
 .team-member-more-description {
-  padding-top: 48vh;
+  padding-top: 32vh;
   padding-bottom: 12.7vh;
   background-color: white;
   max-height: 20vh;
@@ -1904,6 +1931,7 @@ nav #menu {
   transition: 1s;
   z-index: -1;
   border: 3px solid #29023F;
+  z-index: 1;
 }
 
 .team-member-more-description p {
@@ -1913,7 +1941,6 @@ nav #menu {
   font-size: 24px !important;
   width: 14.8vw;
   font-weight: 500;
-  height: 50vh;
   overflow-y: auto;
   margin: auto;
 }
@@ -2024,7 +2051,6 @@ nav #menu {
 #scroll-right-team img {
   margin-left: 3.13vw;
   margin-right: 15.63vw;
-  z-index: 10;
 }
 
 .team-member {
@@ -2034,6 +2060,9 @@ nav #menu {
 .team-member img {
   cursor: pointer;
   width: 15.8vw;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
 }
 
 @media (max-width: 1200px) {
@@ -2050,6 +2079,9 @@ nav #menu {
 }
 
 .team-member > img:nth-of-type(2) {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
   -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
@@ -2086,6 +2118,9 @@ nav #menu {
 }
 
 .team-member-description {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
   -webkit-transition: 1s;
   transition: 1s;
   font-weight: 300;
@@ -2102,6 +2137,9 @@ nav #menu {
 }
 
 .team-member-name {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
   -webkit-transition: 1s;
   transition: 1s;
   margin-left: 0vw;
@@ -2430,6 +2468,25 @@ nav #menu {
   #partners-section:nth-child(3) {
     margin-bottom: 6.2vh;
   }
+}
+
+#partners-fund {
+  width: 32.81vw;
+  margin: auto;
+}
+
+#partners-fund h2 {
+  font-size: 48px !important;
+  margin-bottom: 10.46vh;
+}
+
+#partners-fund .partners-single {
+  margin: auto;
+  margin-bottom: 11.11vh;
+}
+
+#partners-fund .partners-single img {
+  width: 11.88vw;
 }
 
 .partners-single {

@@ -1,6 +1,7 @@
 const scrollRight = document.querySelector('#scroll-right-team');
 const scrollRightArrow = document.querySelector('#scroll-right-team img');
 
+
 const swiper = new Swiper('.swiper-container', {
   grabCursor:true,
   slidesPerView: 1,
@@ -22,6 +23,7 @@ const swiper = new Swiper('.swiper-container', {
     }
   }
 });
+
 
 const ourProductRightArrow = document.querySelector('#ourproduct-button-slide')
 
@@ -173,58 +175,203 @@ menuMobileLinks.forEach((link) => {
   })
 })
 
-if(window.outerWidth >= 1200){
-  const teamMember = document.querySelectorAll('.team-member')
-  const teamMemberPic = document.querySelectorAll('.team-member > img:nth-child(1)')
-  const teamMemberUnderlinePic = document.querySelectorAll('.team-member >img:nth-of-type(2)')
-  const teamMemberMoreDesc = document.querySelectorAll('.team-member-more-description')
-  const teamMemberMoreDescParagraph = document.querySelectorAll('.team-member-more-description p')
-  const teamMemberMoreDescArrow = document.querySelectorAll('.team-member-more-description .team-member-description-arrow')
-  const teamMemberName = document.querySelectorAll('.team-member-name')
-  const teamMemberDesc = document.querySelectorAll('.team-member-description')
-  teamMemberPic.forEach((memberPic,index) => {
-    memberPic.addEventListener('click', () => {
-      teamMemberUnderlinePic[index].style.marginLeft = '5.62vw';
-      teamMemberUnderlinePic[index].style.opacity = '1';
-      teamMemberPic[index].style.cursor = 'auto';
-      teamMemberMoreDescParagraph[index].style.opacity = '1';
-      teamMemberMoreDescArrow[index].style.opacity = '1';
-      teamMemberDesc[index].style.marginLeft = '5.62vw';
-      teamMemberName[index].style.marginLeft = '5.62vw';
-      teamMemberMoreDesc[index].style.opacity = '1';
-      teamMemberMoreDesc[index].style.top = '3.33vh';
-      teamMemberMoreDesc[index].style.left = '3.33vh';
-      teamMemberMoreDesc[index].style.width = '22.55vw';
-      teamMemberMoreDesc[index].style.maxHeight = '114vh';
-      teamMemberMoreDescArrow[index].addEventListener('click', () => {
+const teamMember = document.querySelectorAll('.team-member')
+    const teamMemberPic = document.querySelectorAll('.team-member > img:nth-child(1)')
+    const teamMemberUnderlinePic = document.querySelectorAll('.team-member >img:nth-of-type(2)')
+    const teamMemberMoreDesc = document.querySelectorAll('.team-member-more-description')
+    const teamMemberMoreDescParagraph = document.querySelectorAll('.team-member-more-description p')
+    const teamMemberMoreDescArrow = document.querySelectorAll('.team-member-more-description .team-member-description-arrow')
+    const teamMemberName = document.querySelectorAll('.team-member-name')
+    const teamMemberDesc = document.querySelectorAll('.team-member-description')
+
+    teamMemberPic.forEach((memberPic,index) => {
+        teamMember[index].addEventListener('click', (event) => {
+          if(swiper.activeIndex >= index){
+            console.log(swiper.activeIndex)
+            teamMemberUnderlinePic[index].style.marginLeft = '5.62vw';
+            teamMemberPic[index].style.zIndex = '100';
+            teamMemberUnderlinePic[index].style.opacity = '1';
+            teamMemberUnderlinePic[index].style.zIndex = '100';
+            teamMemberPic[index].style.cursor = 'auto';
+            teamMemberMoreDescParagraph[index].style.width = '28vw';
+            teamMemberMoreDescParagraph[index].style.opacity = '1';
+            teamMemberMoreDescArrow[index].style.opacity = '1';
+            teamMemberDesc[index].style.marginLeft = '5.62vw';
+            teamMemberDesc[index].style.zIndex = '100';
+            teamMemberName[index].style.marginLeft = '5.62vw';
+            teamMemberName[index].style.zIndex = '100';
+            teamMemberMoreDesc[index].style.opacity = '1';
+            teamMemberMoreDesc[index].style.zIndex = '80';
+            teamMemberMoreDesc[index].style.top = '3.33vh';
+            teamMemberMoreDesc[index].style.paddingTop = 'calc(25vw + 15px)';
+            teamMemberMoreDesc[index].classList.add('paddingTop');
+            teamMemberMoreDesc[index].style.left = '3.33vh';
+            teamMemberMoreDesc[index].style.width = '35.57vw';
+            teamMemberMoreDesc[index].style.maxHeight = '160vh';
+          }
+          else{
+            teamMemberUnderlinePic[index].style.marginLeft = '-18.23vw';
+            teamMemberPic[index].style.zIndex = '100';
+            teamMemberUnderlinePic[index].style.opacity = '1';
+            teamMemberUnderlinePic[index].style.zIndex = '100';
+            teamMemberPic[index].style.cursor = 'auto';
+            teamMemberMoreDescParagraph[index].style.width = '28vw';
+            teamMemberMoreDescParagraph[index].style.opacity = '1';
+            teamMemberMoreDescArrow[index].style.opacity = '1';
+            teamMemberDesc[index].style.marginLeft = '-18.23vw';
+            teamMemberDesc[index].style.zIndex = '100';
+            teamMemberName[index].style.marginLeft = '-18.23vw';
+            teamMemberName[index].style.zIndex = '100';
+            teamMemberMoreDesc[index].style.opacity = '1';
+            teamMemberMoreDesc[index].style.zIndex = '80';
+            teamMemberMoreDesc[index].style.top = '3.33vh';
+            teamMemberMoreDesc[index].style.paddingTop = 'calc(25vw + 15px)';
+            teamMemberMoreDesc[index].classList.add('paddingTop');
+            teamMemberMoreDesc[index].style.left = '-22.25vw';
+            teamMemberMoreDesc[index].style.width = '35.57vw';
+            teamMemberMoreDesc[index].style.maxHeight = '160vh';
+          }
+        }, false)
+      document.body.addEventListener('click', () => {
         teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
+        teamMemberPic[index].style.zIndex = '70';
         teamMemberUnderlinePic[index].style.opacity = '0';
+        teamMemberUnderlinePic[index].style.zIndex = '70';
         teamMemberPic[index].style.cursor = 'pointer';
         teamMemberMoreDescParagraph[index].style.opacity = '0';
         teamMemberMoreDescArrow[index].style.opacity = '0';
         teamMemberDesc[index].style.marginLeft = '0vw';
+        teamMemberDesc[index].style.zIndex = '70';
         teamMemberName[index].style.marginLeft = '0vw';
+        teamMemberName[index].style.zIndex = '70';
         teamMemberMoreDesc[index].style.opacity = '0';
+        teamMemberMoreDesc[index].style.zIndex = '60';
         teamMemberMoreDesc[index].style.top = '0vh';
         teamMemberMoreDesc[index].style.left = '0vh';
         teamMemberMoreDesc[index].style.width = '15.8vw';
         return teamMemberMoreDesc[index].style.maxHeight = '20vh';
+      }, true)
+      teamMember[index].addEventListener('mouseover', () => {
+        if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
+          if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
+            return
+          }
+          teamMemberDesc[index].style.marginLeft = '2.5vw';
+          teamMemberName[index].style.marginLeft = '2.5vw';
+        }
+      })
+      teamMember[index].addEventListener('mouseout', () => {
+        if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
+          if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
+            return
+          }
+          teamMemberDesc[index].style.marginLeft = '0vw';
+          teamMemberName[index].style.marginLeft = '0vw';
+        }
       })
     })
-    teamMember[index].addEventListener('mouseover', () => {
-      if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
-        teamMemberDesc[index].style.marginLeft = '2.5vw';
-        teamMemberName[index].style.marginLeft = '2.5vw';
-      }
-    })
-    teamMember[index].addEventListener('mouseout', () => {
-      if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
+
+swiper.on('slideChange', () => {
+  if(window.outerWidth >= 1200){
+    const teamMember = document.querySelectorAll('.team-member')
+    const teamMemberPic = document.querySelectorAll('.team-member > img:nth-child(1)')
+    const teamMemberUnderlinePic = document.querySelectorAll('.team-member >img:nth-of-type(2)')
+    const teamMemberMoreDesc = document.querySelectorAll('.team-member-more-description')
+    const teamMemberMoreDescParagraph = document.querySelectorAll('.team-member-more-description p')
+    const teamMemberMoreDescArrow = document.querySelectorAll('.team-member-more-description .team-member-description-arrow')
+    const teamMemberName = document.querySelectorAll('.team-member-name')
+    const teamMemberDesc = document.querySelectorAll('.team-member-description')
+
+    teamMemberPic.forEach((memberPic,index) => {
+        teamMember[index].addEventListener('click', (event) => {
+          if(swiper.activeIndex >= index){
+            console.log(swiper.activeIndex)
+            teamMemberUnderlinePic[index].style.marginLeft = '5.62vw';
+            teamMemberPic[index].style.zIndex = '100';
+            teamMemberUnderlinePic[index].style.opacity = '1';
+            teamMemberUnderlinePic[index].style.zIndex = '100';
+            teamMemberPic[index].style.cursor = 'auto';
+            teamMemberMoreDescParagraph[index].style.width = '28vw';
+            teamMemberMoreDescParagraph[index].style.opacity = '1';
+            teamMemberMoreDescArrow[index].style.opacity = '1';
+            teamMemberDesc[index].style.marginLeft = '5.62vw';
+            teamMemberDesc[index].style.zIndex = '100';
+            teamMemberName[index].style.marginLeft = '5.62vw';
+            teamMemberName[index].style.zIndex = '100';
+            teamMemberMoreDesc[index].style.opacity = '1';
+            teamMemberMoreDesc[index].style.zIndex = '80';
+            teamMemberMoreDesc[index].style.top = '3.33vh';
+            teamMemberMoreDesc[index].style.paddingTop = 'calc(25vw + 15px)';
+            teamMemberMoreDesc[index].classList.add('paddingTop');
+            teamMemberMoreDesc[index].style.left = '3.33vh';
+            teamMemberMoreDesc[index].style.width = '35.57vw';
+            teamMemberMoreDesc[index].style.maxHeight = '160vh';
+          }
+          else{
+            teamMemberUnderlinePic[index].style.marginLeft = '-18.23vw';
+            teamMemberPic[index].style.zIndex = '100';
+            teamMemberUnderlinePic[index].style.opacity = '1';
+            teamMemberUnderlinePic[index].style.zIndex = '100';
+            teamMemberPic[index].style.cursor = 'auto';
+            teamMemberMoreDescParagraph[index].style.width = '28vw';
+            teamMemberMoreDescParagraph[index].style.opacity = '1';
+            teamMemberMoreDescArrow[index].style.opacity = '1';
+            teamMemberDesc[index].style.marginLeft = '-18.23vw';
+            teamMemberDesc[index].style.zIndex = '100';
+            teamMemberName[index].style.marginLeft = '-18.23vw';
+            teamMemberName[index].style.zIndex = '100';
+            teamMemberMoreDesc[index].style.opacity = '1';
+            teamMemberMoreDesc[index].style.zIndex = '80';
+            teamMemberMoreDesc[index].style.top = '3.33vh';
+            teamMemberMoreDesc[index].style.paddingTop = 'calc(25vw + 15px)';
+            teamMemberMoreDesc[index].classList.add('paddingTop');
+            teamMemberMoreDesc[index].style.left = '-22.25vw';
+            teamMemberMoreDesc[index].style.width = '35.57vw';
+            teamMemberMoreDesc[index].style.maxHeight = '160vh';
+          }
+        }, false)
+      document.body.addEventListener('click', () => {
+        teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
+        teamMemberPic[index].style.zIndex = '70';
+        teamMemberUnderlinePic[index].style.opacity = '0';
+        teamMemberUnderlinePic[index].style.zIndex = '70';
+        teamMemberPic[index].style.cursor = 'pointer';
+        teamMemberMoreDescParagraph[index].style.opacity = '0';
+        teamMemberMoreDescArrow[index].style.opacity = '0';
         teamMemberDesc[index].style.marginLeft = '0vw';
+        teamMemberDesc[index].style.zIndex = '70';
         teamMemberName[index].style.marginLeft = '0vw';
-      }
+        teamMemberName[index].style.zIndex = '70';
+        teamMemberMoreDesc[index].style.opacity = '0';
+        teamMemberMoreDesc[index].style.zIndex = '60';
+        teamMemberMoreDesc[index].style.top = '0vh';
+        teamMemberMoreDesc[index].style.left = '0vh';
+        teamMemberMoreDesc[index].style.width = '15.8vw';
+        return teamMemberMoreDesc[index].style.maxHeight = '20vh';
+      }, true)
+      teamMember[index].addEventListener('mouseover', () => {
+        if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
+          if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
+            return
+          }
+          teamMemberDesc[index].style.marginLeft = '2.5vw';
+          teamMemberName[index].style.marginLeft = '2.5vw';
+        }
+      })
+      teamMember[index].addEventListener('mouseout', () => {
+        if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
+          if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
+            return
+          }
+          teamMemberDesc[index].style.marginLeft = '0vw';
+          teamMemberName[index].style.marginLeft = '0vw';
+        }
+      })
     })
-  })
-}
+  }
+  
+})
+
 
 if(window.outerWidth < '1200'){
   const teamMember = document.querySelectorAll('.team-member')
