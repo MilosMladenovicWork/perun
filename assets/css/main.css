@@ -1786,6 +1786,29 @@ nav #menu {
   margin-left: 20.83vw;
 }
 
+#call-to-action {
+  background-color: #29023F;
+}
+
+#call-to-action #call-to-action-main {
+  margin-left: 20.83vw;
+  margin-right: 20.83vw;
+  padding-top: 31vh;
+  padding-bottom: 31vh;
+}
+
+#call-to-action #call-to-action-main h1 {
+  color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: 6vh;
+}
+
+#call-to-action #call-to-action-main svg {
+  display: block;
+  margin: auto;
+}
+
 #team-main {
   margin-left: 20.83vw;
   display: -webkit-box;

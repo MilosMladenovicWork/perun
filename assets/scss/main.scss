@@ -1406,6 +1406,26 @@ nav{
   }
 }
 
+#call-to-action{
+  background-color:colors(text-color);
+  #call-to-action-main{
+    margin-left:sizes(margin);
+    margin-right:sizes(margin);
+    padding-top:31vh;
+    padding-bottom:31vh;
+    h1{
+      color:white;
+      display:block;
+      text-align: center;
+      margin-bottom:6vh;
+    }
+    svg{
+      display:block;
+      margin:auto;
+    }
+  }
+}
+
 #team-main{
   margin-left:sizes(margin);
   display:flex;
