@@ -203,7 +203,6 @@ const teamMember = document.querySelectorAll('.team-member')
             teamMemberMoreDesc[index].style.opacity = '1';
             teamMemberMoreDesc[index].style.zIndex = '80';
             teamMemberMoreDesc[index].style.top = '3.33vh';
-            teamMemberMoreDesc[index].style.paddingTop = 'calc(25vw + 15px)';
             teamMemberMoreDesc[index].classList.add('paddingTop');
             teamMemberMoreDesc[index].style.left = '3.33vh';
             teamMemberMoreDesc[index].style.width = '35.57vw';
@@ -225,7 +224,6 @@ const teamMember = document.querySelectorAll('.team-member')
             teamMemberMoreDesc[index].style.opacity = '1';
             teamMemberMoreDesc[index].style.zIndex = '80';
             teamMemberMoreDesc[index].style.top = '3.33vh';
-            teamMemberMoreDesc[index].style.paddingTop = 'calc(25vw + 15px)';
             teamMemberMoreDesc[index].classList.add('paddingTop');
             teamMemberMoreDesc[index].style.left = '-22.25vw';
             teamMemberMoreDesc[index].style.width = '35.57vw';
@@ -247,9 +245,10 @@ const teamMember = document.querySelectorAll('.team-member')
         teamMemberMoreDesc[index].style.opacity = '0';
         teamMemberMoreDesc[index].style.zIndex = '60';
         teamMemberMoreDesc[index].style.top = '0vh';
+        teamMemberMoreDesc[index].classList.remove('paddingTop');
         teamMemberMoreDesc[index].style.left = '0vh';
         teamMemberMoreDesc[index].style.width = '15.8vw';
-        return teamMemberMoreDesc[index].style.maxHeight = '20vh';
+        return teamMemberMoreDesc[index].style.maxHeight = '';
       }, true)
       teamMember[index].addEventListener('mouseover', () => {
         if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
@@ -301,7 +300,6 @@ swiper.on('slideChange', () => {
             teamMemberMoreDesc[index].style.opacity = '1';
             teamMemberMoreDesc[index].style.zIndex = '80';
             teamMemberMoreDesc[index].style.top = '3.33vh';
-            teamMemberMoreDesc[index].style.paddingTop = 'calc(25vw + 15px)';
             teamMemberMoreDesc[index].classList.add('paddingTop');
             teamMemberMoreDesc[index].style.left = '3.33vh';
             teamMemberMoreDesc[index].style.width = '35.57vw';
@@ -323,7 +321,6 @@ swiper.on('slideChange', () => {
             teamMemberMoreDesc[index].style.opacity = '1';
             teamMemberMoreDesc[index].style.zIndex = '80';
             teamMemberMoreDesc[index].style.top = '3.33vh';
-            teamMemberMoreDesc[index].style.paddingTop = 'calc(25vw + 15px)';
             teamMemberMoreDesc[index].classList.add('paddingTop');
             teamMemberMoreDesc[index].style.left = '-22.25vw';
             teamMemberMoreDesc[index].style.width = '35.57vw';
@@ -345,9 +342,10 @@ swiper.on('slideChange', () => {
         teamMemberMoreDesc[index].style.opacity = '0';
         teamMemberMoreDesc[index].style.zIndex = '60';
         teamMemberMoreDesc[index].style.top = '0vh';
+        teamMemberMoreDesc[index].classList.remove('paddingTop');
         teamMemberMoreDesc[index].style.left = '0vh';
         teamMemberMoreDesc[index].style.width = '15.8vw';
-        return teamMemberMoreDesc[index].style.maxHeight = '20vh';
+        return teamMemberMoreDesc[index].style.maxHeight = '';
       }, true)
       teamMember[index].addEventListener('mouseover', () => {
         if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
@@ -465,7 +463,7 @@ window.addEventListener('load', (event) => {
 
 //
 
-const callbackTechnology = (entries, observer) => {
+const callbackAbout2 = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       sectionCircle.style.transform = 'translateY(-111px)'
@@ -473,19 +471,40 @@ const callbackTechnology = (entries, observer) => {
   })
 }
 
-const technology = document.querySelector('#ourtechnology-text');
+const about2 = document.querySelector('#about-2');
 
 
 window.addEventListener('load', (event) => {
-  let observerTechnology;
+  let observerAbout2;
 
-  observerTechnology = new IntersectionObserver(callbackTechnology, options);
-  observerTechnology.observe(technology);
+  observerAbout2 = new IntersectionObserver(callbackAbout2, options);
+  observerAbout2.observe(about2);
 })
 
 //
 
-const callbackStatechannels = (entries, observer) => {
+
+// const callbackStatechannels = (entries, observer) => {
+//   entries.forEach(entry => {
+//     if(entry.isIntersecting){
+//       sectionCircle.style.transform = 'translateY(-97px)'
+//     }
+//   })
+// }
+
+// const statechannels = document.querySelector('#statechannels-main');
+
+
+// window.addEventListener('load', (event) => {
+//   let observerStatechannels;
+
+//   observerStatechannels = new IntersectionObserver(callbackStatechannels, options);
+//   observerStatechannels.observe(statechannels);
+// })
+
+//
+
+const callbackProductSection = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       sectionCircle.style.transform = 'translateY(-97px)'
@@ -493,62 +512,23 @@ const callbackStatechannels = (entries, observer) => {
   })
 }
 
-const statechannels = document.querySelector('#statechannels-main');
-
-
-window.addEventListener('load', (event) => {
-  let observerStatechannels;
-
-  observerStatechannels = new IntersectionObserver(callbackStatechannels, options);
-  observerStatechannels.observe(statechannels);
-})
-
-//
-
-const callbackAcademic = (entries, observer) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-83px)'
-    }
-  })
-}
-
-const academic = document.querySelector('#academic-main');
-
-
-window.addEventListener('load', (event) => {
-  let observerAcademic;
-
-  observerAcademic = new IntersectionObserver(callbackAcademic , options);
-  observerAcademic.observe(academic);
-})
-
-//
-
-const callbackProduct = (entries, observer) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-69px)'
-    }
-  })
-}
-
-const product = document.querySelector('#product');
+const productSection = document.querySelector('#product-section');
 
 
 window.addEventListener('load', (event) => {
   let observerProduct;
 
-  observerProduct = new IntersectionObserver(callbackProduct, options);
-  observerProduct.observe(product);
+  observerProduct = new IntersectionObserver(callbackProductSection, options);
+  observerProduct.observe(productSection);
 })
 
 //
 
+
 const callbackWhyUse = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-55px)'
+      sectionCircle.style.transform = 'translateY(-83px)'
     }
   })
 }
@@ -565,10 +545,91 @@ window.addEventListener('load', (event) => {
 
 //
 
-const callbackTeam = (entries, observer) => {
+
+const callbackBigIllustration = (entries, observer) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      sectionCircle.style.transform = 'translateY(-69px)'
+    }
+  })
+}
+
+const bigIllustration = document.querySelector('#big-illustration');
+
+
+window.addEventListener('load', (event) => {
+  let observerBigIllustration;
+
+  observerBigIllustration = new IntersectionObserver(callbackBigIllustration, options);
+  observerBigIllustration.observe(bigIllustration);
+})
+
+//
+
+const callbackTechnology = (entries, observer) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      sectionCircle.style.transform = 'translateY(-55px)'
+    }
+  })
+}
+
+const technology = document.querySelector('#ourtechnology-text');
+
+
+window.addEventListener('load', (event) => {
+  let observerTechnology;
+
+  observerTechnology = new IntersectionObserver(callbackTechnology, options);
+  observerTechnology.observe(technology);
+})
+
+//
+
+const callbackAcademic = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       sectionCircle.style.transform = 'translateY(-41px)'
+    }
+  })
+}
+
+const academic = document.querySelector('#academic-main');
+
+
+window.addEventListener('load', (event) => {
+  let observerAcademic;
+
+  observerAcademic = new IntersectionObserver(callbackAcademic , options);
+  observerAcademic.observe(academic);
+})
+
+//
+
+const callbackCallToAction = (entries, observer) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      sectionCircle.style.transform = 'translateY(-27px)'
+    }
+  })
+}
+
+const action = document.querySelector('#call-to-action');
+
+
+window.addEventListener('load', (event) => {
+  let observerCallToAction;
+
+  observerCallToAction = new IntersectionObserver(callbackCallToAction , options);
+  observerCallToAction.observe(action);
+})
+
+//
+
+const callbackTeam = (entries, observer) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      sectionCircle.style.transform = 'translateY(-13px)'
     }
   })
 }
@@ -588,7 +649,7 @@ window.addEventListener('load', (event) => {
 const callbackCareer = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-27px)'
+      sectionCircle.style.transform = 'translateY(1px)'
     }
   })
 }
@@ -628,12 +689,12 @@ window.addEventListener('load', (event) => {
 const callbackContactUs = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(1px)'
+      sectionCircle.style.transform = 'translateY(15px)'
     }
   })
 }
 
-const contactus = document.querySelector('#contactus');
+const contactus = document.querySelector('#contactus-text');
 
 
 window.addEventListener('load', (event) => {
@@ -642,28 +703,6 @@ window.addEventListener('load', (event) => {
   observerContactUs = new IntersectionObserver(callbackContactUs, options);
   observerContactUs.observe(contactus);
 })
-
-//
-
-const callbackFooter = (entries, observer) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(15px)'
-    }
-  })
-}
-
-const footer = document.querySelector('#footer-container');
-
-
-window.addEventListener('load', (event) => {
-  let observerFooter;
-
-  observerFooter = new IntersectionObserver(callbackFooter, options);
-  observerFooter.observe(footer);
-})
-
-//
 
 const callbackWhyUseSlider = (entries, observer) => {
   entries.forEach(entry => {
