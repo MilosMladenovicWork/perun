@@ -1889,7 +1889,7 @@ nav #menu {
 }
 
 #team-section {
-  width: 80vw;
+  width: 67.55vw;
 }
 
 @media (max-width: 1200px) {
@@ -2047,7 +2047,7 @@ nav #menu {
 }
 
 #scroll-right-team {
-  width: 80vw;
+  width: 58.38vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2068,7 +2068,6 @@ nav #menu {
 
 #scroll-right-team img {
   margin-left: 3.13vw;
-  margin-right: 15.63vw;
 }
 
 .team-member {
@@ -2799,17 +2798,16 @@ nav #menu {
 }
 
 #contactus-form-section #contactus-form-illustration {
-  width: 50%;
+  width: 10px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-transform: translateX(-27.5vw) translateY(12vh);
-          transform: translateX(-27.5vw) translateY(12vh);
+  -webkit-transform: translateX(-27.5vw) translateY(5vh);
+          transform: translateX(-27.5vw) translateY(5vh);
 }
 
 #contactus-form-section #contactus-form-illustration img {
   padding-top: 0;
-  width: 100%;
   width: 35.73vw;
 }
 
@@ -2839,7 +2837,7 @@ nav #menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 37.5%;
+  width: 26.87vw;
 }
 
 #contactus-form-section #contactus-form h2 {

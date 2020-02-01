@@ -1485,7 +1485,7 @@ nav{
 }
 
 #team-section{
-  width:80vw;
+  width:67.55vw;
   @include respond-to(large){
     margin-left:0;
     padding-right:sizes(margin)
@@ -1611,7 +1611,7 @@ nav{
 }
 
 #scroll-right-team{
-  width:80vw;
+  width:58.38vw;
   display:flex;
   justify-content: flex-end;
   align-items: center;
@@ -1622,7 +1622,6 @@ nav{
   }
   img{
     margin-left:3.13vw;
-    margin-right:15.63vw;
   }
 }
 
@@ -2103,12 +2102,11 @@ nav{
   display:flex;
   justify-content: space-between;
   #contactus-form-illustration{
-    width:50%;
+    width:10px;
     height:fit-content;
-    transform: translateX(-27.5vw) translateY(12vh);
+    transform: translateX(-27.5vw) translateY(5vh);
     img{
       padding-top:0;
-      width:100%;
       width:35.73vw;
     }
     @include respond-to(large){
@@ -2126,7 +2124,7 @@ nav{
     margin-right:sizes(margin);
     display:flex;
     flex-direction: column;
-    width:37.5%;
+    width:26.87vw;
     h2{
       margin-bottom: 6vh;
       font-weight: 600;
