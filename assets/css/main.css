@@ -64,6 +64,10 @@ h1 {
   font-weight: 700;
 }
 
+.light {
+  font-weight: 300;
+}
+
 h2 {
   font-size: 36px !important;
   line-height: 48px !important;
@@ -83,7 +87,7 @@ p {
 
 nav {
   visibility: hidden;
-  padding: 6.48vh 5.47vw 6.48vh;
+  padding: 5.42vh 5.47vw;
   background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
   width: 100%;
@@ -140,7 +144,7 @@ nav ul li img {
 
 nav ul li:last-of-type a {
   border: 2px solid #29023F;
-  padding: 20px 50px;
+  padding: 21px 42.5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -355,7 +359,7 @@ nav #menu {
 }
 
 #hero-illustration {
-  width: 32vw;
+  width: 31.35vw;
   position: absolute;
   right: 15.62vw;
 }
@@ -407,6 +411,7 @@ nav #menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 42px;
 }
 
 .social-links a img {
@@ -1790,6 +1795,7 @@ nav #menu {
 
 #call-to-action {
   background-color: #29023F;
+  position: relative;
 }
 
 #call-to-action #call-to-action-main {
@@ -1830,6 +1836,18 @@ nav #menu {
 
 #call-to-action #call-to-action-main svg:hover path {
   stroke: #29023F;
+}
+
+#call-to-action #call-to-action-illustration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#call-to-action #call-to-action-illustration img {
+  width: 19.5vw;
 }
 
 #team-main {
@@ -3228,7 +3246,7 @@ footer > p {
     stroke-dasharray: 200px;
   }
   100% {
-    stroke-dasharray: 0;
+    stroke-dasharray: 5px;
   }
 }
 
@@ -3237,7 +3255,7 @@ footer > p {
     stroke-dasharray: 200px;
   }
   100% {
-    stroke-dasharray: 0;
+    stroke-dasharray: 5px;
   }
 }
 

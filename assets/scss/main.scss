@@ -226,6 +226,10 @@ h1{
   font-weight:700;
 }
 
+.light{
+  font-weight: 300;
+}
+
 h2{
   font-size:36px !important;
   line-height: 48px !important;
@@ -246,7 +250,7 @@ p{
 
 nav{
   visibility:hidden;
-  padding:6.48vh 5.47vw 6.48vh;
+  padding:5.42vh 5.47vw;
   background-color:rgba(255, 255, 255, 0.8);
   position:fixed;
   width:100%;
@@ -287,7 +291,7 @@ nav{
     }
     li:last-of-type a{
       border:2px solid colors(text-color);
-      padding:20px 50px;
+      padding:21px 42.5px;
       img{
         display:none;
       }
@@ -437,7 +441,7 @@ nav{
 }
 
 #hero-illustration{
-  width:32vw;
+  width:31.35vw;
   position:absolute;
   right:sizes(margin) - 5.21vw;
   @include respond-to(large){
@@ -471,6 +475,7 @@ nav{
   a{
     display: flex;
     align-items: center;
+    margin-right:42px;
     img{
       height:18.37px;
     }
@@ -1410,6 +1415,7 @@ nav{
 
 #call-to-action{
   background-color:colors(text-color);
+  position:relative;
   #call-to-action-main{
     margin-left:sizes(margin);
     margin-right:sizes(margin);
@@ -1437,6 +1443,15 @@ nav{
       path{
         stroke:colors(text-color)
       }
+    }
+  }
+  #call-to-action-illustration{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    img{
+      width:19.5vw;
     }
   }
 }
@@ -2401,7 +2416,7 @@ footer{
   }
 
   100%{
-    stroke-dasharray: 0;
+    stroke-dasharray: 5px;
   }
 }
 
