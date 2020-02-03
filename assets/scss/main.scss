@@ -514,7 +514,7 @@ nav{
     position:relative;
   }
   @include respond-to(large){
-    bottom:6.5vh;
+    bottom:6.48vh;
   }
   @include respond-to(small){
     right:-12vw;
@@ -531,7 +531,7 @@ nav{
   visibility: hidden;
   transform:translate(0,-125px);
   @include respond-to(large){
-    top:235px;
+    top:250px;
   }
   @include respond-to(small){
     display:none;
@@ -548,6 +548,11 @@ nav{
     position:absolute;
     top:0;
     right:0;
+    img{
+      @include respond-to(small){
+        width:100%;
+      }
+    }
   }
   @include respond-to(large){
     position:static;
@@ -569,14 +574,19 @@ nav{
   p{
     margin:0;
     width:41.67vw;
+    @include respond-to(small){
+      width:auto;
+    }
   }
   @include respond-to(large){
-    width:53.8vw;
+    margin-left:sizes(margin);
+    margin-right:sizes(margin);
+    width:auto;
     padding-top:16.3vh;
     margin-bottom:6.91vh;
   }
   @include respond-to(small){
-    width:70vw;
+    width:auto;
     padding-top:13.43vh;
   }
 }
@@ -642,7 +652,7 @@ nav{
     width:53.8vw;
   }
   @include respond-to(small){
-    width:70vw;
+    width:100vw - 2*sizes(margin);
     margin-top:10vh;
   }
 }
@@ -658,8 +668,8 @@ nav{
     margin-bottom:4.8vh;
   }
   @include respond-to(small){
-    width:60vw;
-    margin-bottom:30.5vh;
+    width:auto;
+    margin-bottom:0vh;
   }
 }
 
@@ -678,6 +688,14 @@ nav{
       width:150vw;
     }
   }
+  @include respond-to(large){
+    position:static;
+    margin-bottom:10vh;
+  }
+  @include respond-to(small){
+    position:static;
+    margin-bottom:10vh;
+  }
 }
 
 #ourtechnology-subsections{
@@ -690,6 +708,9 @@ nav{
       margin-top:8.33vh;
       font-size:48px !important;
       margin-bottom:6.94vh;
+    }
+    @include respond-to(small){
+      width:100%;
     }
   }
   .ourtechnology-subsections-item:nth-child(3){
@@ -873,6 +894,10 @@ nav{
 
 #product{
   margin-left:sizes(margin) + 3.91vw;
+  @include respond-to(small){
+    margin-left:sizes(margin);
+    margin-right:sizes(margin);
+  }
 }
 
 #product-text h2{
@@ -884,6 +909,7 @@ nav{
     margin-bottom:11vh;
   }
   @include respond-to(small){
+    width:auto;
     padding-top:21.2vh;
     margin-bottom:13.9vh;
   }
@@ -1022,6 +1048,7 @@ nav{
       }
       @include respond-to(small){
         margin-left:0;
+        width:100%;
       }
     }
     .buttons{
@@ -1039,7 +1066,7 @@ nav{
         }
         @include respond-to(small){
           svg{
-            height:7vh;
+            height:6vh;
           }
         }
       }
@@ -1344,7 +1371,6 @@ nav{
   }
   @include respond-to(large){
     display:inline-block;
-    animation:rotate 25s infinite linear;
     margin-bottom:16.8vh;
     margin-top:0;
     margin-left:auto;
@@ -1352,7 +1378,6 @@ nav{
   @include respond-to(small){
     margin-top:sizes(large);
     display:inline-block;
-    animation:rotate 25s infinite linear;
     margin-bottom:sizes(extralarge);
     margin-left:0;
   }
@@ -1361,6 +1386,15 @@ nav{
 @keyframes rotate{
   to{
     transform:rotate(360deg)
+  }
+}
+
+#big-illustration img{
+  width:49.58vw;
+  display:block;
+  margin:auto;
+  @include respond-to(small){
+    width:100%;
   }
 }
 
@@ -1426,8 +1460,10 @@ nav{
     flex-direction: column;
     a{
       display:inline-block;
+      z-index:2;
     }
     h1{
+      z-index:2;
       color:white;
       display:block;
       text-align: center;
@@ -1463,6 +1499,10 @@ nav{
   flex-direction:column;
   width:85%;
   z-index:1;
+  @include respond-to(small){
+    margin-right:sizes(margin);
+    width:auto;
+  }
 }
 
 #team-text{
@@ -1489,6 +1529,9 @@ nav{
   @include respond-to(large){
     margin-left:0;
     padding-right:sizes(margin)
+  }
+  @include respond-to(small){
+    padding-right:0;
   }
 }
 
@@ -1558,9 +1601,11 @@ nav{
     margin:auto;
     @include respond-to(large){
       width:80%;
+      height:30vh;
     }
     @include respond-to(small){
       width:80%;
+      height:30vh;
     }
   }
   .team-member-description-arrow{
@@ -1664,6 +1709,9 @@ nav{
       margin-top:0;
     }
   }
+  @include respond-to(small){
+    width:100%;
+  }
 }
 
 .team-member-description{
@@ -1702,7 +1750,7 @@ nav{
   }
   @include respond-to(large){
     justify-content: center;
-    transform:translate(0, 0);
+    transform:translate(0, -50%);
     margin-right: 0;
     img{
       width:80vw;
@@ -1724,7 +1772,7 @@ nav{
     transition:0.2s;
     width:29vw;
     @include respond-to(large){
-      width:50%;
+      width:70%;
     }
     @include respond-to(small){
       width:60%;
@@ -1732,13 +1780,21 @@ nav{
   }
   @include respond-to(large){
     justify-content: flex-end;
-    transform:translate(0, 0);
+    transform:translate(0, -50%);
     margin-bottom:0px;
+    width:100vw;
+    right:unset;
+    left:0;
   }
   @include respond-to(small){
     justify-content: center;
     margin-right:0;
     margin-bottom:0;
+    transform:translate(0, -50%);
+    width:100vw;
+    top:0;
+    right:unset;
+    left:0;
   }
 }
 
@@ -1876,6 +1932,7 @@ nav{
   }
   @include respond-to(small){
     margin-bottom:20.6vh;
+    margin-right: sizes(margin);
   }
 }
 
@@ -1887,10 +1944,10 @@ nav{
   margin-left:sizes(margin);
   margin-right:sizes(margin);
   @include respond-to(large){
-    margin-bottom: 16.2vh;
+    margin-bottom:0;
   }
   @include respond-to(small){
-    margin-bottom:6.2vh;
+    margin-bottom:0;
   }
 }
 
@@ -1916,7 +1973,32 @@ nav{
     margin-bottom:11.11vh;
     img{
       width:11.88vw;
+      @include respond-to(large){
+        width:auto;
+        margin:auto;
+      }
+      @include respond-to(small){
+        width:auto;
+        margin:auto;
+      }
     }
+    @include respond-to(large){
+      margin-left:0;
+      margin-right:0;
+      width:100%;
+      margin-bottom:20vh;
+    }
+  }
+  @include respond-to(large){
+    width:auto;
+    margin-left:sizes(margin);
+    margin-right:sizes(margin);
+  }
+  @include respond-to(small){
+    width:auto;
+    margin-left:sizes(margin);
+    margin-right:sizes(margin);
+    text-align: center;
   }
 }
 
@@ -1940,7 +2022,7 @@ nav{
     margin-top:9.5vh;
   }
   @include respond-to(small){
-    width:35%;
+    width:40%;
     margin-top:0;
     margin-bottom:8.92vh;
   }
@@ -1986,6 +2068,9 @@ nav{
   width:auto;
   h1{
     width:40.83vw;
+    @include respond-to(small){
+      width:100%;
+    }
   }
   @include respond-to(large){
     width:56vw;
@@ -1993,9 +2078,10 @@ nav{
     margin-bottom:8.4vh;
   }
   @include respond-to(small){
-    width:70vw;
+    width:auto;
     padding-top:11.2vh;
     margin-bottom:13.1vh;
+    margin-right:sizes(margin);
   }
 }
 
@@ -2108,15 +2194,22 @@ nav{
     img{
       padding-top:0;
       width:35.73vw;
+      @include respond-to(large){
+        width:50vw;
+      }
+      @include respond-to(small){
+        width:100vw;
+      }
     }
     @include respond-to(large){
-      width:38vw;
+      width:100vw;
       height:38vw;
       margin:auto;
     }
     @include respond-to(small){
       width:100%;
       height:100%;
+      transform: translate(0, 0);
     }
   }
   #contactus-form{
@@ -2253,6 +2346,7 @@ nav{
   }
   @include respond-to(small){
     justify-content: center;
+    padding-left:0;
     padding-right:0;
   }
 }
@@ -2363,6 +2457,11 @@ footer{
       width:25.21vw;
       transform:translate(-25px, 0);
       margin-bottom:13.33vh;
+      @include respond-to(small){
+        width:auto;
+        transform:translate(0, 0);
+        margin-top:10vh;
+      }
     }
   }
   #ourproduct-heading{
@@ -2400,9 +2499,16 @@ footer{
       p{
         margin-bottom:3.7vh;
         transform:translate(-50px, 0);
+        @include respond-to(small){
+          transform:translate(0, 0);
+        }
       }
       li{
         margin-bottom:2vh;
+      }
+      @include respond-to(small){
+        width:90%;
+        margin-bottom:10vh;
       }
     }
   }
