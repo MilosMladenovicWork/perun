@@ -1363,7 +1363,7 @@ nav{
   img{
     width:60vw;
     @include respond-to(large){
-      width:30vw;
+      width:100vw;
     }
     @include respond-to(small){
       width:60vw;
@@ -1393,6 +1393,9 @@ nav{
   width:49.58vw;
   display:block;
   margin:auto;
+  @include respond-to(large){
+    width:100%;
+  }
   @include respond-to(small){
     width:100%;
   }

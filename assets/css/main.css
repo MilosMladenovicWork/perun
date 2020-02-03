@@ -1723,7 +1723,7 @@ nav #menu {
 
 @media (max-width: 1200px) {
   #whyuse-circle-mobile img {
-    width: 30vw;
+    width: 100vw;
   }
 }
 
@@ -1769,6 +1769,12 @@ nav #menu {
   width: 49.58vw;
   display: block;
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  #big-illustration img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
