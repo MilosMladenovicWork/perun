@@ -390,9 +390,10 @@ if(window.outerWidth < '1200'){
       teamMemberMoreDescParagraph[index].style.opacity = '1';
       teamMemberMoreDescArrow[index].style.opacity = '1';
       teamMemberMoreDesc[index].style.opacity = '1';
+      teamMemberMoreDesc[index].classList.add('paddingTopMobile');
       teamMemberMoreDesc[index].style.marginTop = '18.52vh';
       teamMemberMoreDesc[index].style.width = '100%';
-      teamMemberMoreDesc[index].style.maxHeight = '85.2vh';
+      teamMemberMoreDesc[index].style.maxHeight = '120vh';
     }, 'false')
     document.body.addEventListener('click', () => {
       teamMemberUnderlinePic[index].style.marginLeft = '0';
@@ -402,22 +403,11 @@ if(window.outerWidth < '1200'){
       teamMemberMoreDescArrow[index].style.opacity = '0';
       teamMemberDesc[index].style.marginLeft = '0vw';
       teamMemberName[index].style.marginLeft = '0vw';
+      teamMemberMoreDesc[index].classList.remove('paddingTopMobile');
       teamMemberMoreDesc[index].style.marginTop = '8vh';
       teamMemberMoreDesc[index].style.opacity = '0';
       return teamMemberMoreDesc[index].style.maxHeight = '0vh';
     }, true)
-      teamMemberMoreDescArrow[index].addEventListener('click', () => {
-        teamMemberUnderlinePic[index].style.marginLeft = '0';
-        teamMemberUnderlinePic[index].style.opacity = '0';
-        teamMemberPic[index].style.cursor = 'pointer';
-        teamMemberMoreDescParagraph[index].style.opacity = '0';
-        teamMemberMoreDescArrow[index].style.opacity = '0';
-        teamMemberDesc[index].style.marginLeft = '0vw';
-        teamMemberName[index].style.marginLeft = '0vw';
-        teamMemberMoreDesc[index].style.marginTop = '8vh';
-        teamMemberMoreDesc[index].style.opacity = '0';
-        return teamMemberMoreDesc[index].style.maxHeight = '0vh';
-      })
     })
 }
 

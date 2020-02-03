@@ -1575,6 +1575,10 @@ nav{
   padding-top:calc(20vw + 90px) !important;
 }
 
+.paddingTopMobile{
+  padding-top:calc(300px) !important;
+}
+
 .team-member-more-description{
   padding-top:32vh;
   padding-bottom:12.7vh;
@@ -1629,6 +1633,7 @@ nav{
     width:100%;
     padding-top:24vh;
     margin-top:8vh;
+    padding-bottom:7vh;
   }
   @include respond-to(small){
     width:65vw;
