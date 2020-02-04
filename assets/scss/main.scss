@@ -1595,7 +1595,7 @@ nav{
 // }
 
 .paddingTop{
-  padding-top:calc(20vw + 90px) !important;
+  padding-top:calc(15.8vw + 72px + 1.6vh + 70px) !important;
 }
 
 .paddingTopMobile{
@@ -1603,10 +1603,10 @@ nav{
 }
 
 .team-member-more-description{
-  padding-top:32vh;
-  padding-bottom:12.7vh;
+  padding-top:39vh;
+  padding-bottom:10.65vh;
   background-color:white;
-  max-height:20vh;
+  max-height:22vh;
   position:absolute;
   top:0;
   width:15.8vw;
@@ -1615,7 +1615,6 @@ nav{
   overflow:hidden;
   max-height:0;
   transition:1s;
-  z-index:-1;
   border:3px solid colors(text-color);
   z-index:1;
   #close-description-button{
@@ -1634,6 +1633,7 @@ nav{
     opacity:0;
     font-size:24px !important;
     width:14.8vw;
+    line-height:42px !important;
     font-weight:500;
     overflow-y:auto;
     margin:auto;
@@ -1678,7 +1678,7 @@ nav{
 }
 
 .team-member:nth-child(even){
-  padding-top:18.5vh;
+  padding-top:18.49vh;
   margin-bottom:10.9vh;
   .team-member-more-description{
     margin-top:18.52vh;
@@ -1720,6 +1720,18 @@ nav{
   animation:zoomOut 0.5s;
 }
 
+.small-container{
+  width:15.8vw;
+}
+
+.team-member-description-container{
+  width:fit-content;
+  position:relative;
+  transition:1s;
+  z-index:10;
+  left:0;
+  transform:translate(0, 0);
+}
 
 .team-member{
   width:15vw;
@@ -1736,13 +1748,14 @@ nav{
       width:100%;
     }
   }
-  >img:nth-of-type(2){
-    position:sticky;
+  img:nth-of-type(2){
+    position:relative;
+    left:0;
+    margin-top:1.6vh;
     z-index:10;
     transition:1s;
     opacity:0;
     width:7.55vw;
-    margin-left:2.5vw;
     margin-bottom:1.5vh;
     @include respond-to(small){
       width:20vw;
@@ -1765,29 +1778,34 @@ nav{
 }
 
 .team-member-description{
-  position:sticky;
+  position: relative;
   z-index:10;
   transition:1s;
   font-weight: 300;
   margin-left:0vw;
   margin-top:0;
+  width:fit-content;
   margin-bottom:0;
+  left:0;
   font-size:20px !important;
+  transform:translate(0%, 0);
   @include respond-to(large){
     padding-bottom:sizes(small);
   }
 }
 
 .team-member-name{
-  position:sticky;
+  position:relative;
   z-index:10;
-  transition:1s;
   margin-left:0vw;
   margin-top:4.2vh;
   margin-bottom:0;
-  width:13vw;
+  width:fit-content;
   font-weight: 700;
   font-size:24px !important;
+  transition:1s;
+  left:0;
+  transform:translate(0%, 0);
 }
 
 .some-illustration {

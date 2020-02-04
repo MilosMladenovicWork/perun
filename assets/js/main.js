@@ -17,9 +17,11 @@ const swiper = new Swiper('.swiper-container', {
   on:{
     reachBeginning:() => {
       scrollRightArrow.style.transform = 'rotate(0deg)';
+      document.querySelector('#scroll-right-team tspan').innerHTML = 'Scroll to the Right';
     },
     reachEnd:() => {
       scrollRightArrow.style.transform = 'rotate(180deg)';
+      document.querySelector('#scroll-right-team tspan').innerHTML = 'Scroll to the Left';
     }
   }
 });
@@ -176,29 +178,34 @@ menuMobileLinks.forEach((link) => {
 })
 if(window.outerWidth >= 1200){
   const teamMember = document.querySelectorAll('.team-member')
-  const teamMemberPic = document.querySelectorAll('.team-member > img:nth-child(1)')
-  const teamMemberUnderlinePic = document.querySelectorAll('.team-member >img:nth-of-type(2)')
+  const teamMemberPic = document.querySelectorAll('.team-member .small-container > img:nth-child(1)')
+  const teamMemberUnderlinePic = document.querySelectorAll('.team-member .small-container >img:nth-of-type(2)')
   const teamMemberMoreDesc = document.querySelectorAll('.team-member-more-description')
   const teamMemberMoreDescParagraph = document.querySelectorAll('.team-member-more-description p')
   const teamMemberMoreDescArrow = document.querySelectorAll('.team-member-more-description .team-member-description-arrow')
   const teamMemberName = document.querySelectorAll('.team-member-name')
   const teamMemberDesc = document.querySelectorAll('.team-member-description')
   const closeDescriptionButton = document.querySelectorAll('#close-description-button');
+  const teamMemberDescContainer = document.querySelectorAll('.team-member-description-container')
 
   teamMemberPic.forEach((memberPic,index) => {
       teamMember[index].addEventListener('click', (event) => {
         if(swiper.activeIndex >= index){
-          teamMemberUnderlinePic[index].style.marginLeft = '5.62vw';
+          teamMemberDesc[index].style.left = '0%';
+          teamMemberDesc[index].style.transform = 'translate(0%, 0)';
+          teamMemberName[index].style.left = '0%';
+          teamMemberName[index].style.transform = 'translate(0%, 0)';
+          teamMemberUnderlinePic[index].style.left = '5.62vw';
           teamMemberPic[index].style.zIndex = '100';
           teamMemberUnderlinePic[index].style.opacity = '1';
           teamMemberUnderlinePic[index].style.zIndex = '100';
           teamMemberPic[index].style.cursor = 'auto';
           teamMemberMoreDescParagraph[index].style.width = '28vw';
           teamMemberMoreDescParagraph[index].style.opacity = '1';
-          teamMemberMoreDescArrow[index].style.opacity = '1';
-          teamMemberDesc[index].style.marginLeft = '5.62vw';
-          teamMemberDesc[index].style.zIndex = '100';
-          teamMemberName[index].style.marginLeft = '5.62vw';
+          teamMemberMoreDescArrow[index].style.opacity = '1'; 
+          teamMemberDescContainer[index].style.zIndex = '100';
+          teamMemberDescContainer[index].style.left = '5.62vw';
+          teamMemberDescContainer[index].style.transform = 'translate(0, 0)';
           teamMemberName[index].style.zIndex = '100';
           teamMemberMoreDesc[index].style.opacity = '1';
           teamMemberMoreDesc[index].style.zIndex = '80';
@@ -212,7 +219,13 @@ if(window.outerWidth >= 1200){
           closeDescriptionButton[index].style.right = '3.65vw';
         }
         else{
-          teamMemberUnderlinePic[index].style.marginLeft = '-18.23vw';
+          teamMemberDesc[index].style.left = '0%';
+          teamMemberDesc[index].style.transform = 'translate(0%, 0)';
+          teamMemberName[index].style.left = '0%';
+          teamMemberName[index].style.transform = 'translate(0%, 0)';
+          teamMemberDescContainer[index].style.left = '0%';
+          teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
+          teamMemberUnderlinePic[index].style.left = '-18.23vw';
           teamMemberPic[index].style.zIndex = '100';
           teamMemberUnderlinePic[index].style.opacity = '1';
           teamMemberUnderlinePic[index].style.zIndex = '100';
@@ -220,9 +233,9 @@ if(window.outerWidth >= 1200){
           teamMemberMoreDescParagraph[index].style.width = '28vw';
           teamMemberMoreDescParagraph[index].style.opacity = '1';
           teamMemberMoreDescArrow[index].style.opacity = '1';
-          teamMemberDesc[index].style.marginLeft = '-18.23vw';
-          teamMemberDesc[index].style.zIndex = '100';
-          teamMemberName[index].style.marginLeft = '-18.23vw';
+          teamMemberDesc[index].style.left = '-18.23vw';
+          teamMemberDescContainer[index].style.zIndex = '100';
+          teamMemberName[index].style.left = '-18.23vw';
           teamMemberName[index].style.zIndex = '100';
           teamMemberMoreDesc[index].style.opacity = '1';
           teamMemberMoreDesc[index].style.zIndex = '80';
@@ -237,16 +250,18 @@ if(window.outerWidth >= 1200){
         }
       }, true)
     document.body.addEventListener('click', () => {
-      teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
+      teamMemberDescContainer[index].style.left = '0%';
+        teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
+      teamMemberUnderlinePic[index].style.left = '2.5vw';
       teamMemberPic[index].style.zIndex = '70';
       teamMemberUnderlinePic[index].style.opacity = '0';
       teamMemberUnderlinePic[index].style.zIndex = '70';
       teamMemberPic[index].style.cursor = 'pointer';
       teamMemberMoreDescParagraph[index].style.opacity = '0';
       teamMemberMoreDescArrow[index].style.opacity = '0';
-      teamMemberDesc[index].style.marginLeft = '0vw';
-      teamMemberDesc[index].style.zIndex = '70';
-      teamMemberName[index].style.marginLeft = '0vw';
+      teamMemberDesc[index].style.left = '0vw';
+      teamMemberDescContainer[index].style.zIndex = '70';
+      teamMemberName[index].style.left = '0vw';
       teamMemberName[index].style.zIndex = '70';
       teamMemberMoreDesc[index].style.opacity = '0';
       teamMemberMoreDesc[index].style.zIndex = '60';
@@ -257,16 +272,18 @@ if(window.outerWidth >= 1200){
       return teamMemberMoreDesc[index].style.maxHeight = '';
     }, true)
     closeDescriptionButton[index].addEventListener('click', () => {
-      teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
+      teamMemberDescContainer[index].style.left = '0%';
+        teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
+      teamMemberUnderlinePic[index].style.left = '2.5vw';
       teamMemberPic[index].style.zIndex = '70';
       teamMemberUnderlinePic[index].style.opacity = '0';
       teamMemberUnderlinePic[index].style.zIndex = '70';
       teamMemberPic[index].style.cursor = 'pointer';
       teamMemberMoreDescParagraph[index].style.opacity = '0';
       teamMemberMoreDescArrow[index].style.opacity = '0';
-      teamMemberDesc[index].style.marginLeft = '0vw';
-      teamMemberDesc[index].style.zIndex = '70';
-      teamMemberName[index].style.marginLeft = '0vw';
+      teamMemberDesc[index].style.left = '0vw';
+      teamMemberDescContainer[index].style.zIndex = '70';
+      teamMemberName[index].style.left = '0vw';
       teamMemberName[index].style.zIndex = '70';
       teamMemberMoreDesc[index].style.opacity = '0';
       teamMemberMoreDesc[index].style.zIndex = '60';
@@ -277,22 +294,18 @@ if(window.outerWidth >= 1200){
       return teamMemberMoreDesc[index].style.maxHeight = '';
     }, false)
     teamMember[index].addEventListener('mouseover', () => {
-      if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
-        if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
+        if(teamMemberPic[index].style.zIndex === '100'){
           return
         }
-        teamMemberDesc[index].style.marginLeft = '2.5vw';
-        teamMemberName[index].style.marginLeft = '2.5vw';
-      }
+        teamMemberDescContainer[index].style.left = '50%';
+        teamMemberDescContainer[index].style.transform = 'translate(-50%, 0)';
     })
     teamMember[index].addEventListener('mouseout', () => {
-      if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
-        if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
+        if(teamMemberDescContainer[index].style.left === '5.62vw'){
           return
         }
-        teamMemberDesc[index].style.marginLeft = '0vw';
-        teamMemberName[index].style.marginLeft = '0vw';
-      }
+        teamMemberDescContainer[index].style.left = '0%';
+        teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
     })
   })
 }
@@ -300,118 +313,137 @@ if(window.outerWidth >= 1200){
 swiper.on('slideChange', () => {
   if(window.outerWidth >= 1200){
     const teamMember = document.querySelectorAll('.team-member')
-    const teamMemberPic = document.querySelectorAll('.team-member > img:nth-child(1)')
-    const teamMemberUnderlinePic = document.querySelectorAll('.team-member >img:nth-of-type(2)')
+    const teamMemberPic = document.querySelectorAll('.team-member .small-container > img:nth-child(1)')
+    const teamMemberUnderlinePic = document.querySelectorAll('.team-member .small-container >img:nth-of-type(2)')
     const teamMemberMoreDesc = document.querySelectorAll('.team-member-more-description')
     const teamMemberMoreDescParagraph = document.querySelectorAll('.team-member-more-description p')
     const teamMemberMoreDescArrow = document.querySelectorAll('.team-member-more-description .team-member-description-arrow')
     const teamMemberName = document.querySelectorAll('.team-member-name')
     const teamMemberDesc = document.querySelectorAll('.team-member-description')
+    const closeDescriptionButton = document.querySelectorAll('#close-description-button');
+    const teamMemberDescContainer = document.querySelectorAll('.team-member-description-container')
 
     teamMemberPic.forEach((memberPic,index) => {
-        teamMember[index].addEventListener('click', (event) => {
-          if(swiper.activeIndex >= index){
-            console.log(swiper.activeIndex)
-            teamMemberUnderlinePic[index].style.marginLeft = '5.62vw';
-            teamMemberPic[index].style.zIndex = '100';
-            teamMemberUnderlinePic[index].style.opacity = '1';
-            teamMemberUnderlinePic[index].style.zIndex = '100';
-            teamMemberPic[index].style.cursor = 'auto';
-            teamMemberMoreDescParagraph[index].style.width = '28vw';
-            teamMemberMoreDescParagraph[index].style.opacity = '1';
-            teamMemberMoreDescArrow[index].style.opacity = '1';
-            teamMemberDesc[index].style.marginLeft = '5.62vw';
-            teamMemberDesc[index].style.zIndex = '100';
-            teamMemberName[index].style.marginLeft = '5.62vw';
-            teamMemberName[index].style.zIndex = '100';
-            teamMemberMoreDesc[index].style.opacity = '1';
-            teamMemberMoreDesc[index].style.zIndex = '80';
-            teamMemberMoreDesc[index].style.top = '3.33vh';
-            teamMemberMoreDesc[index].classList.add('paddingTop');
-            teamMemberMoreDesc[index].style.left = '3.33vh';
-            teamMemberMoreDesc[index].style.width = '35.57vw';
-            teamMemberMoreDesc[index].style.maxHeight = '160vh';
-          }
-          else{
-            teamMemberUnderlinePic[index].style.marginLeft = '-20.23vw';
-            teamMemberPic[index].style.zIndex = '100';
-            teamMemberUnderlinePic[index].style.opacity = '1';
-            teamMemberUnderlinePic[index].style.zIndex = '100';
-            teamMemberPic[index].style.cursor = 'auto';
-            teamMemberMoreDescParagraph[index].style.width = '28vw';
-            teamMemberMoreDescParagraph[index].style.opacity = '1';
-            teamMemberMoreDescArrow[index].style.opacity = '1';
-            teamMemberDesc[index].style.marginLeft = '-18.23vw';
-            teamMemberDesc[index].style.zIndex = '100';
-            teamMemberName[index].style.marginLeft = '-18.23vw';
-            teamMemberName[index].style.zIndex = '100';
-            teamMemberMoreDesc[index].style.opacity = '1';
-            teamMemberMoreDesc[index].style.zIndex = '80';
-            teamMemberMoreDesc[index].style.top = '3.33vh';
-            teamMemberMoreDesc[index].classList.add('paddingTop');
-            teamMemberMoreDesc[index].style.left = '-22.25vw';
-            teamMemberMoreDesc[index].style.width = '35.57vw';
-            teamMemberMoreDesc[index].style.maxHeight = '160vh';
-          }
-        }, true)
-      document.body.addEventListener('click', () => {
-        teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
-        teamMemberPic[index].style.zIndex = '70';
-        teamMemberUnderlinePic[index].style.opacity = '0';
-        teamMemberUnderlinePic[index].style.zIndex = '70';
-        teamMemberPic[index].style.cursor = 'pointer';
-        teamMemberMoreDescParagraph[index].style.opacity = '0';
-        teamMemberMoreDescArrow[index].style.opacity = '0';
-        teamMemberDesc[index].style.marginLeft = '0vw';
-        teamMemberDesc[index].style.zIndex = '70';
-        teamMemberName[index].style.marginLeft = '0vw';
-        teamMemberName[index].style.zIndex = '70';
-        teamMemberMoreDesc[index].style.opacity = '0';
-        teamMemberMoreDesc[index].style.zIndex = '60';
-        teamMemberMoreDesc[index].style.top = '0vh';
-        teamMemberMoreDesc[index].classList.remove('paddingTop');
-        teamMemberMoreDesc[index].style.left = '0vh';
-        teamMemberMoreDesc[index].style.width = '15.8vw';
-        return teamMemberMoreDesc[index].style.maxHeight = '';
+      teamMember[index].addEventListener('click', (event) => {
+        if(swiper.activeIndex >= index){
+          teamMemberDesc[index].style.left = '0%';
+          teamMemberDesc[index].style.transform = 'translate(0%, 0)';
+          teamMemberName[index].style.left = '0%';
+          teamMemberName[index].style.transform = 'translate(0%, 0)';
+          teamMemberDescContainer[index].style.left = '0%';
+          teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
+          teamMemberUnderlinePic[index].style.left = '5.62vw';
+          teamMemberPic[index].style.zIndex = '100';
+          teamMemberUnderlinePic[index].style.opacity = '1';
+          teamMemberUnderlinePic[index].style.zIndex = '100';
+          teamMemberPic[index].style.cursor = 'auto';
+          teamMemberMoreDescParagraph[index].style.width = '28vw';
+          teamMemberMoreDescParagraph[index].style.opacity = '1';
+          teamMemberMoreDescArrow[index].style.opacity = '1'; 
+          teamMemberDescContainer[index].style.zIndex = '100';
+          teamMemberDescContainer[index].style.left = '5.62vw';
+          teamMemberDescContainer[index].style.transform = 'translate(0, 0)';
+          teamMemberName[index].style.zIndex = '100';
+          teamMemberMoreDesc[index].style.opacity = '1';
+          teamMemberMoreDesc[index].style.zIndex = '80';
+          teamMemberMoreDesc[index].style.top = '3.33vh';
+          teamMemberMoreDesc[index].classList.add('paddingTop');
+          teamMemberMoreDesc[index].style.left = '3.33vh';
+          teamMemberMoreDesc[index].style.width = '35.57vw';
+          teamMemberMoreDesc[index].style.maxHeight = '160vh';
+          closeDescriptionButton[index].style.left = 'unset';
+          closeDescriptionButton[index].style.top = '5.01vh';
+          closeDescriptionButton[index].style.right = '3.65vw';
+        }
+        else{
+          teamMemberDesc[index].style.left = '0%';
+          teamMemberDesc[index].style.transform = 'translate(0%, 0)';
+          teamMemberName[index].style.left = '0%';
+          teamMemberName[index].style.transform = 'translate(0%, 0)';
+          teamMemberDescContainer[index].style.left = '0%';
+          teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
+          teamMemberUnderlinePic[index].style.left = '-18.23vw';
+          teamMemberPic[index].style.zIndex = '100';
+          teamMemberUnderlinePic[index].style.opacity = '1';
+          teamMemberUnderlinePic[index].style.zIndex = '100';
+          teamMemberPic[index].style.cursor = 'auto';
+          teamMemberMoreDescParagraph[index].style.width = '28vw';
+          teamMemberMoreDescParagraph[index].style.opacity = '1';
+          teamMemberMoreDescArrow[index].style.opacity = '1';
+          teamMemberDesc[index].style.left = '-18.23vw';
+          teamMemberDescContainer[index].style.zIndex = '100';
+          teamMemberName[index].style.left = '-18.23vw';
+          teamMemberName[index].style.zIndex = '100';
+          teamMemberMoreDesc[index].style.opacity = '1';
+          teamMemberMoreDesc[index].style.zIndex = '80';
+          teamMemberMoreDesc[index].style.top = '3.33vh';
+          teamMemberMoreDesc[index].classList.add('paddingTop');
+          teamMemberMoreDesc[index].style.left = '-22.25vw';
+          teamMemberMoreDesc[index].style.width = '35.57vw';
+          teamMemberMoreDesc[index].style.maxHeight = '160vh';
+          closeDescriptionButton[index].style.right = 'unset';
+          closeDescriptionButton[index].style.top = '5.01vh';
+          closeDescriptionButton[index].style.left = '3.65vw';
+        }
       }, true)
-      closeDescriptionButton[index].addEventListener('click', () => {
-        teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
-        teamMemberPic[index].style.zIndex = '70';
-        teamMemberUnderlinePic[index].style.opacity = '0';
-        teamMemberUnderlinePic[index].style.zIndex = '70';
-        teamMemberPic[index].style.cursor = 'pointer';
-        teamMemberMoreDescParagraph[index].style.opacity = '0';
-        teamMemberMoreDescArrow[index].style.opacity = '0';
-        teamMemberDesc[index].style.marginLeft = '0vw';
-        teamMemberDesc[index].style.zIndex = '70';
-        teamMemberName[index].style.marginLeft = '0vw';
-        teamMemberName[index].style.zIndex = '70';
-        teamMemberMoreDesc[index].style.opacity = '0';
-        teamMemberMoreDesc[index].style.zIndex = '60';
-        teamMemberMoreDesc[index].style.top = '0vh';
-        teamMemberMoreDesc[index].classList.remove('paddingTop');
-        teamMemberMoreDesc[index].style.left = '0vh';
-        teamMemberMoreDesc[index].style.width = '15.8vw';
-        return teamMemberMoreDesc[index].style.maxHeight = '';
-      }, false)
+    document.body.addEventListener('click', () => {
+      teamMemberDescContainer[index].style.left = '0%';
+        teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
+      teamMemberUnderlinePic[index].style.left = '2.5vw';
+      teamMemberPic[index].style.zIndex = '70';
+      teamMemberUnderlinePic[index].style.opacity = '0';
+      teamMemberUnderlinePic[index].style.zIndex = '70';
+      teamMemberPic[index].style.cursor = 'pointer';
+      teamMemberMoreDescParagraph[index].style.opacity = '0';
+      teamMemberMoreDescArrow[index].style.opacity = '0';
+      teamMemberDesc[index].style.left = '0vw';
+      teamMemberDescContainer[index].style.zIndex = '70';
+      teamMemberName[index].style.left = '0vw';
+      teamMemberName[index].style.zIndex = '70';
+      teamMemberMoreDesc[index].style.opacity = '0';
+      teamMemberMoreDesc[index].style.zIndex = '60';
+      teamMemberMoreDesc[index].style.top = '0vh';
+      teamMemberMoreDesc[index].classList.remove('paddingTop');
+      teamMemberMoreDesc[index].style.left = '0vh';
+      teamMemberMoreDesc[index].style.width = '15.8vw';
+      return teamMemberMoreDesc[index].style.maxHeight = '';
+    }, true)
+    closeDescriptionButton[index].addEventListener('click', () => {
+      teamMemberDescContainer[index].style.left = '0%';
+        teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
+      teamMemberUnderlinePic[index].style.left = '2.5vw';
+      teamMemberPic[index].style.zIndex = '70';
+      teamMemberUnderlinePic[index].style.opacity = '0';
+      teamMemberUnderlinePic[index].style.zIndex = '70';
+      teamMemberPic[index].style.cursor = 'pointer';
+      teamMemberMoreDescParagraph[index].style.opacity = '0';
+      teamMemberMoreDescArrow[index].style.opacity = '0';
+      teamMemberDesc[index].style.left = '0vw';
+      teamMemberDescContainer[index].style.zIndex = '70';
+      teamMemberName[index].style.left = '0vw';
+      teamMemberName[index].style.zIndex = '70';
+      teamMemberMoreDesc[index].style.opacity = '0';
+      teamMemberMoreDesc[index].style.zIndex = '60';
+      teamMemberMoreDesc[index].style.top = '0vh';
+      teamMemberMoreDesc[index].classList.remove('paddingTop');
+      teamMemberMoreDesc[index].style.left = '0vh';
+      teamMemberMoreDesc[index].style.width = '15.8vw';
+      return teamMemberMoreDesc[index].style.maxHeight = '';
+    }, false)
       teamMember[index].addEventListener('mouseover', () => {
-        if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
-          if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
-            return
-          }
-          teamMemberDesc[index].style.marginLeft = '2.5vw';
-          teamMemberName[index].style.marginLeft = '2.5vw';
+        if(teamMemberPic[index].style.zIndex === '100'){
+          return
         }
-      })
-      teamMember[index].addEventListener('mouseout', () => {
-        if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
-          if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
-            return
-          }
-          teamMemberDesc[index].style.marginLeft = '0vw';
-          teamMemberName[index].style.marginLeft = '0vw';
+        teamMemberDescContainer[index].style.left = '50%';
+        teamMemberDescContainer[index].style.transform = 'translate(-50%, 0)';
+    })
+    teamMember[index].addEventListener('mouseout', () => {
+        if(teamMemberDescContainer[index].style.left === '5.62vw'){
+          return
         }
-      })
+        teamMemberDescContainer[index].style.left = '0%';
+        teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
+    })
     })
   }
   
@@ -429,10 +461,10 @@ if(window.outerWidth < '1200'){
   const teamMemberDesc = document.querySelectorAll('.team-member-description')
   teamMemberPic.forEach((memberPic,index) =>{
     teamMember[index].addEventListener('click', () => {
-      teamMemberDesc[index].style.marginLeft = '10%';
-      teamMemberName[index].style.marginLeft = '10%';
+      teamMemberDesc[index].style.left = '10%';
+      teamMemberName[index].style.left = '10%';
       teamMemberUnderlinePic[index].style.opacity = '1';
-      teamMemberUnderlinePic[index].style.marginLeft = '10%';
+      teamMemberUnderlinePic[index].style.left = '10%';
       teamMemberMoreDescParagraph[index].style.opacity = '1';
       teamMemberMoreDescArrow[index].style.opacity = '1';
       teamMemberMoreDesc[index].style.opacity = '1';
@@ -442,13 +474,13 @@ if(window.outerWidth < '1200'){
       teamMemberMoreDesc[index].style.maxHeight = '120vh';
     }, 'false')
     document.body.addEventListener('click', () => {
-      teamMemberUnderlinePic[index].style.marginLeft = '0';
+      teamMemberUnderlinePic[index].style.left = '0';
       teamMemberUnderlinePic[index].style.opacity = '0';
       teamMemberPic[index].style.cursor = 'pointer';
       teamMemberMoreDescParagraph[index].style.opacity = '0';
       teamMemberMoreDescArrow[index].style.opacity = '0';
-      teamMemberDesc[index].style.marginLeft = '0vw';
-      teamMemberName[index].style.marginLeft = '0vw';
+      teamMemberDesc[index].style.left = '0vw';
+      teamMemberName[index].style.left = '0vw';
       teamMemberMoreDesc[index].classList.remove('paddingTopMobile');
       teamMemberMoreDesc[index].style.marginTop = '8vh';
       teamMemberMoreDesc[index].style.opacity = '0';
@@ -681,6 +713,7 @@ const callbackTeam = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       sectionCircle.style.transform = 'translateY(-58px)'
+      swiper.autoplay.start()
     }
   })
 }

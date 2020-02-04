@@ -2026,7 +2026,7 @@ nav #menu {
 }
 
 .paddingTop {
-  padding-top: calc(20vw + 90px) !important;
+  padding-top: calc(15.8vw + 72px + 1.6vh + 70px) !important;
 }
 
 .paddingTopMobile {
@@ -2034,10 +2034,10 @@ nav #menu {
 }
 
 .team-member-more-description {
-  padding-top: 32vh;
-  padding-bottom: 12.7vh;
+  padding-top: 39vh;
+  padding-bottom: 10.65vh;
   background-color: white;
-  max-height: 20vh;
+  max-height: 22vh;
   position: absolute;
   top: 0;
   width: 15.8vw;
@@ -2047,7 +2047,6 @@ nav #menu {
   max-height: 0;
   -webkit-transition: 1s;
   transition: 1s;
-  z-index: -1;
   border: 3px solid #29023F;
   z-index: 1;
 }
@@ -2071,6 +2070,7 @@ nav #menu {
   opacity: 0;
   font-size: 24px !important;
   width: 14.8vw;
+  line-height: 42px !important;
   font-weight: 500;
   overflow-y: auto;
   margin: auto;
@@ -2136,7 +2136,7 @@ nav #menu {
 }
 
 .team-member:nth-child(even) {
-  padding-top: 18.5vh;
+  padding-top: 18.49vh;
   margin-bottom: 10.9vh;
 }
 
@@ -2205,6 +2205,23 @@ nav #menu {
           animation: zoomOut 0.5s;
 }
 
+.small-container {
+  width: 15.8vw;
+}
+
+.team-member-description-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 10;
+  left: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
 .team-member {
   width: 15vw;
 }
@@ -2230,20 +2247,20 @@ nav #menu {
   }
 }
 
-.team-member > img:nth-of-type(2) {
-  position: -webkit-sticky;
-  position: sticky;
+.team-member img:nth-of-type(2) {
+  position: relative;
+  left: 0;
+  margin-top: 1.6vh;
   z-index: 10;
   -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
   width: 7.55vw;
-  margin-left: 2.5vw;
   margin-bottom: 1.5vh;
 }
 
 @media (max-width: 767px) {
-  .team-member > img:nth-of-type(2) {
+  .team-member img:nth-of-type(2) {
     width: 20vw;
   }
 }
@@ -2276,16 +2293,21 @@ nav #menu {
 }
 
 .team-member-description {
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   z-index: 10;
   -webkit-transition: 1s;
   transition: 1s;
   font-weight: 300;
   margin-left: 0vw;
   margin-top: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 0;
+  left: 0;
   font-size: 20px !important;
+  -webkit-transform: translate(0%, 0);
+          transform: translate(0%, 0);
 }
 
 @media (max-width: 1200px) {
@@ -2295,17 +2317,21 @@ nav #menu {
 }
 
 .team-member-name {
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   z-index: 10;
-  -webkit-transition: 1s;
-  transition: 1s;
   margin-left: 0vw;
   margin-top: 4.2vh;
   margin-bottom: 0;
-  width: 13vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-weight: 700;
   font-size: 24px !important;
+  -webkit-transition: 1s;
+  transition: 1s;
+  left: 0;
+  -webkit-transform: translate(0%, 0);
+          transform: translate(0%, 0);
 }
 
 .some-illustration {
