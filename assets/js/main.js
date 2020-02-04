@@ -183,11 +183,11 @@ if(window.outerWidth >= 1200){
   const teamMemberMoreDescArrow = document.querySelectorAll('.team-member-more-description .team-member-description-arrow')
   const teamMemberName = document.querySelectorAll('.team-member-name')
   const teamMemberDesc = document.querySelectorAll('.team-member-description')
+  const closeDescriptionButton = document.querySelectorAll('#close-description-button');
 
   teamMemberPic.forEach((memberPic,index) => {
       teamMember[index].addEventListener('click', (event) => {
         if(swiper.activeIndex >= index){
-          console.log(swiper.activeIndex)
           teamMemberUnderlinePic[index].style.marginLeft = '5.62vw';
           teamMemberPic[index].style.zIndex = '100';
           teamMemberUnderlinePic[index].style.opacity = '1';
@@ -207,6 +207,9 @@ if(window.outerWidth >= 1200){
           teamMemberMoreDesc[index].style.left = '3.33vh';
           teamMemberMoreDesc[index].style.width = '35.57vw';
           teamMemberMoreDesc[index].style.maxHeight = '160vh';
+          closeDescriptionButton[index].style.left = 'unset';
+          closeDescriptionButton[index].style.top = '5.01vh';
+          closeDescriptionButton[index].style.right = '3.65vw';
         }
         else{
           teamMemberUnderlinePic[index].style.marginLeft = '-18.23vw';
@@ -228,8 +231,11 @@ if(window.outerWidth >= 1200){
           teamMemberMoreDesc[index].style.left = '-22.25vw';
           teamMemberMoreDesc[index].style.width = '35.57vw';
           teamMemberMoreDesc[index].style.maxHeight = '160vh';
+          closeDescriptionButton[index].style.right = 'unset';
+          closeDescriptionButton[index].style.top = '5.01vh';
+          closeDescriptionButton[index].style.left = '3.65vw';
         }
-      }, false)
+      }, true)
     document.body.addEventListener('click', () => {
       teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
       teamMemberPic[index].style.zIndex = '70';
@@ -250,6 +256,26 @@ if(window.outerWidth >= 1200){
       teamMemberMoreDesc[index].style.width = '15.8vw';
       return teamMemberMoreDesc[index].style.maxHeight = '';
     }, true)
+    closeDescriptionButton[index].addEventListener('click', () => {
+      teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
+      teamMemberPic[index].style.zIndex = '70';
+      teamMemberUnderlinePic[index].style.opacity = '0';
+      teamMemberUnderlinePic[index].style.zIndex = '70';
+      teamMemberPic[index].style.cursor = 'pointer';
+      teamMemberMoreDescParagraph[index].style.opacity = '0';
+      teamMemberMoreDescArrow[index].style.opacity = '0';
+      teamMemberDesc[index].style.marginLeft = '0vw';
+      teamMemberDesc[index].style.zIndex = '70';
+      teamMemberName[index].style.marginLeft = '0vw';
+      teamMemberName[index].style.zIndex = '70';
+      teamMemberMoreDesc[index].style.opacity = '0';
+      teamMemberMoreDesc[index].style.zIndex = '60';
+      teamMemberMoreDesc[index].style.top = '0vh';
+      teamMemberMoreDesc[index].classList.remove('paddingTop');
+      teamMemberMoreDesc[index].style.left = '0vh';
+      teamMemberMoreDesc[index].style.width = '15.8vw';
+      return teamMemberMoreDesc[index].style.maxHeight = '';
+    }, false)
     teamMember[index].addEventListener('mouseover', () => {
       if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
         if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
@@ -307,7 +333,7 @@ swiper.on('slideChange', () => {
             teamMemberMoreDesc[index].style.maxHeight = '160vh';
           }
           else{
-            teamMemberUnderlinePic[index].style.marginLeft = '-18.23vw';
+            teamMemberUnderlinePic[index].style.marginLeft = '-20.23vw';
             teamMemberPic[index].style.zIndex = '100';
             teamMemberUnderlinePic[index].style.opacity = '1';
             teamMemberUnderlinePic[index].style.zIndex = '100';
@@ -327,7 +353,7 @@ swiper.on('slideChange', () => {
             teamMemberMoreDesc[index].style.width = '35.57vw';
             teamMemberMoreDesc[index].style.maxHeight = '160vh';
           }
-        }, false)
+        }, true)
       document.body.addEventListener('click', () => {
         teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
         teamMemberPic[index].style.zIndex = '70';
@@ -348,6 +374,26 @@ swiper.on('slideChange', () => {
         teamMemberMoreDesc[index].style.width = '15.8vw';
         return teamMemberMoreDesc[index].style.maxHeight = '';
       }, true)
+      closeDescriptionButton[index].addEventListener('click', () => {
+        teamMemberUnderlinePic[index].style.marginLeft = '2.5vw';
+        teamMemberPic[index].style.zIndex = '70';
+        teamMemberUnderlinePic[index].style.opacity = '0';
+        teamMemberUnderlinePic[index].style.zIndex = '70';
+        teamMemberPic[index].style.cursor = 'pointer';
+        teamMemberMoreDescParagraph[index].style.opacity = '0';
+        teamMemberMoreDescArrow[index].style.opacity = '0';
+        teamMemberDesc[index].style.marginLeft = '0vw';
+        teamMemberDesc[index].style.zIndex = '70';
+        teamMemberName[index].style.marginLeft = '0vw';
+        teamMemberName[index].style.zIndex = '70';
+        teamMemberMoreDesc[index].style.opacity = '0';
+        teamMemberMoreDesc[index].style.zIndex = '60';
+        teamMemberMoreDesc[index].style.top = '0vh';
+        teamMemberMoreDesc[index].classList.remove('paddingTop');
+        teamMemberMoreDesc[index].style.left = '0vh';
+        teamMemberMoreDesc[index].style.width = '15.8vw';
+        return teamMemberMoreDesc[index].style.maxHeight = '';
+      }, false)
       teamMember[index].addEventListener('mouseover', () => {
         if(teamMemberDesc[index].style.marginLeft !== '5.62vw'){
           if(teamMemberDesc[index].style.marginLeft === '-18.23vw'){
@@ -416,14 +462,16 @@ if(window.outerWidth < '1200'){
 
 
 const sectionCircle = document.querySelector('#section-circle')
-const followUsImage = document.querySelector('.social-links > img')
+const followUsImage = document.querySelector('.social-links > svg')
 
 
 const callbackHero = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-310px)'
+      sectionCircle.style.transform = 'translateY(-342px)'
       followUsImage.style.opacity = '1'
+    }else if(!entry.isIntersecting){
+      followUsImage.style.opacity = '0'
     }
   })
 }
@@ -448,7 +496,7 @@ window.addEventListener('load', (event) => {
 const callbackAbout = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-125px)'
+      sectionCircle.style.transform = 'translateY(-170px)'
       followUsImage.style.opacity = '0'
     }
   })
@@ -469,7 +517,7 @@ window.addEventListener('load', (event) => {
 const callbackAbout2 = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-111px)'
+      sectionCircle.style.transform = 'translateY(-156px)'
     }
   })
 }
@@ -510,7 +558,7 @@ window.addEventListener('load', (event) => {
 const callbackProductSection = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-97px)'
+      sectionCircle.style.transform = 'translateY(-142px)'
     }
   })
 }
@@ -531,7 +579,7 @@ window.addEventListener('load', (event) => {
 const callbackWhyUse = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-83px)'
+      sectionCircle.style.transform = 'translateY(-128px)'
     }
   })
 }
@@ -552,7 +600,7 @@ window.addEventListener('load', (event) => {
 const callbackBigIllustration = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-69px)'
+      sectionCircle.style.transform = 'translateY(-114px)'
     }
   })
 }
@@ -572,7 +620,7 @@ window.addEventListener('load', (event) => {
 const callbackTechnology = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-55px)'
+      sectionCircle.style.transform = 'translateY(-100px)'
     }
   })
 }
@@ -592,7 +640,7 @@ window.addEventListener('load', (event) => {
 const callbackAcademic = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-41px)'
+      sectionCircle.style.transform = 'translateY(-86px)'
     }
   })
 }
@@ -612,7 +660,7 @@ window.addEventListener('load', (event) => {
 const callbackCallToAction = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-27px)'
+      sectionCircle.style.transform = 'translateY(-72px)'
     }
   })
 }
@@ -632,7 +680,7 @@ window.addEventListener('load', (event) => {
 const callbackTeam = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-13px)'
+      sectionCircle.style.transform = 'translateY(-58px)'
     }
   })
 }
@@ -652,7 +700,7 @@ window.addEventListener('load', (event) => {
 const callbackCareer = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(1px)'
+      sectionCircle.style.transform = 'translateY(-44px)'
     }
   })
 }
@@ -672,7 +720,7 @@ window.addEventListener('load', (event) => {
 const callbackPartners = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(-13px)'
+      sectionCircle.style.transform = 'translateY(-58px)'
     }
   })
 }
@@ -692,7 +740,7 @@ window.addEventListener('load', (event) => {
 const callbackContactUs = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
-      sectionCircle.style.transform = 'translateY(15px)'
+      sectionCircle.style.transform = 'translateY(-30px)'
     }
   })
 }

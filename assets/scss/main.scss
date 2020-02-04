@@ -250,7 +250,7 @@ p{
 
 nav{
   visibility:hidden;
-  padding:5.42vh 5.47vw;
+  padding:4.63vh 5.47vw;
   background-color:rgba(255, 255, 255, 0.8);
   position:fixed;
   width:100%;
@@ -481,8 +481,8 @@ nav{
     }
   }
 
-  >img{
-    opacity:0;
+  >svg{
+    opacity:1;
     transition:1s;
   }
   @include respond-to(large){
@@ -526,7 +526,7 @@ nav{
   position:absolute;
   transition:1s;
   top:250px;
-  left:15px;
+  left:16px;
   z-index:10;
   visibility: hidden;
   transform:translate(0,-125px);
@@ -975,6 +975,13 @@ nav{
       width:100%;
     }
   }
+  .product-single:nth-child(2){
+    .right-aligned{
+      h2{
+        width:71px;
+      }
+    }
+  }
   .product-single:nth-child(3){
     padding-bottom:32.4vh;
     margin-bottom:0;
@@ -986,6 +993,7 @@ nav{
     }
   }
 }
+
 
 .product-icon{
   width:8.23vw;
@@ -1200,6 +1208,12 @@ nav{
         }
       }
     }
+    #academic-scroll-right:hover{
+      animation:zoom 0.5s;
+    }
+    #academic-scroll-right:active{
+      animation:zoomOut 0.5s;
+    }
     @include respond-to(large){
       margin-left:0;
       margin-top:115px;
@@ -1312,7 +1326,7 @@ nav{
       margin-left:auto;
       display:flex;
       justify-content: flex-end;
-      margin-right:0;
+      margin-right:10px;
       margin-bottom:22.2vh;
       img{
         transform:rotate(0deg);
@@ -1330,6 +1344,12 @@ nav{
           margin-right:13vw;
         }
       }
+    }
+    #whyuse-scroll-right div:hover{
+      animation:zoom 0.5s;
+    }
+    #whyuse-scroll-right div:active{
+      animation:zoomOut 0.5s;
     }
     @include respond-to(large){
       margin-left:0;
@@ -1598,6 +1618,17 @@ nav{
   z-index:-1;
   border:3px solid colors(text-color);
   z-index:1;
+  #close-description-button{
+    position:absolute;
+    top:5.01vh;
+    right:3.65vw;
+    border:none;
+    width:34px;
+    padding:0;
+    img{
+      width:34px;
+    }
+  }
   p{
     transition:1s;
     opacity:0;
@@ -1670,12 +1701,23 @@ nav{
   align-items: center;
   font-weight:700;
   font-size:24px;
+  div{
+    display:flex;
+    align-items: center;
+  }
   img{
     transition:0.5s;
   }
   img{
     margin-left:3.13vw;
   }
+}
+
+#scroll-right-team div:hover{
+  animation:zoom 0.5s;
+}
+#scroll-right-team div:active{
+  animation:zoomOut 0.5s;
 }
 
 
@@ -2299,6 +2341,13 @@ nav{
   }
 }
 
+.scroll-sign-up:hover{
+  animation:zoom 0.5s;
+}
+.scroll-sign-up:active{
+  animation:zoomOut 0.5s;
+}
+
 #form-button{
   width:10vw;
   background-color:transparent;
@@ -2430,6 +2479,9 @@ footer{
 #ourproduct-main{
   margin-left:sizes(margin);
   margin-right:sizes(margin);
+  #ourproduct-slider{
+    height:700px;
+  }
   #ourproduct-illustration{
     position:absolute;
     top:29.1vh;
@@ -2460,6 +2512,9 @@ footer{
   p{
     margin:0;
   }
+  h2{
+    font-weight:600;
+  }
   #ourproduct-text{
     > .right-aligned{
       width:25.21vw;
@@ -2482,12 +2537,19 @@ footer{
     width:58.33vw;
     #ourproduct-button-slide{
       position:absolute;
-      bottom:0;
+      bottom:30px;
       left:142px;
       transition:0.5s;
       z-index:10;
     }
+    #ourproduct-button-slide:hover svg{
+      animation:zoom 0.5s;
+    }
+    #ourproduct-button-slide:active svg{
+      animation:zoomOut 0.5s;
+    }
     .swiper-slide{
+      height:100%;
       .semi-bold{
         margin-bottom:10.83vh;
       }
@@ -2497,7 +2559,7 @@ footer{
       }
       .slide-number{
         position:absolute;
-        bottom:30px;
+        bottom:60px;
         left:0;
       }
     }
@@ -2512,7 +2574,8 @@ footer{
         }
       }
       li{
-        margin-bottom:2vh;
+        margin-bottom:2.78vh;
+        line-height:36px;
       }
       @include respond-to(small){
         width:90%;
@@ -2636,5 +2699,23 @@ footer{
   }
   @include respond-to(small){
     width:20vw;
+  }
+}
+
+@keyframes zoom{
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut{
+  50%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
   }
 }
