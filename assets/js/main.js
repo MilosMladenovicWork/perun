@@ -728,6 +728,7 @@ const callbackTeam = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       sectionCircle.style.transform = 'translateY(-58px)'
+      swiper.slideTo(0);
       swiper.autoplay.start()
     }else if(!entry.isIntersecting){
       swiper.autoplay.stop()
