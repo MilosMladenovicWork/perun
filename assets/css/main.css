@@ -3402,8 +3402,10 @@ footer > p {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   stroke-dasharray: 0;
-  -webkit-animation: circleSplice 10s infinite;
-          animation: circleSplice 10s infinite;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #ourproduct-main #github-link {

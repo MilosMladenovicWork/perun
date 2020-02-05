@@ -191,6 +191,7 @@ if(window.outerWidth >= 1200){
   teamMemberPic.forEach((memberPic,index) => {
       teamMember[index].addEventListener('click', (event) => {
         if(swiper.activeIndex >= index){
+          swiper.autoplay.stop();
           teamMemberDesc[index].style.left = '0%';
           teamMemberDesc[index].style.transform = 'translate(0%, 0)';
           teamMemberName[index].style.left = '0%';
@@ -219,6 +220,7 @@ if(window.outerWidth >= 1200){
           closeDescriptionButton[index].style.right = '3.65vw';
         }
         else{
+          swiper.autoplay.stop();
           teamMemberDesc[index].style.left = '0%';
           teamMemberDesc[index].style.transform = 'translate(0%, 0)';
           teamMemberName[index].style.left = '0%';
@@ -250,6 +252,7 @@ if(window.outerWidth >= 1200){
         }
       }, true)
     document.body.addEventListener('click', () => {
+      swiper.autoplay.start();
       teamMemberDescContainer[index].style.left = '0%';
         teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
       teamMemberUnderlinePic[index].style.left = '2.5vw';
@@ -272,6 +275,7 @@ if(window.outerWidth >= 1200){
       return teamMemberMoreDesc[index].style.maxHeight = '';
     }, true)
     closeDescriptionButton[index].addEventListener('click', () => {
+      swiper.autoplay.start();
       teamMemberDescContainer[index].style.left = '0%';
         teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
       teamMemberUnderlinePic[index].style.left = '2.5vw';
@@ -326,6 +330,7 @@ swiper.on('slideChange', () => {
     teamMemberPic.forEach((memberPic,index) => {
       teamMember[index].addEventListener('click', (event) => {
         if(swiper.activeIndex >= index){
+          swiper.autoplay.stop();
           teamMemberDesc[index].style.left = '0%';
           teamMemberDesc[index].style.transform = 'translate(0%, 0)';
           teamMemberName[index].style.left = '0%';
@@ -356,6 +361,7 @@ swiper.on('slideChange', () => {
           closeDescriptionButton[index].style.right = '3.65vw';
         }
         else{
+          swiper.autoplay.stop();
           teamMemberDesc[index].style.left = '0%';
           teamMemberDesc[index].style.transform = 'translate(0%, 0)';
           teamMemberName[index].style.left = '0%';
@@ -387,6 +393,7 @@ swiper.on('slideChange', () => {
         }
       }, true)
     document.body.addEventListener('click', () => {
+      swiper.autoplay.start();
       teamMemberDescContainer[index].style.left = '0%';
         teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
       teamMemberUnderlinePic[index].style.left = '2.5vw';
@@ -409,6 +416,7 @@ swiper.on('slideChange', () => {
       return teamMemberMoreDesc[index].style.maxHeight = '';
     }, true)
     closeDescriptionButton[index].addEventListener('click', () => {
+      swiper.autoplay.start();
       teamMemberDescContainer[index].style.left = '0%';
         teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
       teamMemberUnderlinePic[index].style.left = '2.5vw';
@@ -460,6 +468,7 @@ if(window.outerWidth < '1200'){
   const teamMemberName = document.querySelectorAll('.team-member-name')
   const teamMemberDesc = document.querySelectorAll('.team-member-description')
   teamMemberPic.forEach((memberPic,index) =>{
+    swiper.autoplay.stop();
     teamMember[index].addEventListener('click', () => {
       teamMemberDesc[index].style.left = '10%';
       teamMemberName[index].style.left = '10%';
@@ -474,6 +483,7 @@ if(window.outerWidth < '1200'){
       teamMemberMoreDesc[index].style.maxHeight = '120vh';
     }, 'false')
     document.body.addEventListener('click', () => {
+      swiper.autoplay.start();
       teamMemberUnderlinePic[index].style.left = '0';
       teamMemberUnderlinePic[index].style.opacity = '0';
       teamMemberPic[index].style.cursor = 'pointer';
@@ -587,10 +597,15 @@ window.addEventListener('load', (event) => {
 
 //
 
+const productIllustration = document.querySelector('#ourproduct-illustration')
+
 const callbackProductSection = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       sectionCircle.style.transform = 'translateY(-142px)'
+      productIllustration.style.animationName = 'circleSplice'
+    }else if(!entry.isIntersecting){
+      productIllustration.style.animationName = ''
     }
   })
 }
@@ -714,6 +729,8 @@ const callbackTeam = (entries, observer) => {
     if(entry.isIntersecting){
       sectionCircle.style.transform = 'translateY(-58px)'
       swiper.autoplay.start()
+    }else if(!entry.isIntersecting){
+      swiper.autoplay.stop()
     }
   })
 }
@@ -792,6 +809,9 @@ const callbackWhyUseSlider = (entries, observer) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       swiperWhyUse.slideTo(0);
+      swiperWhyUse.autoplay.start();
+    }else if(!entry.isIntersecting){
+      swiperWhyUse.autoplay.stop();
     }
   })
 }

@@ -2506,7 +2506,8 @@ footer{
     left:50%;
     transform:translateX(-50%);
     stroke-dasharray: 0;
-    animation:circleSplice 10s infinite;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
   }
   #github-link{
     margin:auto;
