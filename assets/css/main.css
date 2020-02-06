@@ -1795,20 +1795,20 @@ nav #menu {
   }
 }
 
-#big-illustration img {
+#big-illustration svg {
   width: 49.58vw;
   display: block;
   margin: auto;
 }
 
 @media (max-width: 1200px) {
-  #big-illustration img {
+  #big-illustration svg {
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  #big-illustration img {
+  #big-illustration svg {
     width: 100%;
   }
 }
