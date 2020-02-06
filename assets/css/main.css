@@ -362,6 +362,8 @@ nav #menu {
   width: 31.35vw;
   position: absolute;
   right: 15.62vw;
+  -webkit-transform: scale(2.25);
+          transform: scale(2.25);
 }
 
 @media (max-width: 1200px) {
@@ -1217,6 +1219,8 @@ nav #menu {
 #academic-text #academic-heading {
   padding-top: 20.37vh;
   margin-bottom: 9.26vh;
+  width: 52.45vw;
+  letter-spacing: -2.39px;
 }
 
 @media (max-width: 1200px) {
@@ -1440,6 +1444,7 @@ nav #menu {
   margin-bottom: 9.26vh;
   margin-top: 6.5vh;
   font-weight: 700;
+  cursor: pointer;
 }
 
 #academic-main #academic-slider #academic-scroll-right svg {
@@ -1669,6 +1674,7 @@ nav #menu {
           transform: rotate(0deg);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -2184,6 +2190,7 @@ nav #menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 #scroll-right-team img {
@@ -3476,6 +3483,7 @@ footer > p {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 10;
+  cursor: pointer;
 }
 
 #ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide:hover svg {

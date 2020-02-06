@@ -444,6 +444,7 @@ nav{
   width:31.35vw;
   position:absolute;
   right:sizes(margin) - 5.21vw;
+  transform:scale(2.25);
   @include respond-to(large){
     position:static;
     margin-top:13.1vh;
@@ -1027,6 +1028,8 @@ nav{
   #academic-heading{
     padding-top:20.37vh;
     margin-bottom:9.26vh;
+    width:52.45vw;
+    letter-spacing: -2.39px;
     @include respond-to(large){
       margin-bottom:0;
       margin-top:0;
@@ -1183,6 +1186,7 @@ nav{
       margin-bottom:9.26vh;
       margin-top:6.5vh;
       font-weight:700;
+      cursor:pointer;
       svg{
         margin-left:auto;
         margin-bottom:0;
@@ -1331,6 +1335,7 @@ nav{
       img{
         transform:rotate(0deg);
         transition:0.5s;
+        cursor:pointer;
       }
       @include respond-to(large){
         width:30vw;
@@ -1704,6 +1709,7 @@ nav{
   div{
     display:flex;
     align-items: center;
+    cursor:pointer;
   }
   img{
     transition:0.5s;
@@ -2560,6 +2566,7 @@ footer{
       left:142px;
       transition:0.5s;
       z-index:10;
+      cursor:pointer;
     }
     #ourproduct-button-slide:hover svg{
       animation:zoom 0.5s;
