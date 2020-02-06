@@ -731,7 +731,7 @@ const callbackTeam = (entries, observer) => {
   })
 }
 
-const team = document.querySelector('#team-main');
+const team = document.querySelector('#team-members');
 
 
 window.addEventListener('load', (event) => {
