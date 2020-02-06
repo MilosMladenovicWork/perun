@@ -2673,7 +2673,7 @@ footer{
   z-index: 2000;
   position: fixed;
   margin: auto;
-  top: 0;
+  top: 30px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -2715,16 +2715,19 @@ footer{
 
 #logo-loading{
   position:fixed;
-  top:45%;
+  top:40%;
   left:50%;
-  transform:translate(-50%, -50%);
-  width:5vw;
   display:block;
+  transform:translateX(-50%);
+  width:100px;
+  svg{
+    width:100%;
+  }
   @include respond-to(large){
-    width:10vw;
+    width:100px;
   }
   @include respond-to(small){
-    width:20vw;
+    width:50px;
   }
 }
 

@@ -3618,7 +3618,7 @@ footer > p {
   z-index: 2000;
   position: fixed;
   margin: auto;
-  top: 0;
+  top: 30px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -3654,23 +3654,27 @@ footer > p {
 
 #logo-loading {
   position: fixed;
-  top: 45%;
+  top: 40%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 5vw;
   display: block;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+}
+
+#logo-loading svg {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
   #logo-loading {
-    width: 10vw;
+    width: 100px;
   }
 }
 
 @media (max-width: 767px) {
   #logo-loading {
-    width: 20vw;
+    width: 50px;
   }
 }
 
