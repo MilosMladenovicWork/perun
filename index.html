@@ -67,13 +67,7 @@
       </li>
 
     </ul>
-    <svg id='menu' xmlns="http://www.w3.org/2000/svg" width="34" height="23" viewBox="0 0 34 23">
-      <g id="Group_5148" data-name="Group 5148" transform="translate(-330 -50)">
-        <rect id="Rectangle_141" data-name="Rectangle 141" width="25" height="3" rx="1.5" transform="translate(339 60)" fill="#29023f"/>
-        <rect id="Rectangle_1078" data-name="Rectangle 1078" width="25" height="3" rx="1.5" transform="translate(330 50)" fill="#29023f"/>
-        <rect id="Rectangle_1079" data-name="Rectangle 1079" width="17" height="3" rx="1.5" transform="translate(347 70)" fill="#29023f"/>
-      </g>
-    </svg>
+    <img id='menu' src='./images/Menu.svg'/>
   </nav>
 
   <div class='social-links'>
@@ -101,9 +95,8 @@
   </div>
 
   <div id='mobile-menu'>
-    <div id='upper-circle'>
-    </div>
     <ul>
+      <li><a href='#'>Home</a></li>
       <li><a href='#about'>About</a></li>
       <li><a href='#product'>Our product</a></li>
       <li><a href='#technology'>Technology</a></li>
@@ -112,8 +105,11 @@
       <li><a href='#career'>Career</a></li>
       <li><a href='#contactus'>Contact</a></li>
     </ul>
-    <div id='lower-circle'>
-
+    <div class='social-links'>
+      <a href='https://github.com/PerunEthereum/Perun' target='_blank'><img src='./images/github.svg'/></a>
+      <a href='https://www.linkedin.com/company/perun-network/' target='_blank'><img src='./images/linkedin-logo.svg'/></a>
+      <a href='https://medium.com/perunnetwork' target='_blank'><img src='./images/medium.svg'/></a>
+      <a href='https://twitter.com/perunnetwork?lang=en' target='_blank'><img src='./images/twitter.svg'/></a>
     </div>
   </div>
   
@@ -481,7 +477,7 @@
             </h1>
           </div>
           <div id="hero-illustration">
-            <img src='./images/Illustration_4.svg'>
+            <img src='./images/Illustration_hero.svg'>
           </div>
         </div>
       </main>
@@ -681,7 +677,14 @@
               </a>
               <svg id='ourproduct-illustration' xmlns="http://www.w3.org/2000/svg" width="694" height="694" viewBox="0 0 694 694">
                 <g id="Ellipse_1082" data-name="Ellipse 1082" fill="none" stroke="#29023f" stroke-width="1" opacity="0.2">
-                  <circle cx="347" cy="347" r="347" stroke="0.5px solid"/>
+                  <circle id='circle' cx="347" cy="347" r="347" stroke="0.5px solid"/>
+                  <animateTransform xlink:href="#circle" attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 347 347"
+                          to="360 347 347"
+                          dur="10s"
+                          repeatCount="indefinite"/>
                 </g>
               </svg>
             </div>                     
@@ -805,7 +808,7 @@
       </main>
     </div>
     <div class='container' id='big-illustration'>
-      <img src='./images/illustration_3.svg'>
+      <img src='./images/illustration_big.svg'>
       <img src='./images/detail.svg'> 
     </div>
     <!--8. viewport-->
@@ -841,6 +844,7 @@
               </p>
             </div>
             <div class='ourtechnology-subsections-item'>
+              <img src='./images/detail.svg'> 
               <h2  data-sal="slide-left" data-sal-duration='1500'>
                 <span class='medium'>Not tied</span> to any specific blockchain
               </h2>
@@ -1063,7 +1067,7 @@
             <img src='./images/wars.svg'>
           </div>
           <div class='partners-single' data-sal="slide-up" data-sal-duration='1500'>
-            <img src='./images/bund.svg'>
+            <img src='./images/tech.svg'>
           </div>
         </div>
         <div id='partners-section'>
@@ -1361,8 +1365,7 @@
         </div>
         <div id='joinus-text'>
           <h1 data-sal="slide-right" data-sal-duration='1500'>
-            Join us and help unlock more potentials 
-            in the blockchain world
+            Join us and&nbsp;help unlock more potentials in&nbsp;the blockchain world
           </h1>
         </div>
         <div id='joinus-positions'>
@@ -1417,7 +1420,7 @@
               Contact us to learn more about 
               our plans, share your feedback 
               and feature requests with us, or 
-              to get involved as a contributor. 
+              to get involved as a&nbsp;contributor. 
               We look forward to your message.
             </h1>
             <div class='some-illustration-2'>
