@@ -989,7 +989,7 @@ const wheelMov = (e) => {
 
 if(window.outerWidth > '1200'){
   teamMembers.addEventListener('mouseover', () => {
-    window.addEventListener('wheel', preventDefault,{passive: true})
+    window.addEventListener('wheel', preventDefault,{passive: false})
     teamMembers.addEventListener('wheel', wheelMov)
   })
   teamMembers.addEventListener('mouseout', () => {
