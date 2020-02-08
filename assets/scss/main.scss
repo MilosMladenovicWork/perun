@@ -586,7 +586,7 @@ nav{
     transform:translate(0, 0);
   }
   @include respond-to(small){
-    top:5vh;
+    top:5vh;  
   }
 }
 
