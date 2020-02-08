@@ -585,6 +585,9 @@ nav{
     top:0;
     transform:translate(0, 0);
   }
+  @include respond-to(small){
+    top:5vh;
+  }
 }
 
 #about-text{
@@ -614,7 +617,7 @@ nav{
   @include respond-to(small){
     width:auto;
     margin-bottom:0;
-    padding-top:13.43vh;
+    padding-top:25.43vh;
   }
 }
 
@@ -746,12 +749,10 @@ nav{
     }
     @include respond-to(large){
       width:50vw;
-      display:none;
     }
     @include respond-to(small){
       width:100%;
       margin-bottom:0;
-      display:none;
     }
   }
   .ourtechnology-subsections-item:nth-child(3){
@@ -1031,6 +1032,14 @@ nav{
     }
     @include respond-to(small){
       padding-bottom:18.2vh;
+    }
+  }
+  .product-single:nth-child(4){
+    @include respond-to(large){
+      margin-bottom:0vh;
+    }
+    @include respond-to(small){
+      margin-bottom:0vh;
     }
   }
 }
@@ -1387,6 +1396,7 @@ nav{
         margin-bottom:19vh;
       }
       @include respond-to(small){
+        padding-top:50px;
         width:60vw;
         margin-top:sizes(margin);
         margin-bottom:22.2vh;
@@ -1419,7 +1429,13 @@ nav{
       width:30.62vw;
     }
     @include respond-to(large){
-      display:none;
+      top:-15vw;
+      img{
+        width:50vw;
+      }
+    }
+    @include respond-to(small){
+      top:0vw;
     }
   }
   @include respond-to(small){
@@ -1440,14 +1456,11 @@ nav{
     }
   }
   @include respond-to(large){
-    display:inline-block;
     margin-bottom:16.8vh;
     margin-top:0;
     margin-left:auto;
   }
   @include respond-to(small){
-    margin-top:sizes(large);
-    display:inline-block;
     margin-bottom:0;
     margin-left:0;
   }
@@ -1897,9 +1910,14 @@ nav{
     width:27.5vw;
   }
   @include respond-to(large){
-    justify-content: center;
-    transform:translate(0, -50%);
+    justify-content: flex-end;
+    transform:translate(19%, -50%);
     margin-right: 0;
+    img{
+      width:70vw;
+    }
+  }
+  @include respond-to(small){
     img{
       width:80vw;
     }
@@ -2138,7 +2156,7 @@ nav{
       margin-left:0;
       margin-right:0;
       width:100%;
-      margin-bottom:20vh;
+      margin-bottom:25vh;
     }
   }
   @include respond-to(large){
@@ -2302,9 +2320,15 @@ nav{
     list-style: none;
     li{
       display:inline-block;
-      padding-right:0.8vw; 
+      padding-right:5px; 
+      padding-left:5px;
+      font-size:20px;
+      font-weight:400;
       .circle{
         width:0.42vw;
+        @include respond-to(large){
+          width:8px;
+        }
         @include respond-to(small){
           width:2vw;
         }
@@ -2320,6 +2344,12 @@ nav{
       }
       @include respond-to(small){
         padding-right:2vw;
+        margin-bottom:20px;
+      }
+    }
+    li:nth-child(even){
+      @include respond-to(small){
+        display:none;
       }
     }
     @include respond-to(small){
@@ -2328,7 +2358,7 @@ nav{
     }
   }
   @include respond-to(large){
-    margin-bottom:150px;
+    margin-bottom:0px;
   }
   @include respond-to(small){
     margin-bottom:0px;
@@ -2358,11 +2388,12 @@ nav{
       width:100vw;
       height:38vw;
       margin:auto;
+      transform: translateX(-27.5vw) translateY(0vh);
     }
     @include respond-to(small){
       width:100%;
       height:100%;
-      transform: translate(-25%, 0);
+      transform: translate(-75%, 0);
     }
   }
   #contactus-form{
@@ -2406,17 +2437,17 @@ nav{
       width:100%;
       transform:translateY(0);
       margin-top:sizes(extralarge);
-      margin-bottom:28vh;
+      margin-bottom:0vh;
       padding-left:0vw;
     }
     @include respond-to(small){
-      margin-bottom:190px;
+      margin-bottom:0px;
       padding-left:0;
     }
   }
   @include respond-to(large){
     flex-direction:column-reverse;
-    margin-bottom:14vh;
+    margin-bottom:0;
     margin-right: sizes(margin);
   }
   @include respond-to(small){
@@ -2503,6 +2534,7 @@ nav{
   @include respond-to(large){
     justify-content: flex-start;
     padding-left:10.74vw;
+    padding-top:50px;
   }
   @include respond-to(small){
     justify-content: center;

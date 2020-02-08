@@ -174,6 +174,7 @@ menuButton.addEventListener('click', () => {
 
 menuMobileLinks.forEach((link) => {
   link.addEventListener('click', () => {
+    menuButton.setAttribute('src', './images/Menu.svg')
     menuMobile.style.opacity = 0;
     return setTimeout(()=>{menuMobile.style.display = 'none';},500)
   })
@@ -974,9 +975,9 @@ console.log(fired)
 
 const wheelMov = (e) => {
   if(!fired){
-    if(e.deltaY > 0){
+    if(e.deltaY < 0){
       swiper.slidePrev();
-    }else if(e.deltaY < 0){
+    }else if(e.deltaY > 0){
       swiper.slideNext();
     }
   }
@@ -988,7 +989,7 @@ const wheelMov = (e) => {
 
 if(window.outerWidth > '1200'){
   teamMembers.addEventListener('mouseover', () => {
-    window.addEventListener('wheel', preventDefault,{passive: false})
+    window.addEventListener('wheel', preventDefault,{passive: true})
     teamMembers.addEventListener('wheel', wheelMov)
   })
   teamMembers.addEventListener('mouseout', () => {
