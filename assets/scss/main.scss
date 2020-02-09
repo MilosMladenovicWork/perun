@@ -624,7 +624,7 @@ nav{
   @include respond-to(small){
     width:auto;
     margin-bottom:0;
-    padding-top:25.43vh;
+    padding-top:16.43vh;
   }
 }
 
@@ -660,8 +660,8 @@ nav{
 }
 
 #ourtechnology-main{
-  margin-left:sizes(margin) - 5.21vw;
-  margin-right:sizes(margin) - 5.21vw;
+  margin-left:sizes(margin);
+  margin-right:sizes(margin);
   display:flex;
   flex-direction:column;
   height:100%;
@@ -1084,7 +1084,7 @@ nav{
   #academic-heading{
     padding-top:20.37vh;
     margin-bottom:9.26vh;
-    width:52.45vw;
+    width:52vw;
     letter-spacing: -2.39px;
     @include respond-to(large){
       margin-bottom:0;
@@ -2258,7 +2258,6 @@ nav{
   }
   @include respond-to(small){
     width:auto;
-    overflow-x:auto;
     padding-top:11.2vh;
     margin-bottom:13.1vh;
     margin-left:sizes(margin) - 5.21vw;

@@ -625,7 +625,7 @@ nav #menu {
   #about-text {
     width: auto;
     margin-bottom: 0;
-    padding-top: 25.43vh;
+    padding-top: 16.43vh;
   }
 }
 
@@ -666,8 +666,8 @@ nav #menu {
 }
 
 #ourtechnology-main {
-  margin-left: 15.62vw;
-  margin-right: 15.62vw;
+  margin-left: 20.83vw;
+  margin-right: 20.83vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1311,7 +1311,7 @@ nav #menu {
 #academic-text #academic-heading {
   padding-top: 20.37vh;
   margin-bottom: 9.26vh;
-  width: 52.45vw;
+  width: 52vw;
   letter-spacing: -2.39px;
 }
 
@@ -3019,7 +3019,6 @@ nav #menu {
 @media (max-width: 767px) {
   #contactus-text {
     width: auto;
-    overflow-x: auto;
     padding-top: 11.2vh;
     margin-bottom: 13.1vh;
     margin-left: 15.62vw;
