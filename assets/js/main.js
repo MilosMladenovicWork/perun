@@ -956,6 +956,14 @@ window.addEventListener('load', (event) => {
   observerWhyUseSlider.observe(swiperSection);
 })
 
+const firstIllustration = document.querySelector('#hero-illustration img')
+const secondIllustration = document.querySelector('#big-illustration img:first-child')
+
+if(window.outerWidth <= 1200){  
+  firstIllustration.setAttribute('src', './images/illustration_hero.svg')
+  secondIllustration.setAttribute('src', './images/illustration_big.svg')
+}
+
 const teamMembers = document.querySelector('#team-members')
 
 Pace.on('done', ()=>{
