@@ -286,7 +286,7 @@ nav #menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-height: 130vh;
+  min-height: 60vh;
   margin-bottom: 10vh;
 }
 
