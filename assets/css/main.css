@@ -188,7 +188,7 @@ nav #menu {
 
 @media (max-width: 767px) {
   nav {
-    padding: 40px 12.1vw;
+    padding: 30px 12.1vw;
   }
 }
 
@@ -198,13 +198,14 @@ nav #menu {
   opacity: 0;
   display: none;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
   padding-top: 20vh;
+  overflow-y: scroll;
 }
 
 #mobile-menu #upper-circle {
@@ -227,6 +228,7 @@ nav #menu {
   display: flex;
   position: static;
   visibility: visible;
+  padding-bottom: 10px;
   width: 50.2vw;
   margin: auto;
 }
@@ -284,8 +286,12 @@ nav #menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 60.1vh;
+  max-height: 130vh;
   margin-bottom: 10vh;
+}
+
+#mobile-menu ul li {
+  padding-bottom: 7px;
 }
 
 #mobile-menu ul li a {
@@ -377,6 +383,12 @@ nav #menu {
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  #hero-text h1 {
+    width: 68.7vw;
+  }
+}
+
 @media (max-width: 1200px) {
   #hero-text {
     margin-top: 0;
@@ -389,6 +401,7 @@ nav #menu {
   #hero-text {
     margin-top: 0;
     width: auto;
+    margin-left: 15.62vw;
     margin-right: 15.62vw;
   }
 }
@@ -1369,7 +1382,7 @@ nav #menu {
     margin-bottom: 15px;
   }
   #academic-text .swiper-slide .buttons a svg {
-    height: 6vh;
+    height: 7vh;
   }
 }
 
@@ -3006,6 +3019,7 @@ nav #menu {
 @media (max-width: 767px) {
   #contactus-text {
     width: auto;
+    overflow-x: auto;
     padding-top: 11.2vh;
     margin-bottom: 13.1vh;
     margin-left: 15.62vw;
@@ -3582,7 +3596,7 @@ footer > p {
 
 @media (max-width: 767px) {
   #ourproduct-main #ourproduct-slider {
-    height: 1100px;
+    height: 1200px;
   }
 }
 
@@ -3619,6 +3633,9 @@ footer > p {
 @media (max-width: 767px) {
   #ourproduct-main #github-link {
     margin-bottom: 0;
+  }
+  #ourproduct-main #github-link svg {
+    width: 100% !important;
   }
 }
 

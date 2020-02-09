@@ -318,7 +318,7 @@ nav{
     padding:6.44vh 7.8vw 0;
   }
   @include respond-to(small){
-    padding: 40px 12.1vw;
+    padding: 30px 12.1vw;
   }
 }
 
@@ -327,13 +327,14 @@ nav{
   opacity:0;
   display: none;
   width:100vw;
-  min-height:100vh;
+  height:100vh;
   background-color:white;
   position:fixed;
   top:0;
   left:0;
   z-index:2;
   padding-top:20vh;
+  overflow-y:scroll;
   #upper-circle{
     position:absolute;
     top:0;
@@ -349,6 +350,7 @@ nav{
     display:flex;
     position:static;
     visibility: visible;
+    padding-bottom:10px;
     a{
       margin:0;
       z-index:100;
@@ -383,12 +385,13 @@ nav{
     flex-direction:column;
     align-items: center;
     justify-content: space-between;
-    height:60.1vh;
+    max-height:130vh;
     margin-bottom:10vh;
     li{
       a{
         color:colors(text-color);
       }
+      padding-bottom:7px;
     }
     li:last-of-type a{
       border:2px solid colors(text-color);
@@ -450,6 +453,9 @@ nav{
   h1{
     transition:0.2s;
     margin:0;
+    @include respond-to(small){
+      width:68.7vw;
+    }
   }
   @include respond-to(large){
     margin-top:0;
@@ -459,6 +465,7 @@ nav{
   @include respond-to(small){
     margin-top:0;
     width:auto;
+    margin-left:sizes(margin) - 5.21vw;
     margin-right:sizes(margin) - 5.21vw;
   }
 }
@@ -1127,7 +1134,7 @@ nav{
         @include respond-to(small){
           margin-bottom:15px;
           svg{
-            height:6vh;
+            height:7vh;
           }
         }
       }
@@ -2251,6 +2258,7 @@ nav{
   }
   @include respond-to(small){
     width:auto;
+    overflow-x:auto;
     padding-top:11.2vh;
     margin-bottom:13.1vh;
     margin-left:sizes(margin) - 5.21vw;
@@ -2622,7 +2630,7 @@ footer{
       height:1200px;
     }
     @include respond-to(small){
-      height:1100px;
+      height:1200px;
     }
   }
   #ourproduct-illustration{
@@ -2645,6 +2653,9 @@ footer{
     margin-bottom:11.76vh;
     @include respond-to(small){
       margin-bottom:0;
+      svg{
+        width:100% !important;
+      }
     }
   }
   #github-link:hover{
