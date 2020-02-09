@@ -17,11 +17,11 @@ const swiper = new Swiper('.swiper-container', {
   on:{
     reachBeginning:() => {
       scrollRightArrow.style.transform = 'rotate(0deg)';
-      document.querySelector('#scroll-right-team tspan').innerHTML = 'Scroll to the Right';
+      document.querySelector('#scroll-right-team tspan').innerHTML = 'To the Right';
     },
     reachEnd:() => {
       scrollRightArrow.style.transform = 'rotate(180deg)';
-      document.querySelector('#scroll-right-team tspan').innerHTML = 'Scroll to the Left';
+      document.querySelector('#scroll-right-team tspan').innerHTML = 'To the Left';
     }
   }
 });
@@ -194,7 +194,6 @@ if(window.outerWidth >= 1200){
   teamMemberPic.forEach((memberPic,index) => {
       teamMember[index].addEventListener('click', (event) => {
         if(swiper.activeIndex >= index){
-          teamMembers.removeEventListener('wheel', wheelMov)
           teamMemberDesc[index].style.left = '0%';
           teamMemberDesc[index].style.transform = 'translate(0%, 0)';
           teamMemberName[index].style.left = '0%';
@@ -223,7 +222,6 @@ if(window.outerWidth >= 1200){
           closeDescriptionButton[index].style.right = '3.65vw';
         }
         else{
-          teamMembers.removeEventListener('wheel', wheelMov)
           teamMemberDesc[index].style.left = '0%';
           teamMemberDesc[index].style.transform = 'translate(0%, 0)';
           teamMemberName[index].style.left = '0%';
@@ -255,7 +253,6 @@ if(window.outerWidth >= 1200){
         }
       }, true)
     document.body.addEventListener('click', () => {
-      teamMembers.addEventListener('wheel', wheelMov)
       teamMemberDescContainer[index].style.left = '0%';
         teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
       teamMemberUnderlinePic[index].style.left = '2.5vw';
@@ -278,7 +275,6 @@ if(window.outerWidth >= 1200){
       return teamMemberMoreDesc[index].style.maxHeight = '';
     }, true)
     closeDescriptionButton[index].addEventListener('click', () => {
-      teamMembers.addEventListener('wheel', wheelMov)
       teamMemberDescContainer[index].style.left = '0%';
         teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
       teamMemberUnderlinePic[index].style.left = '2.5vw';
@@ -333,7 +329,6 @@ swiper.on('slideChange', () => {
     teamMemberPic.forEach((memberPic,index) => {
       teamMember[index].addEventListener('click', (event) => {
         if(swiper.activeIndex >= index){
-          teamMembers.removeEventListener('wheel', wheelMov)
           teamMemberDesc[index].style.left = '0%';
           teamMemberDesc[index].style.transform = 'translate(0%, 0)';
           teamMemberName[index].style.left = '0%';
@@ -364,7 +359,6 @@ swiper.on('slideChange', () => {
           closeDescriptionButton[index].style.right = '3.65vw';
         }
         else{
-          teamMembers.removeEventListener('wheel', wheelMov)
           teamMemberDesc[index].style.left = '0%';
           teamMemberDesc[index].style.transform = 'translate(0%, 0)';
           teamMemberName[index].style.left = '0%';
@@ -396,7 +390,6 @@ swiper.on('slideChange', () => {
         }
       }, true)
     document.body.addEventListener('click', () => {
-      teamMembers.addEventListener('wheel', wheelMov)
       teamMemberDescContainer[index].style.left = '0%';
         teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
       teamMemberUnderlinePic[index].style.left = '2.5vw';
@@ -419,7 +412,6 @@ swiper.on('slideChange', () => {
       return teamMemberMoreDesc[index].style.maxHeight = '';
     }, true)
     closeDescriptionButton[index].addEventListener('click', () => {
-      teamMembers.addEventListener('wheel', wheelMov)
       teamMemberDescContainer[index].style.left = '0%';
         teamMemberDescContainer[index].style.transform = 'translate(0%, 0)';
       teamMemberUnderlinePic[index].style.left = '2.5vw';
