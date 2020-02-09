@@ -966,40 +966,6 @@ window.addEventListener('load', (event) => {
 
 const teamMembers = document.querySelector('#team-members')
 
-function preventDefault(e){
-  e.preventDefault()
-}
-
-var fired = false;
-console.log(fired)
-
-const wheelMov = (e) => {
-  if(!fired){
-    if(e.deltaY < 0){
-      swiper.slidePrev();
-    }else if(e.deltaY > 0){
-      swiper.slideNext();
-    }
-  }
-  if(fired){
-    fired = !fired;
-  }
-
-}
-
-if(window.outerWidth > '1200'){
-  teamMembers.addEventListener('mouseover', () => {
-    window.addEventListener('wheel', preventDefault,{passive: false})
-    teamMembers.addEventListener('wheel', wheelMov)
-  })
-  teamMembers.addEventListener('mouseout', () => {
-    window.removeEventListener('wheel', preventDefault)
-    teamMembers.removeEventListener('wheel', wheelMov)
-  })
-}
-
-
-
 Pace.on('done', ()=>{
   setTimeout(() => {
     document.querySelector('#logo-loading').style.display='none';
