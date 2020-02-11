@@ -2657,7 +2657,7 @@ footer{
       }
     }
   }
-  #github-link:hover{
+  #github-link a:hover{
     rect{
       fill:#29023f;
       transition:0.5s;
@@ -2884,5 +2884,126 @@ footer{
   }
   100%{
     transform: scale(1);
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #hero-main{
+    height:10px;
+  }
+  #hero-illustration{
+    top:25%;
+  }
+  #whyuse-text{
+    margin-right:0;
+    margin-left:0;
+  }
+  #github-link{
+    width:100%;
+    text-align:center;
+  }
+  #whyuse-main #whyuse-circle{
+    right:-2vw - sizes(margin);
+  }
+  #big-illustration img:nth-child(2){
+    margin-right:2.81 - sizes(margin);
+  }
+  #ourtechnology-main{
+    margin-left:0;
+    margin-right:0;
+  }
+  #ourtechnology-text{
+    width:38.8vw;
+    margin:auto;
+  }
+  #ourtechnology-subsections{
+    .ourtechnology-subsections-item{
+      img{
+        left:- 5vw;
+      }
+    }
+  }
+  #academic-main{
+    margin-left:0;
+    margin-right:0;
+    margin-left:- sizes(margin);
+  }
+  #call-to-action{
+    width:100vw;
+    margin-left:- sizes(margin);
+    margin-right:- sizes(margin);
+    #call-to-action-main{
+      #call-to-action-main{
+        margin-left:- sizes(margin);
+        margin-right:0;
+      }
+    }
+  }
+  #partners-section{
+    margin-left:0;
+    margin-right:0;
+  }
+  #partners-fund{
+    .partners-single{
+      width:100%;
+      text-align: center;
+      display:flex;
+      justify-content: center;
+    }
+  }
+  #team-main{
+    margin-left:0;
+    margin-right:0;
+  }
+  .secondary-color-background:nth-child(2){
+    margin-left:- sizes(margin);
+  }
+  #career{
+    margin-left:- sizes(margin);
+    margin-right:- sizes(margin);
+  }
+  .some-illustration-2{
+    right:-2 * sizes(margin);
+  }
+  #contactus-main{
+    margin-left:0;
+    margin-right:0;
+  }
+  #contactus-form-section{
+    margin-right:- sizes(margin);
+    #contactus-form{
+      margin-right:0;
+    }
+  }
+  .scroll-sign-up{
+    right:- sizes(margin);
+  }
+  footer{
+    width:100%;
+    margin-left:sizes(margin);
+  }
+  #footer-copyright{
+    position:relative;
+    svg{
+      height:20px;
+    }
+  }
+  #logo-loading{
+    top:37%;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  #github-link{
+    width:100%;
+    text-align:center;
+  }
+  #partners-fund{
+    .partners-single{
+      width:100%;
+      text-align: center;
+      display:flex;
+      justify-content: center;
+    }
   }
 }

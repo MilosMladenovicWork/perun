@@ -3638,19 +3638,19 @@ footer > p {
   }
 }
 
-#ourproduct-main #github-link:hover rect {
+#ourproduct-main #github-link a:hover rect {
   fill: #29023f;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#ourproduct-main #github-link:hover text {
+#ourproduct-main #github-link a:hover text {
   fill: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#ourproduct-main #github-link:hover path {
+#ourproduct-main #github-link a:hover path {
   stroke: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -3924,6 +3924,125 @@ footer > p {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #hero-main {
+    height: 10px;
+  }
+  #hero-illustration {
+    top: 25%;
+  }
+  #whyuse-text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #github-link {
+    width: 100%;
+    text-align: center;
+  }
+  #whyuse-main #whyuse-circle {
+    right: -22.83vw;
+  }
+  #big-illustration img:nth-child(2) {
+    margin-right: -18.02vw;
+  }
+  #ourtechnology-main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #ourtechnology-text {
+    width: 38.8vw;
+    margin: auto;
+  }
+  #ourtechnology-subsections .ourtechnology-subsections-item img {
+    left: -5vw;
+  }
+  #academic-main {
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: -20.83vw;
+  }
+  #call-to-action {
+    width: 100vw;
+    margin-left: -20.83vw;
+    margin-right: -20.83vw;
+  }
+  #call-to-action #call-to-action-main #call-to-action-main {
+    margin-left: -20.83vw;
+    margin-right: 0;
+  }
+  #partners-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #partners-fund .partners-single {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #team-main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .secondary-color-background:nth-child(2) {
+    margin-left: -20.83vw;
+  }
+  #career {
+    margin-left: -20.83vw;
+    margin-right: -20.83vw;
+  }
+  .some-illustration-2 {
+    right: -41.66vw;
+  }
+  #contactus-main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #contactus-form-section {
+    margin-right: -20.83vw;
+  }
+  #contactus-form-section #contactus-form {
+    margin-right: 0;
+  }
+  .scroll-sign-up {
+    right: -20.83vw;
+  }
+  footer {
+    width: 100%;
+    margin-left: 20.83vw;
+  }
+  #footer-copyright {
+    position: relative;
+  }
+  #footer-copyright svg {
+    height: 20px;
+  }
+  #logo-loading {
+    top: 37%;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  #github-link {
+    width: 100%;
+    text-align: center;
+  }
+  #partners-fund .partners-single {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
