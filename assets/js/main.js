@@ -139,12 +139,11 @@ var updateLax = function updateLax() {
 window.requestAnimationFrame(updateLax);
 
 if (!(/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent))) {
-  // This is internet explorer 10
+  // This is not internet explorer
   sal({
     threshold: 0.25,
     once: true
   });
-  window.alert('isIE10');
 }
 
 var impressumPopup = document.getElementById('impressum-popup');
