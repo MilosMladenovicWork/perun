@@ -137,10 +137,16 @@ var updateLax = function updateLax() {
 };
 
 window.requestAnimationFrame(updateLax);
-sal({
-  threshold: 0.25,
-  once: true
-});
+
+if (!(/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent))) {
+  // This is internet explorer 10
+  sal({
+    threshold: 0.25,
+    once: true
+  });
+  window.alert('isIE10');
+}
+
 var impressumPopup = document.getElementById('impressum-popup');
 var impressumButton = document.getElementById('impressum');
 var closeImpressumButton = document.getElementById('close-impressum-button');
