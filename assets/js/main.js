@@ -123,20 +123,6 @@ academicScrollRight.addEventListener('click', function () {
     swiperAcademic.slideNext();
   }
 });
-lax.setup({
-  breakpoints: {
-    small: 0,
-    medium: 767,
-    large: 1200
-  }
-}); // init
-
-var updateLax = function updateLax() {
-  lax.update(window.scrollY);
-  window.requestAnimationFrame(updateLax);
-};
-
-window.requestAnimationFrame(updateLax);
 
 if (!(/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent))) {
   // This is not internet explorer

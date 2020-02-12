@@ -410,8 +410,8 @@ nav #menu {
   width: 31.35vw;
   position: absolute;
   right: 15.62vw;
-  -webkit-transform: scale(2.25);
-          transform: scale(2.25);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 @media (max-width: 1200px) {
