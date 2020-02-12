@@ -2991,6 +2991,11 @@ footer{
   #logo-loading{
     top:34%;
   }
+  .product-single{
+    .right-aligned{
+      margin-left:6.15vw;
+    }
+  }
 }
 
 @supports (-ms-ime-align: auto) {
@@ -3004,6 +3009,11 @@ footer{
       text-align: center;
       display:flex;
       justify-content: center;
+    }
+  }
+  .product-single{
+    .right-aligned{
+      margin-left:6.15vw;
     }
   }
 }

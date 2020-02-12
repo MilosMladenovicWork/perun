@@ -4027,6 +4027,9 @@ footer > p {
   #logo-loading {
     top: 34%;
   }
+  .product-single .right-aligned {
+    margin-left: 6.15vw;
+  }
 }
 
 @supports (-ms-ime-align: auto) {
@@ -4043,6 +4046,9 @@ footer > p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .product-single .right-aligned {
+    margin-left: 6.15vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
