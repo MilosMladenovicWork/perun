@@ -437,6 +437,44 @@ nav #menu {
   width: 100%;
 }
 
+#hero-illustration img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: bounce 10s infinite;
+          animation: bounce 10s infinite;
+}
+
+@-webkit-keyframes bounce {
+  33% {
+    -webkit-transform: translate(0, -3%);
+            transform: translate(0, -3%);
+  }
+  66% {
+    -webkit-transform: translate(0, 3%);
+            transform: translate(0, 3%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes bounce {
+  33% {
+    -webkit-transform: translate(0, -3%);
+            transform: translate(0, -3%);
+  }
+  66% {
+    -webkit-transform: translate(0, 3%);
+            transform: translate(0, 3%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
 .social-links {
   visibility: hidden;
   z-index: 10;

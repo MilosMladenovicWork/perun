@@ -491,6 +491,24 @@ nav{
 #hero-illustration img{
   width:100%;
 }
+#hero-illustration img:nth-child(2){
+  position:absolute;
+  left:0;
+  top:0;
+  animation:bounce 10s infinite;
+}
+
+@keyframes bounce{
+  33%{
+    transform:translate(0, -3%)
+  }
+  66%{
+    transform:translate(0, 3%)
+  }
+  100%{
+    transform:translate(0, 0)
+  }
+}
 
 
 .social-links{
