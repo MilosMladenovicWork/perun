@@ -34,6 +34,19 @@ html {
   color: #29023F;
 }
 
+.active {
+  opacity: 1;
+}
+
+.active-button {
+  background-color: #29023F;
+  color: white;
+}
+
+.idle {
+  opacity: unset;
+}
+
 #no-overflow-wrapper {
   visibility: hidden;
   padding-top: 0;
@@ -587,6 +600,22 @@ nav #menu {
   height: auto;
 }
 
+#about-all {
+  padding-top: 30vh;
+}
+
+@media (max-width: 1200px) {
+  #about-all {
+    padding-top: 16.3vh;
+  }
+}
+
+@media (max-width: 767px) {
+  #about-all {
+    padding-top: 16.43vh;
+  }
+}
+
 #about-main {
   position: static;
 }
@@ -595,6 +624,8 @@ nav #menu {
   position: absolute;
   top: 0;
   right: 0;
+  -webkit-transform: translate(0, -30vh);
+          transform: translate(0, -30vh);
 }
 
 @media (max-width: 767px) {
@@ -603,8 +634,17 @@ nav #menu {
   }
 }
 
+@media (max-width: 1200px) {
+  #about-main #about-illustration {
+    -webkit-transform: translate(0, -16.3vh);
+            transform: translate(0, -16.3vh);
+  }
+}
+
 @media (max-width: 767px) {
   #about-main #about-illustration {
+    -webkit-transform: translate(0, 16.43vh);
+            transform: translate(0, 16.43vh);
     width: 50%;
   }
 }
@@ -627,7 +667,6 @@ nav #menu {
 #about-text {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  padding-top: 30vh;
   margin-bottom: 28.24vh;
   margin-left: 24.74vw;
   width: 50.52vw;
@@ -654,7 +693,6 @@ nav #menu {
     margin-left: 20.83vw;
     margin-right: 20.83vw;
     width: auto;
-    padding-top: 16.3vh;
     margin-bottom: 6.91vh;
   }
 }
@@ -663,7 +701,6 @@ nav #menu {
   #about-text {
     width: auto;
     margin-bottom: 0;
-    padding-top: 16.43vh;
   }
 }
 

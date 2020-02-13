@@ -699,11 +699,11 @@ var callbackHero = function callbackHero(entries, observer) {
   });
 };
 
-var hero = document.querySelector('#hero-text');
+var hero = document.querySelector('#hero-main');
 var options = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.5
+  threshold: 0
 };
 window.addEventListener('load', function (event) {
   var observerAbout;
@@ -720,7 +720,7 @@ var callbackAbout = function callbackAbout(entries, observer) {
   });
 };
 
-var about = document.querySelector('#about');
+var about = document.querySelector('#about-text');
 window.addEventListener('load', function (event) {
   var observerAbout;
   observerAbout = new IntersectionObserver(callbackAbout, options);
@@ -735,11 +735,62 @@ var callbackAbout2 = function callbackAbout2(entries, observer) {
   });
 };
 
-var about2 = document.querySelector('#about-2');
+var about2 = document.querySelector('#about-2 #product-list');
 window.addEventListener('load', function (event) {
   var observerAbout2;
   observerAbout2 = new IntersectionObserver(callbackAbout2, options);
   observerAbout2.observe(about2);
+}); //
+
+var callbackAboutAll = function callbackAboutAll(entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('nav ul li a img')[0].classList.add('active');
+    } else if(!entry.isIntersecting){
+      document.querySelectorAll('nav ul li a img')[0].classList.remove('active');
+    }
+  });
+};
+
+var aboutAll = document.querySelector('#about-all');
+window.addEventListener('load', function (event) {
+  var observerAboutAll;
+  observerAboutAll = new IntersectionObserver(callbackAboutAll, options);
+  observerAboutAll.observe(aboutAll);
+}); //
+
+var callbackWhyuseAll = function callbackWhyuseAll(entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('nav ul li a img')[1].classList.add('active');
+    } else if(!entry.isIntersecting){
+      document.querySelectorAll('nav ul li a img')[1].classList.remove('active');
+    }
+  });
+};
+
+var whyuseAll = document.querySelector('#whyuse-all');
+window.addEventListener('load', function (event) {
+  var observerWhyuseAll;
+  observerWhyuseAll = new IntersectionObserver(callbackWhyuseAll, options);
+  observerWhyuseAll.observe(whyuseAll);
+}); //
+
+var callbackTechAll = function callbackTechAll(entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('nav ul li a img')[2].classList.add('active');
+    } else if(!entry.isIntersecting){
+      document.querySelectorAll('nav ul li a img')[2].classList.remove('active');
+    }
+  });
+};
+
+var techAll = document.querySelector('#technology-all');
+window.addEventListener('load', function (event) {
+  var observerTechAll;
+  observerTechAll = new IntersectionObserver(callbackTechAll, options);
+  observerTechAll.observe(techAll);
 }); //
 // const callbackStatechannels = (entries, observer) => {
 //   entries.forEach(entry => {
@@ -785,7 +836,7 @@ var callbackWhyUse = function callbackWhyUse(entries, observer) {
   });
 };
 
-var whyuse = document.querySelector('#whyuse-main');
+var whyuse = document.querySelector('#whyuse-slider');
 window.addEventListener('load', function (event) {
   var observerWhyUse;
   observerWhyUse = new IntersectionObserver(callbackWhyUse, options);
@@ -796,6 +847,9 @@ var callbackBigIllustration = function callbackBigIllustration(entries, observer
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       sectionCircle.style.transform = 'translateY(-114px)';
+      document.querySelectorAll('nav ul li a img')[1].classList.add('active');
+    } else if(!entry.isIntersecting){
+      document.querySelectorAll('nav ul li a img')[1].classList.remove('active');
     }
   });
 };
@@ -810,12 +864,13 @@ window.addEventListener('load', function (event) {
 var callbackTechnology = function callbackTechnology(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+      console.log(entry)
       sectionCircle.style.transform = 'translateY(-100px)';
     }
   });
 };
 
-var technology = document.querySelector('#ourtechnology-text');
+var technology = document.querySelector('#technology main');
 window.addEventListener('load', function (event) {
   var observerTechnology;
   observerTechnology = new IntersectionObserver(callbackTechnology, options);
@@ -857,6 +912,9 @@ var callbackTeam = function callbackTeam(entries, observer) {
     if (entry.isIntersecting) {
       sectionCircle.style.transform = 'translateY(-58px)';
       swiper.slideTo(0);
+      document.querySelectorAll('nav ul li a img')[4].classList.add('active');
+    } else if(!entry.isIntersecting){
+      document.querySelectorAll('nav ul li a img')[4].classList.remove('active');
     }
   });
 };
@@ -872,6 +930,9 @@ var callbackCareer = function callbackCareer(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       sectionCircle.style.transform = 'translateY(-44px)';
+      document.querySelectorAll('nav ul li a img')[5].classList.add('active');
+    }else if(!entry.isIntersecting){
+      document.querySelectorAll('nav ul li a img')[5].classList.remove('active');
     }
   });
 };
@@ -887,6 +948,9 @@ var callbackPartners = function callbackPartners(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       sectionCircle.style.transform = 'translateY(-58px)';
+      document.querySelectorAll('nav ul li a img')[3].classList.add('active');
+    } else if(!entry.isIntersecting){
+      document.querySelectorAll('nav ul li a img')[3].classList.remove('active');
     }
   });
 };
@@ -902,11 +966,14 @@ var callbackContactUs = function callbackContactUs(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       sectionCircle.style.transform = 'translateY(-30px)';
+      document.querySelector('nav ul li:last-of-type a').classList.add('active-button')
+    } else if(!entry.isIntersecting){
+      document.querySelector('nav ul li:last-of-type a').classList.remove('active-button')
     }
   });
 };
 
-var contactus = document.querySelector('#contactus-text');
+var contactus = document.querySelector('#contactus');
 window.addEventListener('load', function (event) {
   var observerContactUs;
   observerContactUs = new IntersectionObserver(callbackContactUs, options);

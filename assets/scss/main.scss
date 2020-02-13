@@ -195,6 +195,18 @@ html { font-family: 'Inter', sans-serif; }
   color:colors(text-color);
 }
 
+.active{
+  opacity:1;
+}
+
+.active-button{
+  background-color:colors(text-color);
+  color:white;
+}
+
+.idle{
+  opacity:unset;
+}
 
 #no-overflow-wrapper{
   visibility: hidden;
@@ -590,18 +602,34 @@ nav{
   height:auto;
 }
 
+#about-all{
+  padding-top:30vh;
+  @include respond-to(large){
+    padding-top:16.3vh;
+  }
+  @include respond-to(small){
+    padding-top:16.43vh;
+  }
+}
+
 #about-main{
   position:static;
   #about-illustration{
     position:absolute;
     top:0;
     right:0;
+    transform:translate(0, -30vh);
     img{
       @include respond-to(small){
         width:100%;
       }
     }
+    @include respond-to(large){
+      transform:translate(0, -16.3vh);
+    }
     @include respond-to(small){
+      
+    transform:translate(0, 16.43vh);
       width:50%;
     }
   }
@@ -617,7 +645,6 @@ nav{
 
 #about-text{
   transition:0.2s;
-  padding-top:30vh;
   margin-bottom:28.24vh;
   margin-left:sizes(margin) + 3.91vw;
   width:50.52vw;
@@ -636,13 +663,11 @@ nav{
     margin-left:sizes(margin);
     margin-right:sizes(margin);
     width:auto;
-    padding-top:16.3vh;
     margin-bottom:6.91vh;
   }
   @include respond-to(small){
     width:auto;
     margin-bottom:0;
-    padding-top:16.43vh;
   }
 }
 
