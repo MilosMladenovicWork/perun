@@ -624,8 +624,8 @@ nav #menu {
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translate(0, -30vh);
-          transform: translate(0, -30vh);
+  -webkit-transform: translate(0, -45%);
+          transform: translate(0, -45%);
 }
 
 @media (max-width: 767px) {
@@ -639,13 +639,16 @@ nav #menu {
     -webkit-transform: translate(0, -16.3vh);
             transform: translate(0, -16.3vh);
   }
+  #about-main #about-illustration img {
+    width: 50vw;
+  }
 }
 
 @media (max-width: 767px) {
   #about-main #about-illustration {
-    -webkit-transform: translate(0, 16.43vh);
-            transform: translate(0, 16.43vh);
-    width: 50%;
+    -webkit-transform: translate(0, -16.43vh);
+            transform: translate(0, -16.43vh);
+    width: 50vw;
   }
 }
 

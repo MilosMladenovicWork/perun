@@ -618,7 +618,7 @@ nav{
     position:absolute;
     top:0;
     right:0;
-    transform:translate(0, -30vh);
+    transform:translate(0, -45%);
     img{
       @include respond-to(small){
         width:100%;
@@ -626,11 +626,14 @@ nav{
     }
     @include respond-to(large){
       transform:translate(0, -16.3vh);
+      img{
+        width:50vw;
+      }
     }
     @include respond-to(small){
       
-    transform:translate(0, 16.43vh);
-      width:50%;
+    transform:translate(0, -16.43vh);
+      width:50vw;
     }
   }
   @include respond-to(large){
