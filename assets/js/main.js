@@ -756,14 +756,15 @@ window.addEventListener('load', function (event) {
 // })
 //
 
-var productIllustration = document.querySelector('#ourproduct-illustration circle');
+var productIllustration = document.querySelector('#ourproduct-illustration');
 
 var callbackProductSection = function callbackProductSection(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       sectionCircle.style.transform = 'translateY(-142px)';
-      productIllustration.style.animationName = 'circleSplice';
+      productIllustration.style.animationName = 'rotate';
     } else if (!entry.isIntersecting) {
+      productIllustration.style.animationName = '';
       productIllustration.style.animationName = '';
     }
   });
