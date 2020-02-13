@@ -703,7 +703,7 @@ var hero = document.querySelector('#hero-main');
 var options = {
   root: null,
   rootMargin: '0px',
-  threshold: 0
+  threshold: 0.1
 };
 window.addEventListener('load', function (event) {
   var observerAbout;
@@ -847,9 +847,6 @@ var callbackBigIllustration = function callbackBigIllustration(entries, observer
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       sectionCircle.style.transform = 'translateY(-114px)';
-      document.querySelectorAll('nav ul li a img')[1].classList.add('active');
-    } else if(!entry.isIntersecting){
-      document.querySelectorAll('nav ul li a img')[1].classList.remove('active');
     }
   });
 };
