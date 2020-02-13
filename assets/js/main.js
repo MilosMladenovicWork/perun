@@ -47,6 +47,10 @@ var swiperOurProduct = new Swiper('.swiper-container-ourproduct', {
   slidesPerView: 1,
   spaceBetween: 300,
   initialSlide: 0,
+  pagination: {
+    el: '.swiper-pagination-ourproduct',
+    clickable:true
+  },
   centeredSlides: true,
   on: {
     reachBeginning: function reachBeginning() {
