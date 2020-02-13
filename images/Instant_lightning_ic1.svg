@@ -1,32 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="158.43" height="149.721" viewBox="0 0 158.43 149.721">
-  <g id="Group_9609" data-name="Group 9609" transform="translate(-513 -2476)">
-    <g id="Layer_2" data-name="Layer 2" transform="translate(513 2476)">
-      <g id="Layer_1" data-name="Layer 1">
-        <path id="Path_8669" data-name="Path 8669" d="M39.22,135c-15.33-7.72-31.73-21.66-37-38a50.46,50.46,0,0,1,2-35c14-31,35-7,57-20s26-42,51-42,33.29,16.1,43,42C167.22,74,149.17,190.37,39.22,135Z" fill="#f5f5f5"/>
-      </g>
-    </g>
-    <g id="Lightning_instant" transform="translate(436.73 2481.6)">
-      <g id="Group_9534" data-name="Group 9534" transform="translate(146.383 2)">
-        <circle id="Ellipse_1094" data-name="Ellipse 1094" cx="1.867" cy="1.867" r="1.867" fill="#29023f"/>
-      </g>
-      <g id="Group_9535" data-name="Group 9535" transform="translate(121.181 45.347)">
-        <ellipse id="Ellipse_1095" data-name="Ellipse 1095" cx="1.5" cy="2" rx="1.5" ry="2" transform="translate(0.089 0.053)" fill="#29023f"/>
-      </g>
-      <g id="Group_9536" data-name="Group 9536" transform="translate(153.876 133.967)">
-        <circle id="Ellipse_1096" data-name="Ellipse 1096" cx="1.867" cy="1.867" r="1.867" transform="translate(0)" fill="#29023f"/>
-      </g>
-      <g id="Group_9537" data-name="Group 9537" transform="translate(178.808 27.732)">
-        <circle id="Ellipse_1097" data-name="Ellipse 1097" cx="1.867" cy="1.867" r="1.867" transform="translate(0 0)" fill="#29023f"/>
-      </g>
-      <g id="Group_9538" data-name="Group 9538" transform="translate(176.941 91.996)">
-        <circle id="Ellipse_1098" data-name="Ellipse 1098" cx="1.867" cy="1.867" r="1.867" transform="translate(0)" fill="#29023f"/>
-      </g>
-      <g id="Group_9539" data-name="Group 9539" transform="translate(123.77 102.768)">
-        <circle id="Ellipse_1099" data-name="Ellipse 1099" cx="1.867" cy="1.867" r="1.867" transform="translate(0)" fill="#29023f"/>
-      </g>
-      <g id="Group_9540" data-name="Group 9540" transform="translate(127.741 13.226)">
-        <path id="Path_8641" data-name="Path 8641" d="M164.192,162.654a2.379,2.379,0,0,1-.587-.08,1.874,1.874,0,0,1-1.253-2.133L173.9,99.591l-25.012,5.786a1.887,1.887,0,0,1-1.733-.48,1.939,1.939,0,0,1-.533-1.707l12.053-57.6a1.886,1.886,0,0,1,1.84-1.493h27.119a1.873,1.873,0,0,1,1.547.8,1.9,1.9,0,0,1,.213,1.733L178,76.338l11.226-2.8a1.869,1.869,0,0,1,.907,3.626l-14.719,3.653a1.85,1.85,0,0,1-1.84-.587,1.893,1.893,0,0,1-.347-1.893l11.706-30.505H162.032l-11.146,53.251,24.959-5.76a1.868,1.868,0,0,1,2.24,2.187l-9.36,49.331L203.23,73.885l-5.12,1.28a1.869,1.869,0,0,1-.907-3.626l8.96-2.213a1.87,1.87,0,0,1,2.133,2.613l-42.425,89.649A1.873,1.873,0,0,1,164.192,162.654Z" transform="translate(-146.59 -44.1)" fill="#29023f"/>
-      </g>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 158.4 149.7" style="enable-background:new 0 0 158.4 149.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F5F5F5;}
+	.st1{fill:#29023F;}
+	.st2{fill:#FCD200;}
+</style>
+<g>
+	<g transform="translate(513 2476)">
+		<g>
+			<path id="Path_8669" class="st0" d="M-473.8-2341c-15.3-7.7-31.7-21.7-37-38c-3.5-11.5-2.8-23.9,2-35c14-31,35-7,57-20
+				s26-42,51-42s33.3,16.1,43,42C-345.8-2402-363.8-2285.6-473.8-2341z"/>
+		</g>
+	</g>
+	<g id="Group_9534" transform="translate(146.383 2)">
+		<circle id="Ellipse_1094" class="st1" cx="-74.4" cy="7.5" r="1.9"/>
+	</g>
+	<g id="Group_9536" transform="translate(153.876 133.967)">
+		<circle id="Ellipse_1096" class="st1" cx="-74.4" cy="7.5" r="1.9"/>
+	</g>
+	<g id="Group_9537" transform="translate(178.808 27.732)">
+		<circle id="Ellipse_1097" class="st1" cx="-74.4" cy="7.5" r="1.9"/>
+	</g>
+	<g id="Group_9538" transform="translate(176.941 91.996)">
+		<circle id="Ellipse_1098" class="st1" cx="-74.4" cy="7.5" r="1.9"/>
+	</g>
+	<g id="Group_9539" transform="translate(123.77 102.768)">
+		<circle id="Ellipse_1099" class="st1" cx="-74.4" cy="7.5" r="1.9"/>
+	</g>
+	<g id="Group_9539_1_" transform="translate(123.77 102.768)">
+		<circle id="Ellipse_1099_1_" class="st1" cx="-79.9" cy="-48.4" r="1.9"/>
+	</g>
+	<path class="st2" d="M102.9,53.6l-27.4,58.3l-6.4,13.6l9.7-51.1l-25,5.8c-0.6,0.1-1.3,0-1.7-0.5c-0.4-0.4-0.6-1.1-0.5-1.7
+		l10.3-49.3h21.8l-11.5,32L102.9,53.6z"/>
+	<g id="Group_9540" transform="translate(127.741 13.226)">
+		<path class="st1" d="M-14.6,33.4L-57,123.1c-0.3,0.7-1,1.1-1.7,1.1c-0.2,0-0.4,0-0.6-0.1c-0.9-0.3-1.4-1.2-1.3-2.1l1.9-9.7
+			l9.7-51.1l-25,5.8c-0.6,0.1-1.3,0-1.7-0.5c-0.4-0.4-0.6-1.1-0.5-1.7l10.3-49.3l1.8-8.4c0.2-0.9,1-1.5,1.8-1.5h27.1
+			c0.6,0,1.2,0.3,1.5,0.8c0.3,0.5,0.4,1.2,0.2,1.7l-11.4,29.7l11.2-2.8c1-0.2,2,0.4,2.3,1.4c0.2,1-0.4,2-1.3,2.2l-14.7,3.7
+			c-0.7,0.2-1.4-0.1-1.8-0.6c-0.5-0.5-0.6-1.3-0.4-1.9l11.7-30.5h-22.9l-1.3,6.1L-72,62.6l25-5.8c1-0.2,2,0.4,2.2,1.4
+			c0,0.3,0.1,0.5,0,0.8l-7.5,39.6l-1.8,9.7l34.5-73l-5.1,1.3c-1,0.2-2-0.4-2.3-1.4c-0.2-1,0.4-2,1.3-2.2l9-2.2c1-0.2,2,0.4,2.3,1.4
+			C-14.3,32.6-14.4,33.1-14.6,33.4z"/>
+	</g>
+</g>
 </svg>
