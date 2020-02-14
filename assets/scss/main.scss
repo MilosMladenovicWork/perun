@@ -1547,6 +1547,7 @@ nav{
   }
   @include respond-to(small){
     width:80vw;
+    margin:auto;
   }
 }
 

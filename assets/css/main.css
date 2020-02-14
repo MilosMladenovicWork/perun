@@ -2012,6 +2012,7 @@ nav #menu {
 @media (max-width: 767px) {
   #big-illustration {
     width: 80vw;
+    margin: auto;
   }
 }
 
