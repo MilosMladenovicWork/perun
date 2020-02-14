@@ -458,6 +458,8 @@ nav #menu {
           animation: bounce 10s infinite linear;
   -webkit-transform: translate(0, 3%);
           transform: translate(0, 3%);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 @-webkit-keyframes bounce {
@@ -1979,8 +1981,9 @@ nav #menu {
 }
 
 #big-illustration {
-  width: 49.58vw;
-  margin: auto;
+  width: auto;
+  margin-left: 20.83vw;
+  margin-right: 20.83vw;
 }
 
 #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
@@ -4076,54 +4079,65 @@ footer > p {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  #hero-main {
-    height: 10px;
-  }
   #hero-illustration {
-    top: 25%;
+    -webkit-transform: translate(0, -50%) scale(1.5);
+            transform: translate(0, -50%) scale(1.5);
   }
-  #whyuse-text {
-    margin-right: 0;
-    margin-left: 0;
+  #ourproduct-main {
+    position: relative;
+  }
+  #ourproduct-main #ourproduct-illustration {
+    top: 17.5%;
   }
   #github-link {
     width: 100%;
     text-align: center;
   }
+  #whyuse-main {
+    margin-left: -20.83vw;
+  }
   #whyuse-main #whyuse-circle {
     right: -22.83vw;
   }
-  #big-illustration img:nth-child(2) {
-    margin-right: -18.02vw;
-  }
-  #ourtechnology-main {
+  #big-illustration {
     margin-left: 0;
     margin-right: 0;
+  }
+  #big-illustration img:nth-child(2) {
+    margin-right: -18.02vw;
   }
   #ourtechnology-text {
     width: 38.8vw;
     margin: auto;
   }
   #ourtechnology-subsections .ourtechnology-subsections-item img {
-    left: -5vw;
+    left: 5vw;
   }
   #academic-main {
     margin-left: 0;
     margin-right: 0;
-    margin-left: -20.83vw;
   }
   #call-to-action {
     width: 100vw;
-    margin-left: -20.83vw;
-    margin-right: -20.83vw;
   }
   #call-to-action #call-to-action-main #call-to-action-main {
     margin-left: -20.83vw;
     margin-right: 0;
   }
-  #partners-section {
-    margin-left: 0;
-    margin-right: 0;
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .buttons .button {
+    width: 11.72vw;
+  }
+  #academic-main #academic-slider #academic-scroll-right {
+    width: 15.62vw;
   }
   #partners-fund .partners-single {
     width: 100%;
@@ -4135,36 +4149,8 @@ footer > p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #team-main {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .secondary-color-background:nth-child(2) {
-    margin-left: -20.83vw;
-  }
-  #career {
-    margin-left: -20.83vw;
-    margin-right: -20.83vw;
-  }
-  .some-illustration-2 {
-    right: -41.66vw;
-  }
-  #contactus-main {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  #contactus-form-section {
-    margin-right: -20.83vw;
-  }
-  #contactus-form-section #contactus-form {
-    margin-right: 0;
-  }
-  .scroll-sign-up {
-    right: -20.83vw;
-  }
   footer {
     width: 100%;
-    margin-left: 20.83vw;
   }
   #footer-copyright {
     position: relative;

@@ -509,6 +509,7 @@ nav{
   top:0;
   animation:bounce 10s infinite linear;
   transform:translate(0, 3%);
+  transition:0.1s;
 }
 
 @keyframes bounce{
@@ -1526,8 +1527,9 @@ nav{
 }
 
 #big-illustration{
-  width:49.58vw;
-  margin:auto;
+  width:auto;
+  margin-left:sizes(margin);
+  margin-right:sizes(margin);
   img:nth-child(4), img:nth-child(1), img:nth-child(2), img:nth-child(3){
     width:100% ;
     margin-bottom:4.63vh;
@@ -2979,29 +2981,31 @@ footer{
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  #hero-main{
-    height:10px;
-  }
   #hero-illustration{
-    top:25%;
+    transform:translate(0, -50%) scale(1.5);
   }
-  #whyuse-text{
-    margin-right:0;
-    margin-left:0;
+  #ourproduct-main{
+    position:relative;
+    #ourproduct-illustration{
+      top:17.5%;
+    }
   }
   #github-link{
     width:100%;
     text-align:center;
   }
+  #whyuse-main{
+    margin-left:- (sizes(margin));
+  }
   #whyuse-main #whyuse-circle{
     right:-2vw - sizes(margin);
   }
-  #big-illustration img:nth-child(2){
-    margin-right:2.81 - sizes(margin);
-  }
-  #ourtechnology-main{
+  #big-illustration{
     margin-left:0;
     margin-right:0;
+  }
+  #big-illustration img:nth-child(2){
+    margin-right:2.81 - sizes(margin);
   }
   #ourtechnology-text{
     width:38.8vw;
@@ -3010,19 +3014,16 @@ footer{
   #ourtechnology-subsections{
     .ourtechnology-subsections-item{
       img{
-        left:- 5vw;
+        left:5vw;
       }
     }
   }
   #academic-main{
     margin-left:0;
     margin-right:0;
-    margin-left:- sizes(margin);
   }
   #call-to-action{
     width:100vw;
-    margin-left:- sizes(margin);
-    margin-right:- sizes(margin);
     #call-to-action-main{
       #call-to-action-main{
         margin-left:- sizes(margin);
@@ -3030,9 +3031,15 @@ footer{
       }
     }
   }
-  #partners-section{
-    margin-left:0;
-    margin-right:0;
+  .buttons{
+    display:flex;
+    flex-direction:column;
+    .button{
+      width:11.72vw;
+    }
+  }
+  #academic-main #academic-slider #academic-scroll-right{
+    width:15.62vw;
   }
   #partners-fund{
     .partners-single{
@@ -3042,36 +3049,8 @@ footer{
       justify-content: center;
     }
   }
-  #team-main{
-    margin-left:0;
-    margin-right:0;
-  }
-  .secondary-color-background:nth-child(2){
-    margin-left:- sizes(margin);
-  }
-  #career{
-    margin-left:- sizes(margin);
-    margin-right:- sizes(margin);
-  }
-  .some-illustration-2{
-    right:-2 * sizes(margin);
-  }
-  #contactus-main{
-    margin-left:0;
-    margin-right:0;
-  }
-  #contactus-form-section{
-    margin-right:- sizes(margin);
-    #contactus-form{
-      margin-right:0;
-    }
-  }
-  .scroll-sign-up{
-    right:- sizes(margin);
-  }
   footer{
     width:100%;
-    margin-left:sizes(margin);
   }
   #footer-copyright{
     position:relative;
