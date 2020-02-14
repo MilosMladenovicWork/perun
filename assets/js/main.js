@@ -951,6 +951,8 @@ var callbackCareer = function callbackCareer(entries, observer) {
         section.classList.remove('active')
       });
       sectionCircle.style.transform = 'translateY(-44px)';
+      
+      document.querySelector('nav ul li:last-of-type a').classList.remove('active-button')
       document.querySelectorAll('nav ul li a img')[5].classList.add('active');
     }else if(!entry.isIntersecting){
       document.querySelectorAll('nav ul li a img')[5].classList.remove('active');
@@ -975,7 +977,6 @@ var callbackPartners = function callbackPartners(entries, observer) {
       document.querySelectorAll('nav ul li a img').forEach(function(section){
         section.classList.remove('active')
       });
-      document.querySelector('nav ul li:last-of-type a').classList.remove('active-button')
       sectionCircle.style.transform = 'translateY(-58px)';
       document.querySelectorAll('nav ul li a img')[3].classList.add('active');
     } else if(!entry.isIntersecting){
