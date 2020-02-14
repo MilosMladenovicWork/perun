@@ -454,37 +454,31 @@ nav #menu {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-animation: bounce 10s infinite;
-          animation: bounce 10s infinite;
+  -webkit-animation: bounce 10s infinite linear;
+          animation: bounce 10s infinite linear;
+  -webkit-transform: translate(0, 3%);
+          transform: translate(0, 3%);
 }
 
 @-webkit-keyframes bounce {
-  33% {
+  50% {
     -webkit-transform: translate(0, -3%);
             transform: translate(0, -3%);
   }
-  66% {
+  100% {
     -webkit-transform: translate(0, 3%);
             transform: translate(0, 3%);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
   }
 }
 
 @keyframes bounce {
-  33% {
+  50% {
     -webkit-transform: translate(0, -3%);
             transform: translate(0, -3%);
   }
-  66% {
+  100% {
     -webkit-transform: translate(0, 3%);
             transform: translate(0, 3%);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
   }
 }
 
