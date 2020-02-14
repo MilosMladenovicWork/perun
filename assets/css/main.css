@@ -4149,6 +4149,9 @@ footer > p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #form-button {
+    width: 16vw;
+  }
   footer {
     width: 100%;
   }
