@@ -1545,6 +1545,9 @@ nav{
     top:0;
     z-index:-1;
   }
+  @include respond-to(small){
+    width:80vw;
+  }
 }
 
 #small-circle, #medium-circle, #big-circle{

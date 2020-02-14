@@ -2012,6 +2012,12 @@ nav #menu {
   z-index: -1;
 }
 
+@media (max-width: 767px) {
+  #big-illustration {
+    width: 80vw;
+  }
+}
+
 #small-circle, #medium-circle, #big-circle {
   -webkit-animation: scale 10s infinite;
           animation: scale 10s infinite;
