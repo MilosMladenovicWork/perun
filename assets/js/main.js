@@ -749,6 +749,10 @@ window.addEventListener('load', function (event) {
 var callbackAboutAll = function callbackAboutAll(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+
+      document.querySelectorAll('nav ul li a img').forEach(function(section){
+        section.classList.remove('active')
+      });
       document.querySelectorAll('nav ul li a img')[0].classList.add('active');
     } else if(!entry.isIntersecting){
       document.querySelectorAll('nav ul li a img')[0].classList.remove('active');
@@ -766,6 +770,10 @@ window.addEventListener('load', function (event) {
 var callbackWhyuseAll = function callbackWhyuseAll(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+
+      document.querySelectorAll('nav ul li a img').forEach(function(section){
+        section.classList.remove('active')
+      });
       document.querySelectorAll('nav ul li a img')[1].classList.add('active');
     } else if(!entry.isIntersecting){
       document.querySelectorAll('nav ul li a img')[1].classList.remove('active');
@@ -783,6 +791,10 @@ window.addEventListener('load', function (event) {
 var callbackTechAll = function callbackTechAll(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+
+      document.querySelectorAll('nav ul li a img').forEach(function(section){
+        section.classList.remove('active')
+      });
       document.querySelectorAll('nav ul li a img')[2].classList.add('active');
     } else if(!entry.isIntersecting){
       document.querySelectorAll('nav ul li a img')[2].classList.remove('active');
@@ -913,6 +925,10 @@ var callbackTeam = function callbackTeam(entries, observer) {
     if (entry.isIntersecting) {
       sectionCircle.style.transform = 'translateY(-58px)';
       swiper.slideTo(0);
+
+      document.querySelectorAll('nav ul li a img').forEach(function(section){
+        section.classList.remove('active')
+      });
       document.querySelectorAll('nav ul li a img')[4].classList.add('active');
     } else if(!entry.isIntersecting){
       document.querySelectorAll('nav ul li a img')[4].classList.remove('active');
@@ -930,6 +946,10 @@ window.addEventListener('load', function (event) {
 var callbackCareer = function callbackCareer(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+
+      document.querySelectorAll('nav ul li a img').forEach(function(section){
+        section.classList.remove('active')
+      });
       sectionCircle.style.transform = 'translateY(-44px)';
       document.querySelectorAll('nav ul li a img')[5].classList.add('active');
     }else if(!entry.isIntersecting){
@@ -948,6 +968,14 @@ window.addEventListener('load', function (event) {
 var callbackPartners = function callbackPartners(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+
+      document.querySelectorAll('nav ul li a img').forEach(function(section){
+        section.classList.remove('active')
+      });
+      document.querySelectorAll('nav ul li a img').forEach(function(section){
+        section.classList.remove('active')
+      });
+      document.querySelector('nav ul li:last-of-type a').classList.remove('active-button')
       sectionCircle.style.transform = 'translateY(-58px)';
       document.querySelectorAll('nav ul li a img')[3].classList.add('active');
     } else if(!entry.isIntersecting){
@@ -966,6 +994,10 @@ window.addEventListener('load', function (event) {
 var callbackContactUs = function callbackContactUs(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+
+      document.querySelectorAll('nav ul li a img').forEach(function(section){
+        section.classList.remove('active')
+      });
       sectionCircle.style.transform = 'translateY(-30px)';
       document.querySelector('nav ul li:last-of-type a').classList.add('active-button')
     } else if(!entry.isIntersecting){
@@ -1001,10 +1033,6 @@ window.addEventListener('load', function (event) {
 var firstIllustration = document.querySelector('#hero-illustration img');
 var secondIllustration = document.querySelector('#big-illustration img:first-child');
 
-if (window.outerWidth <= 1200) {
-  firstIllustration.setAttribute('src', './images/illustration_hero.svg');
-  secondIllustration.setAttribute('src', './images/illustration_big.svg');
-}
 
 var teamMembers = document.querySelector('#team-members');
 Pace.on('done', function () {
