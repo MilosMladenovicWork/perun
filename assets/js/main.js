@@ -708,10 +708,12 @@ var callbackHero = function callbackHero(entries, observer) {
 };
 
 var hero = document.querySelector('#hero-main');
+var viewHeight = (window.outerHeight / 10000)
+var totalThres = 0.18 - viewHeight
 var options = {
   root: null,
   rootMargin: '0px',
-  threshold: [0.2]
+  threshold: [totalThres]
 };
 window.addEventListener('load', function (event) {
   var observerAbout;
@@ -728,7 +730,7 @@ var callbackAbout = function callbackAbout(entries, observer) {
   });
 };
 
-var about = document.querySelector('#about-text');
+var about = document.querySelector('#about-text h2');
 window.addEventListener('load', function (event) {
   var observerAbout;
   observerAbout = new IntersectionObserver(callbackAbout, options);

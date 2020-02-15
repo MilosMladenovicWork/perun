@@ -620,7 +620,6 @@ nav{
 }
 
 #about-all{
-  margin-top:30vh;
   @include respond-to(large){
     margin-top:0vh;
     padding-top:16.3vh;
@@ -634,7 +633,7 @@ nav{
   position:static;
   #about-illustration{
     position:absolute;
-    top:0;
+    top:30vh;
     right:0;
     transform:translate(0, -45%);
     img{
@@ -668,6 +667,7 @@ nav{
   transition:0.2s;
   margin-left:sizes(margin) + 3.91vw;
   width:50.52vw;
+  padding-top:30vh;
   h2{
     margin:0;
     margin-bottom:11vh;
@@ -742,7 +742,7 @@ nav{
 }
 
 #ourtechnology-text h1{
-  margin-top:28.9vh;
+  margin-top:15vh;
   margin-bottom:6.48vh;
   text-align:center;
   width:100%;

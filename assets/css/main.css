@@ -634,10 +634,6 @@ nav #menu {
   height: auto;
 }
 
-#about-all {
-  margin-top: 30vh;
-}
-
 @media (max-width: 1200px) {
   #about-all {
     margin-top: 0vh;
@@ -657,7 +653,7 @@ nav #menu {
 
 #about-main #about-illustration {
   position: absolute;
-  top: 0;
+  top: 30vh;
   right: 0;
   -webkit-transform: translate(0, -45%);
           transform: translate(0, -45%);
@@ -707,6 +703,7 @@ nav #menu {
   transition: 0.2s;
   margin-left: 24.74vw;
   width: 50.52vw;
+  padding-top: 30vh;
 }
 
 #about-text h2 {
@@ -813,7 +810,7 @@ nav #menu {
 }
 
 #ourtechnology-text h1 {
-  margin-top: 28.9vh;
+  margin-top: 15vh;
   margin-bottom: 6.48vh;
   text-align: center;
   width: 100%;
