@@ -241,6 +241,10 @@ nav #menu {
   display: flex;
   position: static;
   visibility: visible;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding-bottom: 10px;
   width: 50.2vw;
   margin: auto;
@@ -409,6 +413,8 @@ nav #menu {
     margin-top: 0;
     margin-left: 20.83vw;
     width: 55vw;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -438,6 +444,8 @@ nav #menu {
         -ms-grid-row-align: center;
         align-self: center;
     width: 80vw;
+    -webkit-transform: scale(1.335) translateY(0vh);
+            transform: scale(1.335) translateY(0vh);
   }
 }
 
@@ -1999,13 +2007,13 @@ nav #menu {
 
 @media (max-width: 1200px) {
   #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
-    width: 100%;
+    width: auto;
   }
 }
 
 @media (max-width: 767px) {
   #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
-    width: 100%;
+    width: auto;
   }
 }
 
@@ -2013,13 +2021,6 @@ nav #menu {
   position: absolute;
   top: 0;
   z-index: -1;
-}
-
-@media (max-width: 767px) {
-  #big-illustration {
-    width: 80vw;
-    margin: auto;
-  }
 }
 
 #small-circle, #medium-circle, #big-circle {
@@ -2645,8 +2646,8 @@ nav #menu {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transform: translate(5.5vw, -31vh);
-          transform: translate(5.5vw, -31vh);
+  -webkit-transform: translate(5.5vw, -35vh);
+          transform: translate(5.5vw, -35vh);
 }
 
 .some-illustration img {
@@ -3731,6 +3732,12 @@ footer > p {
   margin-right: 25px !important;
 }
 
+@media (max-width: 767px) {
+  .swiper-pagination-ourproduct {
+    bottom: 55px !important;
+  }
+}
+
 #ourproduct-main {
   margin-left: 20.83vw;
   margin-right: 20.83vw;
@@ -3867,9 +3874,16 @@ footer > p {
 }
 
 @media (max-width: 767px) {
+  #ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide #left {
+    margin-right: 2vw;
+  }
+}
+
+@media (max-width: 767px) {
   #ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide {
     left: unset;
     right: 0;
+    bottom: -10px;
   }
 }
 

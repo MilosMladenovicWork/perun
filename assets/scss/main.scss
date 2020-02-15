@@ -362,6 +362,7 @@ nav{
     display:flex;
     position:static;
     visibility: visible;
+    flex-direction: row;
     padding-bottom:10px;
     a{
       margin:0;
@@ -474,6 +475,7 @@ nav{
     margin-top:0;
     margin-left:sizes(margin);
     width:55vw;
+    transform:translateY(0);
   }
   @include respond-to(small){
     margin-top:0;
@@ -494,6 +496,7 @@ nav{
     margin-bottom:0;
     align-self:center;
     width:80vw;
+    transform:scale(1.335) translateY(0vh);
   }
   @include respond-to(small){
     margin-top:12.81vh;
@@ -1536,20 +1539,16 @@ nav{
     margin-right:sizes(margin);
     margin-bottom:4.63vh;
     @include respond-to(large){
-      width:100%;
+      width:auto;
     }
     @include respond-to(small){
-      width:100%;
+      width:auto;
     }
   }
   img:nth-child(1), img:nth-child(2), img:nth-child(3){
     position:absolute;
     top:0;
     z-index:-1;
-  }
-  @include respond-to(small){
-    width:80vw;
-    margin:auto;
   }
 }
 
@@ -1996,7 +1995,7 @@ nav{
 .some-illustration {
   display:flex;
   justify-content: flex-end;
-  transform:translate(5.5vw,-31vh);
+  transform:translate(5.5vw,-35vh);
   img{
     transition:0.2s;
     width:27.5vw;
@@ -2711,6 +2710,9 @@ footer{
         background-color:colors(text-color);
         margin-right:25px !important;
   }
+  @include respond-to(small){
+    bottom:55px !important;
+  }
 }
 
 #ourproduct-main{
@@ -2804,10 +2806,14 @@ footer{
       #left{
         opacity:0;
         margin-right:7.41vw;
+        @include respond-to(small){
+          margin-right:2vw;
+        }
       }
       @include respond-to(small){
         left:unset;
         right:0;
+        bottom:-10px;
       }
     }
     #ourproduct-button-slide svg:hover{
