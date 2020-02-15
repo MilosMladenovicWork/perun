@@ -433,8 +433,9 @@ nav #menu {
   right: 15.62vw;
   -webkit-transform: scale(1.335);
           transform: scale(1.335);
-  -webkit-animation-name: hey;
-          animation-name: hey;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #hero-illustration #box {

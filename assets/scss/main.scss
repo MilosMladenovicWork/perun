@@ -490,7 +490,7 @@ nav{
   position:absolute;
   right:sizes(margin) - 5.21vw;
   transform:scale(1.335);
-  animation-name:hey;
+  align-self:center;
   #box{
     transform: translate(0, -10vh);
     @include respond-to(large){
