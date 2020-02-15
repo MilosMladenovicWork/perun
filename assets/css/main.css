@@ -4176,15 +4176,15 @@ footer > p {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  #hero-illustration {
-    -webkit-transform: translate(0, -50%) scale(1.5);
-            transform: translate(0, -50%) scale(1.5);
-  }
   #ourproduct-main {
     position: relative;
   }
   #ourproduct-main #ourproduct-illustration {
     top: 17.5%;
+  }
+  #hero-text {
+    -webkit-transform: translate(0, 30vh);
+            transform: translate(0, 30vh);
   }
   #github-link {
     width: 100%;
@@ -4200,8 +4200,49 @@ footer > p {
     margin-left: 0;
     margin-right: 0;
   }
-  #big-illustration img:nth-child(2) {
-    margin-right: -18.02vw;
+  #big-illustration {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (max-width: 1200px), (-ms-high-contrast: active) and (max-width: 1200px) {
+  #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
+    width: auto;
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (max-width: 767px), (-ms-high-contrast: active) and (max-width: 767px) {
+  #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
+    width: auto;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
+    left: 0%;
+  }
+  #big-illustration img:nth-child(5) {
+    margin-right: -20.83vw;
   }
   #ourtechnology-text {
     width: 38.8vw;
