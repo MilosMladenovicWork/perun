@@ -433,8 +433,8 @@ nav #menu {
   right: 15.62vw;
   -webkit-transform: scale(1.335) translate(0, -10vh);
           transform: scale(1.335) translate(0, -10vh);
-  -webkit-animation: rollUp 0.2s 1;
-          animation: rollUp 0.2s 1;
+  -webkit-animation-name: hey;
+          animation-name: hey;
 }
 
 @media (max-width: 1200px) {

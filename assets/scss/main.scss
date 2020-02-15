@@ -490,7 +490,7 @@ nav{
   position:absolute;
   right:sizes(margin) - 5.21vw;
   transform:scale(1.335) translate(0, -10vh);
-  animation:rollUp 0.2s 1;
+  animation-name:hey;
   @include respond-to(large){
     position:static;
     margin-top:13.1vh;
