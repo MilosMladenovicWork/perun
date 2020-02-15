@@ -448,6 +448,7 @@ nav{
   min-height:79.3vh;
   width:100%;
   padding-top:25vh;
+  padding-bottom:10vh;
   @include respond-to(large){
     flex-direction: column;
     justify-content: center;
@@ -619,7 +620,7 @@ nav{
 }
 
 #about-all{
-  padding-top:30vh;
+  margin-top:30vh;
   @include respond-to(large){
     padding-top:16.3vh;
   }

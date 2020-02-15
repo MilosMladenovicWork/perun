@@ -362,6 +362,7 @@ nav #menu {
   min-height: 79.3vh;
   width: 100%;
   padding-top: 25vh;
+  padding-bottom: 10vh;
 }
 
 @media (max-width: 1200px) {
@@ -634,7 +635,7 @@ nav #menu {
 }
 
 #about-all {
-  padding-top: 30vh;
+  margin-top: 30vh;
 }
 
 @media (max-width: 1200px) {

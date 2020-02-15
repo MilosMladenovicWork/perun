@@ -711,7 +711,7 @@ var hero = document.querySelector('#hero-main');
 var options = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.1
+  thresholds: [0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1]
 };
 window.addEventListener('load', function (event) {
   var observerAbout;
@@ -758,6 +758,8 @@ var callbackAboutAll = function callbackAboutAll(entries, observer) {
         section.classList.remove('active')
       });
       document.querySelectorAll('nav ul li a img')[0].classList.add('active');
+      
+      console.log('about')
     } else if(!entry.isIntersecting){
       document.querySelectorAll('nav ul li a img')[0].classList.remove('active');
     }
