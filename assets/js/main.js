@@ -1040,6 +1040,10 @@ window.addEventListener('load', function (event) {
 var firstIllustration = document.querySelector('#hero-illustration img');
 var secondIllustration = document.querySelector('#big-illustration img:first-child');
 
+const formButton = document.querySelector('#form-button')
+formButton.addEventListener('click', (e) => {
+  e.preventDefault();
+})
 
 var teamMembers = document.querySelector('#team-members');
 Pace.on('done', function () {

@@ -705,7 +705,6 @@ nav #menu {
 #about-text {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  margin-bottom: 28.24vh;
   margin-left: 24.74vw;
   width: 50.52vw;
 }
@@ -1359,7 +1358,7 @@ nav #menu {
 }
 
 #product-list .product-single:nth-child(3) {
-  padding-bottom: 32.4vh;
+  padding-bottom: 0;
   margin-bottom: 0;
 }
 
@@ -2795,7 +2794,7 @@ nav #menu {
 
 #joinus-text {
   width: 50vw;
-  padding-top: 32.4vh;
+  padding-top: 10vh;
   margin-top: 10vh;
   margin-left: 20.83vw;
   margin-bottom: 19.4vh;

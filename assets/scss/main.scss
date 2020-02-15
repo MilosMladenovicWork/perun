@@ -666,7 +666,6 @@ nav{
 
 #about-text{
   transition:0.2s;
-  margin-bottom:28.24vh;
   margin-left:sizes(margin) + 3.91vw;
   width:50.52vw;
   h2{
@@ -1101,7 +1100,7 @@ nav{
     }
   }
   .product-single:nth-child(3){
-    padding-bottom:32.4vh;
+    padding-bottom:0;
     margin-bottom:0;
     @include respond-to(large){
       padding-bottom:19vh;
@@ -2090,7 +2089,7 @@ nav{
 
 #joinus-text{
   width:50vw;
-  padding-top:32.4vh;
+  padding-top:10vh;
   margin-top:10vh;
   margin-left:sizes(margin);
   margin-bottom:19.4vh;
