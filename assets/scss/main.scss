@@ -489,15 +489,21 @@ nav{
   width:31.35vw;
   position:absolute;
   right:sizes(margin) - 5.21vw;
-  transform:scale(1.335) translate(0, -10vh);
+  transform:scale(1.335);
   animation-name:hey;
+  #box{
+    transform: translate(0, -10vh);
+    @include respond-to(large){
+      transform: translate(0, 0vh);
+    }
+  }
   @include respond-to(large){
     position:static;
     margin-top:13.1vh;
     margin-bottom:0;
     align-self:center;
     width:80vw;
-    transform:scale(1.335) translateY(0vh);
+    transform:scale(1.335);
   }
   @include respond-to(small){
     margin-top:12.81vh;

@@ -1038,9 +1038,6 @@ window.addEventListener('load', function (event) {
 var firstIllustration = document.querySelector('#hero-illustration img');
 var secondIllustration = document.querySelector('#big-illustration img:first-child');
 
-var heroIllustration = document.querySelector('#hero-illustration')
-
-heroIllustration.style.animationName = 'none'
 
 var teamMembers = document.querySelector('#team-members');
 Pace.on('done', function () {

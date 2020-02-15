@@ -431,10 +431,22 @@ nav #menu {
   width: 31.35vw;
   position: absolute;
   right: 15.62vw;
-  -webkit-transform: scale(1.335) translate(0, -10vh);
-          transform: scale(1.335) translate(0, -10vh);
+  -webkit-transform: scale(1.335);
+          transform: scale(1.335);
   -webkit-animation-name: hey;
           animation-name: hey;
+}
+
+#hero-illustration #box {
+  -webkit-transform: translate(0, -10vh);
+          transform: translate(0, -10vh);
+}
+
+@media (max-width: 1200px) {
+  #hero-illustration #box {
+    -webkit-transform: translate(0, 0vh);
+            transform: translate(0, 0vh);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -446,8 +458,8 @@ nav #menu {
         -ms-grid-row-align: center;
         align-self: center;
     width: 80vw;
-    -webkit-transform: scale(1.335) translateY(0vh);
-            transform: scale(1.335) translateY(0vh);
+    -webkit-transform: scale(1.335);
+            transform: scale(1.335);
   }
 }
 
