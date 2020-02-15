@@ -361,7 +361,7 @@ nav #menu {
   display: flex;
   min-height: 79.3vh;
   width: 100%;
-  padding-top: 30vh;
+  padding-top: 25vh;
 }
 
 @media (max-width: 1200px) {
@@ -392,8 +392,8 @@ nav #menu {
   margin-left: 15.62vw;
   font-weight: 300 !important;
   width: 30vw;
-  -webkit-transform: translateY(10vh);
-          transform: translateY(10vh);
+  -webkit-transform: translateY(20vh);
+          transform: translateY(20vh);
 }
 
 #hero-text h1 {
@@ -429,18 +429,12 @@ nav #menu {
 
 #hero-illustration {
   width: 31.35vw;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   position: absolute;
   right: 15.62vw;
   -webkit-transform: scale(1.335);
           transform: scale(1.335);
-}
-
-#hero-illustration #box {
-  -webkit-transform: translate(0, -108px);
-          transform: translate(0, -108px);
 }
 
 @media (max-width: 1200px) {
