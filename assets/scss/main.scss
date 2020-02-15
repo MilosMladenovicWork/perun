@@ -2999,8 +2999,7 @@ footer{
     width:100px;
   }
   @include respond-to(small){
-    top:37%;
-    width:100px;
+    width:30px;
   }
 }
 
@@ -3012,6 +3011,10 @@ footer{
   margin:0;
   font-size:13px !important;
   font-weight:400;
+  @include respond-to(small){
+    width:90vw;
+    text-align: center;
+  }
 }
 
 @keyframes zoom{
