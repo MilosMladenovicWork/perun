@@ -934,7 +934,6 @@ var callbackTeam = function callbackTeam(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       sectionCircle.style.transform = 'translateY(-58px)';
-      swiper.slideTo(0);
 
       document.querySelectorAll('nav ul li a img').forEach(function(section){
         section.classList.remove('active')
