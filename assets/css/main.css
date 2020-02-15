@@ -433,6 +433,8 @@ nav #menu {
   right: 15.62vw;
   -webkit-transform: scale(1.335) translate(0, -10vh);
           transform: scale(1.335) translate(0, -10vh);
+  -webkit-animation: rollUp 0.2s 1;
+          animation: rollUp 0.2s 1;
 }
 
 @media (max-width: 1200px) {
@@ -453,6 +455,20 @@ nav #menu {
   #hero-illustration {
     margin-top: 12.81vh;
     margin-bottom: 15vh;
+  }
+}
+
+@-webkit-keyframes rollUp {
+  100% {
+    -webkit-transform: translate(0, -10vh);
+            transform: translate(0, -10vh);
+  }
+}
+
+@keyframes rollUp {
+  100% {
+    -webkit-transform: translate(0, -10vh);
+            transform: translate(0, -10vh);
   }
 }
 

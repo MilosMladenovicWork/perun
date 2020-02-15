@@ -490,6 +490,7 @@ nav{
   position:absolute;
   right:sizes(margin) - 5.21vw;
   transform:scale(1.335) translate(0, -10vh);
+  animation:rollUp 0.2s 1;
   @include respond-to(large){
     position:static;
     margin-top:13.1vh;
@@ -501,6 +502,12 @@ nav{
   @include respond-to(small){
     margin-top:12.81vh;
     margin-bottom:15vh;
+  }
+}
+
+@keyframes rollUp{
+  100%{
+    transform: translate(0, -10vh);
   }
 }
 
