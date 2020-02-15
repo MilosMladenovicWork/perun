@@ -2906,7 +2906,7 @@ footer{
   z-index: 2000;
   position: fixed;
   margin: auto;
-  top: 30px;
+  top: 72px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -2948,12 +2948,12 @@ footer{
 
 #logo-loading{
   position:fixed;
-  top:40%;
+  top:50%;
   left:50%;
   display:block;
-  transform:translateX(-50%);
-  width:100px;
-  svg{
+  transform:translate(-50%, -100%);
+  width:33px;
+  img{
     width:100%;
   }
   @include respond-to(large){
@@ -2963,6 +2963,16 @@ footer{
     top:37%;
     width:100px;
   }
+}
+
+#loading-text{
+  position:fixed;
+  bottom:11.76vh;
+  left:50%;
+  transform:translate(-50%, -50%);
+  margin:0;
+  font-size:13px !important;
+  font-weight:400;
 }
 
 @keyframes zoom{

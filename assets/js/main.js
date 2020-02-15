@@ -1039,6 +1039,7 @@ var teamMembers = document.querySelector('#team-members');
 Pace.on('done', function () {
   setTimeout(function () {
     document.querySelector('#logo-loading').style.display = 'none';
+    document.querySelector('#loading-text').style.display = 'none';
     document.querySelector('#no-overflow-wrapper').style.visibility = 'visible';
     document.querySelector('nav').style.visibility = 'visible';
     document.querySelector('.social-links').style.visibility = 'visible';
