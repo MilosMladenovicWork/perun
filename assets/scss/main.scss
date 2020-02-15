@@ -3149,4 +3149,20 @@ footer{
       margin-left:6.15vw;
     }
   }
+  #big-illustration{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    img:nth-child(4), img:nth-child(1), img:nth-child(2), img:nth-child(3){
+      width:50vw;
+      margin:0;
+      @include respond-to(large){
+        width:auto;
+      }
+      @include respond-to(small){
+        width:auto;
+      }
+    }
+  }
 }
