@@ -755,7 +755,8 @@ nav{
     margin-bottom:9.52vh;
   }
   @include respond-to(small){
-    width:100%;
+    width:100vw;
+    margin-left:- sizes(margin);
     margin-top:10vh;
   }
 }

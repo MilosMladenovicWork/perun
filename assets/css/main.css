@@ -832,7 +832,8 @@ nav #menu {
 
 @media (max-width: 767px) {
   #ourtechnology-text h1 {
-    width: 100%;
+    width: 100vw;
+    margin-left: -20.83vw;
     margin-top: 10vh;
   }
 }
