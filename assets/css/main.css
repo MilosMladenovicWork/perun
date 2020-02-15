@@ -390,7 +390,7 @@ nav #menu {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-left: 15.62vw;
+  margin-left: 20.83vw;
   font-weight: 300 !important;
   width: 30vw;
   -webkit-transform: translateY(20vh);
@@ -3366,6 +3366,10 @@ nav #menu {
   }
 }
 
+.contactus-links ul li:nth-child(1) {
+  padding-left: 0;
+}
+
 @media (max-width: 767px) {
   .contactus-links ul {
     -webkit-box-orient: vertical;
@@ -3933,7 +3937,7 @@ footer > p {
 
 #ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide #left {
   opacity: 0;
-  margin-right: 7.41vw;
+  margin-right: 4.17vw;
 }
 
 @media (max-width: 767px) {

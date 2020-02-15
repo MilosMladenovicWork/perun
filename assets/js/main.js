@@ -708,7 +708,7 @@ var callbackHero = function callbackHero(entries, observer) {
 };
 
 var hero = document.querySelector('#hero-main');
-var viewHeight = (window.outerHeight / 12000)
+var viewHeight = (window.outerHeight / 18000)
 var totalThres = 0.18 - viewHeight
 console.log(totalThres)
 var options = {

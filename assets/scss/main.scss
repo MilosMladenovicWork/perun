@@ -461,7 +461,7 @@ nav{
 
 #hero-text{
   align-self:center;
-  margin-left:sizes(margin) - 5.21vw;
+  margin-left:sizes(margin);
   font-weight: 300 !important;
   width:30vw;
   transform:translateY(20vh);
@@ -2475,6 +2475,9 @@ nav{
         display:none;
       }
     }
+    li:nth-child(1){
+      padding-left:0;
+    }
     @include respond-to(small){
       flex-direction: column;
       align-items: flex-start;
@@ -2846,7 +2849,7 @@ footer{
       }
       #left{
         opacity:0;
-        margin-right:7.41vw;
+        margin-right:4.17vw;
         @include respond-to(small){
           margin-right:2vw;
         }
