@@ -3468,6 +3468,12 @@ nav #menu {
   font-weight: 600;
 }
 
+@media (max-width: 767px) {
+  #contactus-form-section #contactus-form h2 {
+    margin-bottom: 54px;
+  }
+}
+
 #contactus-form-section #contactus-form form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3495,6 +3501,15 @@ nav #menu {
   font-family: 'Inter', sans-serif;
 }
 
+@media (max-width: 767px) {
+  #contactus-form-section #contactus-form form input, #contactus-form-section #contactus-form form textarea {
+    margin-bottom: 34px;
+    padding-bottom: 18px;
+    padding-top: 10px;
+    height: 25px;
+  }
+}
+
 #contactus-form-section #contactus-form form textarea {
   resize: none;
   height: 20vh;
@@ -3502,8 +3517,8 @@ nav #menu {
 
 @media (max-width: 767px) {
   #contactus-form-section #contactus-form form textarea {
-    height: 50vh;
-    margin-bottom: 7.87vh;
+    height: 300px;
+    margin-bottom: 70px;
   }
 }
 

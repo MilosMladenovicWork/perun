@@ -2528,6 +2528,9 @@ nav{
     h2{
       margin-bottom: 6vh;
       font-weight: 600;
+      @include respond-to(small){
+        margin-bottom:54px;
+      }
     }
 
     form{
@@ -2546,13 +2549,19 @@ nav{
         color:colors(text-color);
         font-weight:300;
         font-family:'Inter', sans-serif;
+        @include respond-to(small){
+          margin-bottom:34px;
+          padding-bottom:18px;
+          padding-top:10px;
+          height:25px;
+        }
       }
       textarea{
         resize:none;
         height:20vh;
         @include respond-to(small){
-          height:50vh;
-          margin-bottom:7.87vh;
+          height:300px;
+          margin-bottom:70px;
         }
       }
     }
