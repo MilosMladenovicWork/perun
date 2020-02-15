@@ -711,7 +711,7 @@ var hero = document.querySelector('#hero-main');
 var options = {
   root: null,
   rootMargin: '0px',
-  thresholds: [0.25, 0.75]
+  threshold: [0.2]
 };
 window.addEventListener('load', function (event) {
   var observerAbout;
@@ -753,6 +753,7 @@ window.addEventListener('load', function (event) {
 var callbackAboutAll = function callbackAboutAll(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+      console.log(entry)
 
       document.querySelectorAll('nav ul li a img').forEach(function(section){
         section.classList.remove('active')
