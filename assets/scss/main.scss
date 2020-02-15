@@ -455,7 +455,8 @@ nav{
     align-items:flex-start;
   }
   @include respond-to(small){
-    padding-top:235px;
+    padding-top:200px;
+    padding-bottom:0;
   }
 }
 
@@ -503,11 +504,11 @@ nav{
     margin-bottom:0;
     align-self:center;
     width:80vw;
-    transform:scale(1.335);
+    transform:scale(1.25);
   }
   @include respond-to(small){
     margin-top:12.81vh;
-    margin-bottom:15vh;
+    margin-bottom:0vh;
   }
 }
 
@@ -648,7 +649,7 @@ nav{
       }
     }
     @include respond-to(small){
-      
+      top:15vh;
     transform:translate(0, -16.43vh);
       width:50vw;
     }
@@ -688,6 +689,7 @@ nav{
   @include respond-to(small){
     width:auto;
     margin-bottom:0;
+    padding-top:15vh;
   }
 }
 
@@ -1475,7 +1477,7 @@ nav{
         padding-top:50px;
         width:60vw;
         margin-top:sizes(margin);
-        margin-bottom:22.2vh;
+        margin-bottom:5vh;
         img{
           margin-right:13vw;
         }
@@ -1553,8 +1555,8 @@ nav{
   width:100vw;
   img:nth-child(4), img:nth-child(1), img:nth-child(2), img:nth-child(3){
     width:auto;
-    margin-left:sizes(margin);
-    margin-right:sizes(margin);
+    margin-left:sizes(margin) - (sizes(margin) / 2);
+    margin-right:sizes(margin) - (sizes(margin) / 2);
     margin-bottom:4.63vh;
     @include respond-to(large){
       width:auto;
@@ -1945,6 +1947,7 @@ nav{
   transition:1s;
   z-index:10;
   left:0;
+  max-width:90%;
   transform:translate(0, 0);
 }
 

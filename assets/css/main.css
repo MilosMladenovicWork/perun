@@ -382,7 +382,8 @@ nav #menu {
 
 @media (max-width: 767px) {
   #hero-main {
-    padding-top: 235px;
+    padding-top: 200px;
+    padding-bottom: 0;
   }
 }
 
@@ -454,15 +455,15 @@ nav #menu {
         -ms-grid-row-align: center;
         align-self: center;
     width: 80vw;
-    -webkit-transform: scale(1.335);
-            transform: scale(1.335);
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
   }
 }
 
 @media (max-width: 767px) {
   #hero-illustration {
     margin-top: 12.81vh;
-    margin-bottom: 15vh;
+    margin-bottom: 0vh;
   }
 }
 
@@ -677,6 +678,7 @@ nav #menu {
 
 @media (max-width: 767px) {
   #about-main #about-illustration {
+    top: 15vh;
     -webkit-transform: translate(0, -16.43vh);
             transform: translate(0, -16.43vh);
     width: 50vw;
@@ -735,6 +737,7 @@ nav #menu {
   #about-text {
     width: auto;
     margin-bottom: 0;
+    padding-top: 15vh;
   }
 }
 
@@ -1910,7 +1913,7 @@ nav #menu {
     padding-top: 50px;
     width: 60vw;
     margin-top: 20.83vw;
-    margin-bottom: 22.2vh;
+    margin-bottom: 5vh;
   }
   #whyuse-main #whyuse-slider #whyuse-scroll-right img {
     margin-right: 13vw;
@@ -2030,8 +2033,8 @@ nav #menu {
 
 #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
   width: auto;
-  margin-left: 20.83vw;
-  margin-right: 20.83vw;
+  margin-left: 10.415vw;
+  margin-right: 10.415vw;
   margin-bottom: 4.63vh;
 }
 
@@ -2570,6 +2573,7 @@ nav #menu {
   transition: 1s;
   z-index: 10;
   left: 0;
+  max-width: 90%;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
