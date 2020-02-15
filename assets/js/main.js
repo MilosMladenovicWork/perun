@@ -711,7 +711,7 @@ var hero = document.querySelector('#hero-main');
 var options = {
   root: null,
   rootMargin: '0px',
-  thresholds: [0.25, 0.35, 0.45, 0.55, 0.65, 0.75]
+  thresholds: [0.25, 0.75]
 };
 window.addEventListener('load', function (event) {
   var observerAbout;
