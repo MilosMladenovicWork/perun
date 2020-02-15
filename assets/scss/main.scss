@@ -492,7 +492,7 @@ nav{
   right:sizes(margin) - 5.21vw;
   transform:scale(1.335);
   #box{
-    transform: translate(0, -10vh);
+    transform: translate(0, -108px);
     @include respond-to(large){
       transform: translate(0, 0vh);
     }

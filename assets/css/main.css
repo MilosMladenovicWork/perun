@@ -439,8 +439,8 @@ nav #menu {
 }
 
 #hero-illustration #box {
-  -webkit-transform: translate(0, -10vh);
-          transform: translate(0, -10vh);
+  -webkit-transform: translate(0, -108px);
+          transform: translate(0, -108px);
 }
 
 @media (max-width: 1200px) {
