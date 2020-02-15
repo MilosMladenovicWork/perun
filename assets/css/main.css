@@ -2289,6 +2289,16 @@ nav #menu {
           justify-content: space-evenly;
 }
 
+#team-members .swiper-slide {
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#team-members .swiper-slide-active, #team-members .swiper-slide-prev, #team-members .swiper-slide-next {
+  opacity: 1;
+}
+
 @media (max-width: 1200px) {
   #team-members {
     width: 32.5vw;

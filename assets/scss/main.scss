@@ -1732,6 +1732,13 @@ nav{
   overflow-x:visible;
   align-items:center;
   justify-content: space-evenly;
+  .swiper-slide{
+    opacity:0;
+    transition:0.2s;
+  }
+  .swiper-slide-active, .swiper-slide-prev, .swiper-slide-next{
+    opacity:1;
+  }
   @include respond-to(large){
     width:32.5vw;
   }
