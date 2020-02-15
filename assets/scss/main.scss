@@ -462,6 +462,7 @@ nav{
   margin-left:sizes(margin) - 5.21vw;
   font-weight: 300 !important;
   width:30vw;
+  transform:translateY(10vh);
   h1{
     transition:0.2s;
     margin:0;
@@ -486,7 +487,7 @@ nav{
   width:31.35vw;
   position:absolute;
   right:sizes(margin) - 5.21vw;
-  transform:scale(1.5);
+  transform:scale(1.335) translateY(-10vh);
   @include respond-to(large){
     position:static;
     margin-top:13.1vh;
@@ -526,16 +527,17 @@ nav{
   visibility:hidden;
   z-index:10;
   position:fixed;
-  bottom:6.48vh;
+  bottom:8.15vh;
   left:5.47vw;
   display:flex;
+  flex-direction:column;
   align-items: center;
   justify-content: space-between;
 
   a{
     display: flex;
     align-items: center;
-    margin-right:42px;
+    margin-top:40px;
     img{
       height:18.37px;
     }

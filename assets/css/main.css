@@ -388,6 +388,8 @@ nav #menu {
   margin-left: 15.62vw;
   font-weight: 300 !important;
   width: 30vw;
+  -webkit-transform: translateY(10vh);
+          transform: translateY(10vh);
 }
 
 #hero-text h1 {
@@ -423,8 +425,8 @@ nav #menu {
   width: 31.35vw;
   position: absolute;
   right: 15.62vw;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.335) translateY(-10vh);
+          transform: scale(1.335) translateY(-10vh);
 }
 
 @media (max-width: 1200px) {
@@ -488,11 +490,15 @@ nav #menu {
   visibility: hidden;
   z-index: 10;
   position: fixed;
-  bottom: 6.48vh;
+  bottom: 8.15vh;
   left: 5.47vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -508,7 +514,7 @@ nav #menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 42px;
+  margin-top: 40px;
 }
 
 .social-links a img {
