@@ -640,6 +640,7 @@ nav #menu {
 
 @media (max-width: 1200px) {
   #about-all {
+    margin-top: 0vh;
     padding-top: 16.3vh;
   }
 }
@@ -894,7 +895,7 @@ nav #menu {
 @media (max-width: 767px) {
   #ourtechnology-illustration {
     position: static;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
   }
 }
 
@@ -920,6 +921,14 @@ nav #menu {
   bottom: 19.26vh;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+}
+
+@media (max-width: 767px) {
+  #ourtechnology-subsections .ourtechnology-subsections-item img {
+    bottom: 10vh;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -3823,7 +3832,7 @@ footer > p {
 
 @media (max-width: 767px) {
   #ourproduct-main #ourproduct-illustration {
-    display: none;
+    width: 100vw;
   }
 }
 

@@ -622,6 +622,7 @@ nav{
 #about-all{
   margin-top:30vh;
   @include respond-to(large){
+    margin-top:0vh;
     padding-top:16.3vh;
   }
   @include respond-to(small){
@@ -796,7 +797,7 @@ nav{
   }
   @include respond-to(small){
     position:static;
-    margin-bottom:10vh;
+    margin-bottom:20vh;
   }
 }
 
@@ -816,6 +817,10 @@ nav{
       left:0;
       bottom:19.26vh;
       transform:translateX(-100%);
+      @include respond-to(small){
+        bottom:10vh;
+        transform:translateX(-50%);
+      }
     }
     @include respond-to(large){
       width:50vw;
@@ -2767,7 +2772,7 @@ footer{
       stroke-dasharray: 200px;
     }
     @include respond-to(small){
-      display:none;
+      width:100vw;
     }
   }
   #github-link{
