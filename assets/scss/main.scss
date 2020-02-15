@@ -2755,22 +2755,22 @@ footer{
         margin-right:25px !important;
   }
   @include respond-to(small){
-    bottom:55px !important;
+    bottom:100px !important;
   }
 }
 
 #ourproduct-main{
   margin-left:sizes(margin);
   margin-right:sizes(margin);
-  #ourproduct-slider{
-    height:750px;
-    @include respond-to(large){
-      height:1200px;
-    }
-    @include respond-to(small){
-      height:1200px;
-    }
-  }
+  // #ourproduct-slider{
+  //   height:750px;
+  //   @include respond-to(large){
+  //     height:1200px;
+  //   }
+  //   @include respond-to(small){
+  //     height:1200px;
+  //   }
+  // }
   #ourproduct-illustration{
     position:absolute;
     top:50%;
@@ -2857,7 +2857,9 @@ footer{
       @include respond-to(small){
         left:unset;
         right:0;
-        bottom:-10px;
+        width:100%;
+        display:flex;
+        justify-content: space-between;
       }
     }
     #ourproduct-button-slide svg:hover{
@@ -2874,6 +2876,9 @@ footer{
       ul{
         font-size:20px;
         margin-bottom:5vh;
+        @include respond-to(small){
+          margin-bottom:20vh;
+        }
       }
       .slide-number{
         position:absolute;
