@@ -2705,7 +2705,7 @@ footer{
 
 .swiper-pagination-ourproduct{
   position:absolute;
-  bottom:64px !important;
+  bottom:45px !important;
   left:0;
   .swiper-pagination-bullet{
         background-color:colors(text-color);
@@ -2795,19 +2795,25 @@ footer{
     #ourproduct-button-slide{
       position:absolute;
       bottom:30px;
-      left:242px;
-      transition:0.5s;
+      left:186px;
       z-index:10;
-      cursor:pointer;
+      svg{
+        transition:0.5s;
+        cursor:pointer;
+      }
+      #left{
+        opacity:0;
+        margin-right:7.41vw;
+      }
       @include respond-to(small){
         left:unset;
         right:0;
       }
     }
-    #ourproduct-button-slide:hover svg{
+    #ourproduct-button-slide svg:hover{
       animation:zoom 0.5s;
     }
-    #ourproduct-button-slide:active svg{
+    #ourproduct-button-slide svg:active{
       animation:zoomOut 0.5s;
     }
     .swiper-slide{

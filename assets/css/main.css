@@ -3722,7 +3722,7 @@ footer > p {
 
 .swiper-pagination-ourproduct {
   position: absolute;
-  bottom: 64px !important;
+  bottom: 45px !important;
   left: 0;
 }
 
@@ -3851,11 +3851,19 @@ footer > p {
 #ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide {
   position: absolute;
   bottom: 30px;
-  left: 242px;
+  left: 186px;
+  z-index: 10;
+}
+
+#ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide svg {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 10;
   cursor: pointer;
+}
+
+#ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide #left {
+  opacity: 0;
+  margin-right: 7.41vw;
 }
 
 @media (max-width: 767px) {
@@ -3865,12 +3873,12 @@ footer > p {
   }
 }
 
-#ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide:hover svg {
+#ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide svg:hover {
   -webkit-animation: zoom 0.5s;
           animation: zoom 0.5s;
 }
 
-#ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide:active svg {
+#ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide svg:active {
   -webkit-animation: zoomOut 0.5s;
           animation: zoomOut 0.5s;
 }

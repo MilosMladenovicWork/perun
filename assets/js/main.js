@@ -41,7 +41,8 @@ var swiper = new Swiper('.swiper-container', {
     }
   }
 });
-var ourProductRightArrow = document.querySelector('#ourproduct-button-slide');
+var ourProductRightArrow = document.querySelector('#ourproduct-button-slide #right');
+var ourProductLeftArrow = document.querySelector('#ourproduct-button-slide #left');
 var swiperOurProduct = new Swiper('.swiper-container-ourproduct', {
   grabCursor: true,
   slidesPerView: 1,
@@ -54,19 +55,22 @@ var swiperOurProduct = new Swiper('.swiper-container-ourproduct', {
   centeredSlides: true,
   on: {
     reachBeginning: function reachBeginning() {
-      ourProductRightArrow.style.transform = 'rotate(0deg)';
+      ourProductLeftArrow.style.opacity = '0';
     },
     reachEnd: function reachEnd() {
-      ourProductRightArrow.style.transform = 'rotate(180deg)';
+      ourProductRightArrow.style.opacity = '0';
+    },
+    fromEdge: function fromEdge() {
+      ourProductLeftArrow.style.opacity = '1';
+      ourProductRightArrow.style.opacity = '1';
     }
   }
 });
 ourProductRightArrow.addEventListener('click', function () {
-  if (ourProductRightArrow.style.transform === 'rotate(180deg)') {
-    swiperOurProduct.slidePrev();
-  } else {
     swiperOurProduct.slideNext();
-  }
+});
+ourProductLeftArrow.addEventListener('click', function () {
+    swiperOurProduct.slidePrev();
 });
 scrollRight.addEventListener('click', function () {
   if (scrollRightArrow.style.transform === 'rotate(180deg)') {
