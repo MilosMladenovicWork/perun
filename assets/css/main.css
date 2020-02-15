@@ -431,8 +431,8 @@ nav #menu {
   width: 31.35vw;
   position: absolute;
   right: 15.62vw;
-  transform: scale(1.335) translateY(-10vh);
-  -webkit-transform: scale(1.335) translateY(-10vh);
+  -webkit-transform: scale(1.335) translate(0, -10vh);
+          transform: scale(1.335) translate(0, -10vh);
 }
 
 @media (max-width: 1200px) {

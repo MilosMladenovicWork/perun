@@ -489,8 +489,7 @@ nav{
   width:31.35vw;
   position:absolute;
   right:sizes(margin) - 5.21vw;
-  transform:scale(1.335) translateY(-10vh);
-  -webkit-transform: scale(1.335) translateY(-10vh);
+  transform:scale(1.335) translate(0, -10vh);
   @include respond-to(large){
     position:static;
     margin-top:13.1vh;
