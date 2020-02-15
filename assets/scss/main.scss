@@ -1529,11 +1529,11 @@ nav{
 }
 
 #big-illustration{
-  width:auto;
-  margin-left:sizes(margin);
-  margin-right:sizes(margin);
+  width:100vw;
   img:nth-child(4), img:nth-child(1), img:nth-child(2), img:nth-child(3){
-    width:100% ;
+    width:auto;
+    margin-left:sizes(margin);
+    margin-right:sizes(margin);
     margin-bottom:4.63vh;
     @include respond-to(large){
       width:100%;

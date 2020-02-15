@@ -1987,13 +1987,13 @@ nav #menu {
 }
 
 #big-illustration {
-  width: auto;
-  margin-left: 20.83vw;
-  margin-right: 20.83vw;
+  width: 100vw;
 }
 
 #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
-  width: 100%;
+  width: auto;
+  margin-left: 20.83vw;
+  margin-right: 20.83vw;
   margin-bottom: 4.63vh;
 }
 
