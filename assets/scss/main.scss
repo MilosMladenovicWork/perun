@@ -445,7 +445,6 @@ nav{
 
 #hero-main{
   display:flex;
-  align-items: center;
   min-height:79.3vh;
   width:100%;
   padding-top:30vh;
@@ -460,6 +459,7 @@ nav{
 }
 
 #hero-text{
+  align-self:center;
   margin-left:sizes(margin) - 5.21vw;
   font-weight: 300 !important;
   width:30vw;
@@ -487,10 +487,10 @@ nav{
 
 #hero-illustration{
   width:31.35vw;
+  align-self:center;
   position:absolute;
   right:sizes(margin) - 5.21vw;
   transform:scale(1.335);
-  align-self:center;
   #box{
     transform: translate(0, -10vh);
     @include respond-to(large){
