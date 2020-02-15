@@ -552,7 +552,7 @@ nav #menu {
   margin-left: 1.6vw;
   width: 2.6vw;
   height: 0.55vh;
-  border-top: 1px solid #29023F;
+  border-top: 2px solid #29023F;
 }
 
 .scroll-sign {
@@ -750,7 +750,7 @@ nav #menu {
   margin-left: 30px;
   width: 50px;
   height: 6px;
-  border-top: 1px solid #29023F;
+  border-top: 2px solid #29023F;
 }
 
 #ourtechnology-main {
@@ -2331,7 +2331,7 @@ nav #menu {
   max-height: 0;
   -webkit-transition: 1s;
   transition: 1s;
-  border: 3px solid #29023F;
+  border: 2px solid #29023F;
   z-index: 1;
 }
 
@@ -2858,7 +2858,7 @@ nav #menu {
 
 @media (max-width: 1200px) {
   #joinus-positions #open-positions-table td:nth-child(1) {
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid gray;
     padding-bottom: 2.5vh;
   }
 }
@@ -2881,7 +2881,7 @@ nav #menu {
 }
 
 #joinus-positions #open-positions-table tr {
-  border-bottom: 1px solid #b3b3b3;
+  border-bottom: 2px solid #b3b3b3;
 }
 
 @media (max-width: 1200px) {
@@ -3248,7 +3248,7 @@ nav #menu {
   margin-left: 1.6vw;
   width: 2.6vw;
   height: 2px;
-  border-top: 3px solid #29023F;
+  border-top: 2px solid #29023F;
 }
 
 @media (max-width: 767px) {
