@@ -1741,6 +1741,13 @@ nav{
   }
   @include respond-to(large){
     width:32.5vw;
+    .swiper-slide{
+      opacity:0;
+      transition:0.2s;
+    }
+    .swiper-slide-active{
+      opacity:1;
+    }
   }
   @include respond-to(small){
     width:auto;

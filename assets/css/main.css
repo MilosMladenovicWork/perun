@@ -2303,6 +2303,14 @@ nav #menu {
   #team-members {
     width: 32.5vw;
   }
+  #team-members .swiper-slide {
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #team-members .swiper-slide-active {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 767px) {
