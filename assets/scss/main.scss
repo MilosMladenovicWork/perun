@@ -1554,8 +1554,8 @@ nav{
   width:100vw;
   img:nth-child(4), img:nth-child(1), img:nth-child(2), img:nth-child(3){
     width:auto;
-    margin-left:sizes(margin) - (sizes(margin) / 2);
-    margin-right:sizes(margin) - (sizes(margin) / 2);
+    margin-left:sizes(margin) + (sizes(margin) / 2);
+    margin-right:sizes(margin) + (sizes(margin) / 2);
     margin-bottom:4.63vh;
     @include respond-to(large){
       width:auto;
