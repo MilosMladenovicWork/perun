@@ -652,7 +652,6 @@ if (window.outerWidth <= '767') {
       _closeDescriptionButton3[index].style.left = 'unset';
       _closeDescriptionButton3[index].style.top = '5.01vh';
       _closeDescriptionButton3[index].style.right = '3.65vw';
-      console.log('hey');
     }, 'false');
 
     document.body.addEventListener('click', function () {
@@ -711,8 +710,6 @@ var hero = document.querySelector('#hero-main');
 
 var rootMargDimens = - window.outerHeight / 2.6 + 'px'
 
-console.log(rootMargDimens)
-
 var options = {
   root: null,
   rootMargin: rootMargDimens,
@@ -758,14 +755,12 @@ window.addEventListener('load', function (event) {
 var callbackAboutAll = function callbackAboutAll(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
-      console.log(entry)
 
       document.querySelectorAll('nav ul li a img').forEach(function(section){
         section.classList.remove('active')
       });
       document.querySelectorAll('nav ul li a img')[0].classList.add('active');
       
-      console.log('about')
     } else if(!entry.isIntersecting){
       document.querySelectorAll('nav ul li a img')[0].classList.remove('active');
     }
@@ -889,7 +884,6 @@ window.addEventListener('load', function (event) {
 var callbackTechnology = function callbackTechnology(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
-      console.log(entry)
       sectionCircle.style.transform = 'translateY(-100px)';
     }
   });
