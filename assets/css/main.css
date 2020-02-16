@@ -3904,8 +3904,14 @@ footer > p {
 #ourproduct-main #ourproduct-heading {
   width: 100%;
   text-align: center;
-  margin-bottom: 8.15vh;
+  margin-bottom: 23.15vh;
   padding-top: 15.74vh;
+}
+
+@media (max-width: 767px) {
+  #ourproduct-main #ourproduct-heading {
+    margin-bottom: 8.15vh;
+  }
 }
 
 #ourproduct-main .swiper-container-ourproduct {

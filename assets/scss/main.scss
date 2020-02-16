@@ -2836,8 +2836,11 @@ footer{
   #ourproduct-heading{
     width:100%;
     text-align:center;
-    margin-bottom:8.15vh;
+    margin-bottom:23.15vh;
     padding-top:15.74vh;
+    @include respond-to(small){
+      margin-bottom:8.15vh;
+    }
   }
   .swiper-container-ourproduct{
     width:58.33vw;
