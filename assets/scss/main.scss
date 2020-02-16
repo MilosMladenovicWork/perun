@@ -1564,6 +1564,8 @@ nav{
     }
     @include respond-to(small){
       width:auto;
+      margin-left:sizes(margin) - (sizes(margin) / 2);
+      margin-right:sizes(margin) - (sizes(margin) / 2);
     }
   }
   img:nth-child(1), img:nth-child(2), img:nth-child(3){

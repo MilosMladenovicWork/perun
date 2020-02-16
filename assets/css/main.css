@@ -2048,6 +2048,8 @@ nav #menu {
 @media (max-width: 767px) {
   #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
     width: auto;
+    margin-left: 10.415vw;
+    margin-right: 10.415vw;
   }
 }
 
