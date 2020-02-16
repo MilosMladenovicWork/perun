@@ -488,11 +488,10 @@ nav{
 }
 
 #hero-illustration{
-  width:31.35vw;
+  width:41.85vw;
   align-self:flex-start;
   position:absolute;
   right:sizes(margin) - 5.21vw;
-  transform:scale(1.335);
   #box{
     @include respond-to(large){
       transform: translate(0, 0vh);
@@ -3209,10 +3208,3 @@ footer{
     }
   }
 }
-
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) {
-    #hero-illustration{
-      width:10000px;
-    }
-}}
