@@ -3839,6 +3839,7 @@ footer > p {
 @media (max-width: 767px) {
   #ourproduct-main #ourproduct-illustration {
     width: 100vw;
+    display: none;
   }
 }
 

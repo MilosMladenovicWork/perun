@@ -2788,6 +2788,7 @@ footer{
     }
     @include respond-to(small){
       width:100vw;
+      display:none;
     }
   }
   #github-link{
