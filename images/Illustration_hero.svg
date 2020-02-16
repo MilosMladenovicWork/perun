@@ -393,6 +393,9 @@
 	.st387{clip-path:url(#SVGID_667_);enable-background:new    ;}
 	.st388{fill:#CCCEE8;}
 	.st389{clip-path:url(#SVGID_669_);enable-background:new    ;}
+	g {
+    shape-rendering: geometricPrecision;
+	}
 </style>
 
 <g>
