@@ -2773,6 +2773,9 @@ footer{
   // }
   #ourproduct-illustration{
     position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     top:50%;
     left:50%;
     transform:translate(-50%, -50%) rotate(0deg);
@@ -2841,7 +2844,7 @@ footer{
     #ourproduct-button-slide{
       position:absolute;
       bottom:30px;
-      left:186px;
+      left:156px;
       z-index:10;
       svg{
         transition:0.5s;
