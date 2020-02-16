@@ -434,7 +434,7 @@ nav #menu {
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: absolute;
-  right: 15.62vw;
+  right: 9.37vw;
 }
 
 @media (max-width: 1200px) {
