@@ -1883,10 +1883,8 @@ nav{
 }
 
 .team-member:nth-child(even){
-  padding-top:18.49vh;
   margin-bottom:10.9vh;
   .team-member-more-description{
-    margin-top:18.52vh;
     @include respond-to(large){
       margin-top:0vh;
     }

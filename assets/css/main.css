@@ -2469,12 +2469,7 @@ nav #menu {
 }
 
 .team-member:nth-child(even) {
-  padding-top: 18.49vh;
   margin-bottom: 10.9vh;
-}
-
-.team-member:nth-child(even) .team-member-more-description {
-  margin-top: 18.52vh;
 }
 
 @media (max-width: 1200px) {
