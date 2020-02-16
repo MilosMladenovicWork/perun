@@ -2474,7 +2474,7 @@ nav #menu {
 }
 
 .team-member:nth-child(even) {
-  margin-bottom: 3.9vh;
+  margin-bottom: 5.9vh;
 }
 
 @media (max-width: 1200px) {
