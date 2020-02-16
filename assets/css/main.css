@@ -430,13 +430,11 @@ nav #menu {
 }
 
 #hero-illustration {
-  width: 31.35vw;
+  width: 41.85vw;
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: absolute;
   right: 15.62vw;
-  -webkit-transform: scale(1.335);
-          transform: scale(1.335);
 }
 
 @media (max-width: 1200px) {
