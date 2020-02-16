@@ -2266,7 +2266,7 @@ nav #menu {
 
 #team-text {
   margin-top: 20.4vh;
-  margin-bottom: 13.9vh;
+  margin-bottom: 9.26vh;
   width: 50vw;
 }
 
@@ -2469,7 +2469,7 @@ nav #menu {
 }
 
 .team-member:nth-child(even) {
-  margin-bottom: 10.9vh;
+  margin-bottom: 3.9vh;
 }
 
 @media (max-width: 1200px) {
