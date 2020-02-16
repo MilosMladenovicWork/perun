@@ -2760,6 +2760,13 @@ footer{
   }
   @include respond-to(small){
     bottom:100px !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    .swiper-pagination-bullet{
+      margin-right:12.5px !important;
+      margin-left:12.5px !important;
+    }
   }
 }
 
