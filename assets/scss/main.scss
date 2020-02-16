@@ -508,6 +508,8 @@ nav{
   @include respond-to(small){
     margin-top:12.81vh;
     margin-bottom:0vh;
+    width:90vw;
+    transform:scale(1);
   }
 }
 

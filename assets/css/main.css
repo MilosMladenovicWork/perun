@@ -462,6 +462,9 @@ nav #menu {
   #hero-illustration {
     margin-top: 12.81vh;
     margin-bottom: 0vh;
+    width: 90vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
