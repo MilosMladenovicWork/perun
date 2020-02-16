@@ -713,8 +713,8 @@ var totalThres = 0.18 - viewHeight
 console.log(totalThres)
 var options = {
   root: null,
-  rootMargin: '0px',
-  threshold: [totalThres]
+  rootMargin: '-200px',
+  threshold: [0]
 };
 window.addEventListener('load', function (event) {
   var observerAbout;
