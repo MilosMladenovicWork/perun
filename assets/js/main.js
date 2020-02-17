@@ -1053,62 +1053,64 @@ Pace.options = {
 var teamMembers = document.querySelector('#team-members');
 
 
-document.addEventListener('click', function(e) {
-  
+document.addEventListener('click', function (e) {
   if (e.target.tagName !== 'A') return;
-  
-  if ((e.target.href && e.target.href.indexOf('#') != -1) && ((e.target.pathname == location.pathname) || ('/' + e.target.pathname == location.pathname)) && (e.target.search == location.search)) {
-			scrollAnchors(e, e.target);
+
+  if (e.target.href && e.target.href.indexOf('#') != -1 && (e.target.pathname == location.pathname || '/' + e.target.pathname == location.pathname) && e.target.search == location.search) {
+    scrollAnchors(e, e.target);
+  }
+});
+window.addEventListener("hashchange", function (e) {
+  e.preventDefault();
+
+  function distanceToTop(el) {
+    return Math.floor(el.getBoundingClientRect().top);
   }
 
+  var element = document.querySelector(window.location.hash);
+  var originalTop = distanceToTop(element);
+  window.scrollBy({
+    top: originalTop,
+    left: 0,
+    behavior: 'smooth'
+  });
+  document.querySelectorAll('nav ul li a img').forEach(function (section) {
+    section.classList.remove('active');
+  });
 });
 
-window.addEventListener("hashchange", function(e) {
-  e.preventDefault()
+function scrollAnchors(e) {
+  var respond = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
   function distanceToTop(el) {
-    return Math.floor(el.getBoundingClientRect().top); 
+    return Math.floor(el.getBoundingClientRect().top);
   }
-  var element = document.querySelector(window.location.hash)
-  
-  var originalTop = distanceToTop(element);
-  
-  window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
 
-  document.querySelectorAll('nav ul li a img').forEach(function(section){
-    section.classList.remove('active')
+  e.preventDefault();
+  var targetID = respond ? respond.getAttribute('href') : this.getAttribute('href');
+  var targetAnchor = document.querySelector(targetID);
+  if (!targetAnchor) return;
+  console.log('hey')
+  var originalTop = distanceToTop(targetAnchor);
+  window.scrollBy({
+    top: originalTop,
+    left: 0,
+    behavior: 'smooth'
   });
-})
+  var checkIfDone = setInterval(function () {
+    var atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
 
-			
-			function scrollAnchors(e, respond = null) {
-        
-        function distanceToTop(el) { 
-          return Math.floor(el.getBoundingClientRect().top); 
-        }
-        
-        e.preventDefault();
-				var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-			var targetAnchor = document.querySelector(targetID);
-				if (!targetAnchor) return;
-				var originalTop = distanceToTop(targetAnchor);
-				window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-				var checkIfDone = setInterval(function() {
-					var atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-					if (distanceToTop(targetAnchor) === 0 || atBottom) {
-            
-            if ('history' in window) {
-              
-						    window.history.pushState('', '', targetID);
-              
-              } else {
-                window.location = targetID;
-                
-              }
-           
-						clearInterval(checkIfDone);
-					}
-				}, 100);
-			}
+    if (distanceToTop(targetAnchor) === 0 || atBottom) {
+      if ('history' in window) {
+        window.history.pushState('', '', targetID);
+      } else {
+        window.location = targetID;
+      }
+
+      clearInterval(checkIfDone);
+    }
+  }, 100);
+}
 
 Pace.on('done', function () {
   setTimeout(function () {

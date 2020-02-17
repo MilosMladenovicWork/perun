@@ -11,7 +11,8 @@
   "dependencies": {
     "custom-event-polyfill": "^1.0.7",
     "intersection-observer": "^0.7.0",
-    "sal.js": "^0.7.0"
+    "sal.js": "^0.7.0",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "optimize-js": "^1.0.3"
