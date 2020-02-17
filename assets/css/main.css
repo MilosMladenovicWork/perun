@@ -195,7 +195,7 @@ nav #menu {
 
 @media (max-width: 1200px) {
   nav {
-    padding: 6.44vh 7.8vw 0;
+    padding: 3.89vh 7.8vw;
   }
 }
 
@@ -453,8 +453,6 @@ nav #menu {
         -ms-grid-row-align: center;
         align-self: center;
     width: 80vw;
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
   }
 }
 
@@ -2043,6 +2041,8 @@ nav #menu {
 @media (max-width: 1200px) {
   #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
     width: auto;
+    margin-left: 10.415vw;
+    margin-right: 10.415vw;
   }
 }
 
@@ -2476,7 +2476,7 @@ nav #menu {
 }
 
 .team-member:nth-child(even) {
-  margin-bottom: 8.9vh;
+  margin-bottom: 7.9vh;
 }
 
 @media (max-width: 1200px) {
@@ -4008,6 +4008,12 @@ footer > p {
   margin-bottom: 5vh;
 }
 
+@media (max-width: 1200px) {
+  #ourproduct-main .swiper-container-ourproduct .swiper-slide ul {
+    margin-bottom: 10vh;
+  }
+}
+
 @media (max-width: 767px) {
   #ourproduct-main .swiper-container-ourproduct .swiper-slide ul {
     margin-bottom: 20vh;
@@ -4156,7 +4162,7 @@ footer > p {
 
 @media (max-width: 1200px) {
   #logo-loading {
-    width: 100px;
+    width: 35px;
   }
 }
 

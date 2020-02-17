@@ -327,7 +327,7 @@ nav{
     }
   }
   @include respond-to(large){
-    padding:6.44vh 7.8vw 0;
+    padding:3.89vh 7.8vw;
   }
   @include respond-to(small){
     padding: 30px 12.1vw;
@@ -503,7 +503,6 @@ nav{
     margin-bottom:0;
     align-self:center;
     width:80vw;
-    transform:scale(1.25);
   }
   @include respond-to(small){
     margin-top:12.81vh;
@@ -1562,6 +1561,8 @@ nav{
     margin-bottom:4.63vh;
     @include respond-to(large){
       width:auto;
+      margin-left:sizes(margin) - (sizes(margin) / 2);
+      margin-right:sizes(margin) - (sizes(margin) / 2);
     }
     @include respond-to(small){
       width:auto;
@@ -2901,6 +2902,9 @@ footer{
       ul{
         font-size:20px;
         margin-bottom:5vh;
+        @include respond-to(large){
+          margin-bottom:10vh;
+        }
         @include respond-to(small){
           margin-bottom:20vh;
         }
@@ -3043,7 +3047,7 @@ footer{
     width:100%;
   }
   @include respond-to(large){
-    width:100px;
+    width:35px;
   }
   @include respond-to(small){
     width:30px;
