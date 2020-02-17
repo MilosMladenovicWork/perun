@@ -2469,7 +2469,7 @@ nav #menu {
 @media (max-width: 767px) {
   .team-member-more-description {
     width: 100%;
-    padding-top: 45vh;
+    padding-top: 55vh;
     margin-top: 0;
     padding-bottom: 7vh;
   }
