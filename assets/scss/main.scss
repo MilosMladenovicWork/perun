@@ -760,6 +760,7 @@ nav{
     width:100vw;
     margin-left:- sizes(margin);
     margin-top:10vh;
+    word-spacing:50vw;
   }
 }
 
@@ -1738,7 +1739,8 @@ nav{
   }
 }
 
-#team-section{
+#team-section{word-spacing:50vw;
+  text-align:center;
   width:67.55vw;
   @include respond-to(large){
     margin-left:0;
@@ -2222,6 +2224,10 @@ nav{
     width:57.8vw;
     @include respond-to(large){
       width:70vw;
+    }
+    @include respond-to(small){
+      word-spacing:50vw;
+      text-align:center;
     }
   }
   @include respond-to(large){

@@ -835,6 +835,7 @@ nav #menu {
     width: 100vw;
     margin-left: -20.83vw;
     margin-top: 10vh;
+    word-spacing: 50vw;
   }
 }
 
@@ -2295,6 +2296,8 @@ nav #menu {
 }
 
 #team-section {
+  word-spacing: 50vw;
+  text-align: center;
   width: 67.55vw;
 }
 
@@ -2971,6 +2974,13 @@ nav #menu {
 @media (max-width: 1200px) {
   #partners-text .partners-h1 {
     width: 70vw;
+  }
+}
+
+@media (max-width: 767px) {
+  #partners-text .partners-h1 {
+    word-spacing: 50vw;
+    text-align: center;
   }
 }
 
