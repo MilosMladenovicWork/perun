@@ -1090,7 +1090,6 @@ function scrollAnchors(e) {
   var targetID = respond ? respond.getAttribute('href') : this.getAttribute('href');
   var targetAnchor = document.querySelector(targetID);
   if (!targetAnchor) return;
-  console.log('hey')
   var originalTop = distanceToTop(targetAnchor);
   window.scrollBy({
     top: originalTop,
