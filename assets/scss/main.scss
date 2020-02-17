@@ -2472,6 +2472,7 @@ nav{
       @include respond-to(small){
         padding-right:2vw;
         margin-bottom:20px;
+        padding-left:0;
       }
     }
     li:nth-child(even){

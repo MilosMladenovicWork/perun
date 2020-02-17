@@ -3359,6 +3359,7 @@ nav #menu {
   .contactus-links ul li {
     padding-right: 2vw;
     margin-bottom: 20px;
+    padding-left: 0;
   }
 }
 
