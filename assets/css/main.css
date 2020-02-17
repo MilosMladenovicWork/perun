@@ -2308,6 +2308,7 @@ nav #menu {
 @media (max-width: 767px) {
   #team-section {
     padding-right: 0;
+    margin-left: -4.4vw;
   }
 }
 
