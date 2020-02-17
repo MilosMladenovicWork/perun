@@ -327,7 +327,7 @@ nav{
     }
   }
   @include respond-to(large){
-    padding:6.44vh 7.8vw 0;
+    padding:3.89vh 7.8vw;
   }
   @include respond-to(small){
     padding: 30px 12.1vw;
@@ -503,7 +503,6 @@ nav{
     margin-bottom:0;
     align-self:center;
     width:80vw;
-    transform:scale(1.25);
   }
   @include respond-to(small){
     margin-top:12.81vh;
@@ -760,6 +759,7 @@ nav{
     width:100vw;
     margin-left:- sizes(margin);
     margin-top:10vh;
+    word-spacing:50vw;
   }
 }
 
@@ -1561,6 +1561,8 @@ nav{
     margin-bottom:4.63vh;
     @include respond-to(large){
       width:auto;
+      margin-left:sizes(margin) - (sizes(margin) / 2);
+      margin-right:sizes(margin) - (sizes(margin) / 2);
     }
     @include respond-to(small){
       width:auto;
@@ -1746,6 +1748,7 @@ nav{
   }
   @include respond-to(small){
     padding-right:0;
+    margin-left:-4.4vw;
   }
 }
 
@@ -1880,14 +1883,14 @@ nav{
   }
   @include respond-to(small){
     width:100%;
-    padding-top:45vh;
+    padding-top:calc(65vw + 110px);
     margin-top:0;
     padding-bottom:7vh;
   }
 }
 
 .team-member:nth-child(even){
-  margin-bottom:5.9vh;
+  margin-bottom:7.9vh;
   .team-member-more-description{
     @include respond-to(large){
       margin-top:0vh;
@@ -2222,6 +2225,10 @@ nav{
     @include respond-to(large){
       width:70vw;
     }
+    @include respond-to(small){
+      word-spacing:50vw;
+      text-align:center;
+    }
   }
   @include respond-to(large){
     margin-bottom:9.3vh;
@@ -2472,6 +2479,7 @@ nav{
       @include respond-to(small){
         padding-right:2vw;
         margin-bottom:20px;
+        padding-left:0;
       }
     }
     li:nth-child(even){
@@ -2894,6 +2902,9 @@ footer{
       ul{
         font-size:20px;
         margin-bottom:5vh;
+        @include respond-to(large){
+          margin-bottom:10vh;
+        }
         @include respond-to(small){
           margin-bottom:20vh;
         }
@@ -3036,7 +3047,7 @@ footer{
     width:100%;
   }
   @include respond-to(large){
-    width:100px;
+    width:35px;
   }
   @include respond-to(small){
     width:30px;
@@ -3052,7 +3063,7 @@ footer{
   font-size:13px !important;
   font-weight:400;
   @include respond-to(small){
-    width:90vw;
+    width:92vw;
     text-align: center;
   }
 }

@@ -708,7 +708,9 @@ var callbackHero = function callbackHero(entries, observer) {
 
 var hero = document.querySelector('#hero-main');
 
-var rootMargDimens = - window.outerHeight / 2.6 + 'px'
+if(window.outerWidth >= 1200){
+  var rootMargDimens = - window.outerHeight / 2.6 + 'px'
+}
 
 var options = {
   root: null,

@@ -195,7 +195,7 @@ nav #menu {
 
 @media (max-width: 1200px) {
   nav {
-    padding: 6.44vh 7.8vw 0;
+    padding: 3.89vh 7.8vw;
   }
 }
 
@@ -453,8 +453,6 @@ nav #menu {
         -ms-grid-row-align: center;
         align-self: center;
     width: 80vw;
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
   }
 }
 
@@ -835,6 +833,7 @@ nav #menu {
     width: 100vw;
     margin-left: -20.83vw;
     margin-top: 10vh;
+    word-spacing: 50vw;
   }
 }
 
@@ -2042,6 +2041,8 @@ nav #menu {
 @media (max-width: 1200px) {
   #big-illustration img:nth-child(4), #big-illustration img:nth-child(1), #big-illustration img:nth-child(2), #big-illustration img:nth-child(3) {
     width: auto;
+    margin-left: 10.415vw;
+    margin-right: 10.415vw;
   }
 }
 
@@ -2308,6 +2309,7 @@ nav #menu {
 @media (max-width: 767px) {
   #team-section {
     padding-right: 0;
+    margin-left: -4.4vw;
   }
 }
 
@@ -2467,14 +2469,14 @@ nav #menu {
 @media (max-width: 767px) {
   .team-member-more-description {
     width: 100%;
-    padding-top: 45vh;
+    padding-top: calc(65vw + 110px);
     margin-top: 0;
     padding-bottom: 7vh;
   }
 }
 
 .team-member:nth-child(even) {
-  margin-bottom: 5.9vh;
+  margin-bottom: 7.9vh;
 }
 
 @media (max-width: 1200px) {
@@ -2973,6 +2975,13 @@ nav #menu {
   }
 }
 
+@media (max-width: 767px) {
+  #partners-text .partners-h1 {
+    word-spacing: 50vw;
+    text-align: center;
+  }
+}
+
 @media (max-width: 1200px) {
   #partners-text {
     margin-bottom: 9.3vh;
@@ -3359,6 +3368,7 @@ nav #menu {
   .contactus-links ul li {
     padding-right: 2vw;
     margin-bottom: 20px;
+    padding-left: 0;
   }
 }
 
@@ -3998,6 +4008,12 @@ footer > p {
   margin-bottom: 5vh;
 }
 
+@media (max-width: 1200px) {
+  #ourproduct-main .swiper-container-ourproduct .swiper-slide ul {
+    margin-bottom: 10vh;
+  }
+}
+
 @media (max-width: 767px) {
   #ourproduct-main .swiper-container-ourproduct .swiper-slide ul {
     margin-bottom: 20vh;
@@ -4146,7 +4162,7 @@ footer > p {
 
 @media (max-width: 1200px) {
   #logo-loading {
-    width: 100px;
+    width: 35px;
   }
 }
 
@@ -4169,7 +4185,7 @@ footer > p {
 
 @media (max-width: 767px) {
   #loading-text {
-    width: 90vw;
+    width: 92vw;
     text-align: center;
   }
 }
