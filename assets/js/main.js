@@ -132,13 +132,11 @@ academicScrollRight.addEventListener('click', function () {
   }
 });
 
-if (!(/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent))) {
   // This is not internet explorer
   sal({
     threshold: 0.25,
     once: true
   });
-}
 
 var impressumPopup = document.getElementById('impressum-popup');
 var impressumButton = document.getElementById('impressum');
