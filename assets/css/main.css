@@ -184,11 +184,33 @@ nav ul li:last-of-type:hover a {
 }
 
 nav #menu {
+  position: absolute;
+  right: 7.8vw;
   display: none;
 }
 
 @media (max-width: 1200px) {
   nav #menu {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 767px) {
+  nav #menu {
+    right: 12.1vw;
+  }
+}
+
+nav #menu-close {
+  display: none;
+}
+
+nav #close-menu {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  nav #close-menu {
     display: inline-block;
   }
 }

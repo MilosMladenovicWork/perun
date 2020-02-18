@@ -155,29 +155,26 @@ closeImpressumButton.addEventListener('click', function () {
   body.style.overflow = 'auto';
 });
 var menuButton = document.getElementById('menu');
+var menuCloseButton = document.getElementById('menu-close');
 var menuMobileLinks = document.querySelectorAll('#mobile-menu ul li a');
 var menuMobile = document.getElementById('mobile-menu');
 menuButton.addEventListener('click', function () {
-  menuButton.setAttribute('src', './images/Close_Button.svg');
-
-  if (menuMobile.style.display === 'none') {
-    menuMobile.style.display = 'block';
-    return setTimeout(function () {
-      menuMobile.style.opacity = 1;
-    }, 0);
-  } else if (menuMobile.style.display === 'block') {
-    menuMobile.style.opacity = 0;
-    menuButton.setAttribute('src', './images/Menu.svg');
-    return setTimeout(function () {
-      menuMobile.style.display = 'none';
-    }, 500);
-  }
-
   menuMobile.style.display = 'block';
-  setTimeout(function () {
+  menuButton.style.display = 'none';
+  menuCloseButton.style.display = 'inline-block';
+  setTimeout(() => {
     menuMobile.style.opacity = 1;
-  }, 0);
-});
+  }, 100)
+})
+menuCloseButton.addEventListener('click', function(){
+  menuMobile.style.opacity = 0;
+  setTimeout(() => {
+    menuMobile.style.display = 'none';
+  }, 500)
+  menuButton.style.display = 'inline-block';
+  menuCloseButton.style.display = 'none';
+})
+
 menuMobileLinks.forEach(function (link) {
   link.addEventListener('click', function () {
     menuButton.setAttribute('src', './images/Menu.svg');

@@ -321,6 +321,20 @@ nav{
     }
   }
   #menu{
+    position:absolute;
+    right:7.8vw;
+    display:none;
+    @include respond-to(large){
+      display:inline-block;
+    }
+    @include respond-to(small){
+      right:12.1vw;
+    }
+  }
+  #menu-close{
+    display:none;
+  }
+  #close-menu{
     display:none;
     @include respond-to(large){
       display:inline-block;
