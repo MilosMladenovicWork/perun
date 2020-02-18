@@ -162,13 +162,13 @@ menuButton.addEventListener('click', function () {
   menuMobile.style.display = 'block';
   menuButton.style.display = 'none';
   menuCloseButton.style.display = 'inline-block';
-  setTimeout(() => {
+  setTimeout(function(){
     menuMobile.style.opacity = 1;
   }, 100)
 })
 menuCloseButton.addEventListener('click', function(){
   menuMobile.style.opacity = 0;
-  setTimeout(() => {
+  setTimeout(function(){
     menuMobile.style.display = 'none';
   }, 500)
   menuButton.style.display = 'inline-block';
