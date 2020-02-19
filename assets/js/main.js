@@ -321,16 +321,18 @@ if (window.outerWidth >= 1200) {
 swiper.on('slideChange', function () {
   var _teamMember = document.querySelectorAll('.team-member');
   _teamMember.forEach(function(member, index) {
-    if(swiper.activeIndex > index){
-      if(index - 1 < 0){
-        return
+    if(window.outerWidth >= 1200){
+      if(swiper.activeIndex > index){
+        if(index - 1 < 0){
+          return
+        }
+        _teamMember[index - 1].style.opacity = 0;
+      }else if(swiper.activeIndex === index){
+        if(index - 1 < 0){
+          return
+        }
+        _teamMember[index - 1].style.opacity = 1;
       }
-      _teamMember[index - 1].style.opacity = 0;
-    }else if(swiper.activeIndex === index){
-      if(index - 1 < 0){
-        return
-      }
-      _teamMember[index - 1].style.opacity = 1;
     }
   })})
 
