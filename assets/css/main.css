@@ -2557,15 +2557,27 @@ nav #close-menu {
   #scroll-right-team {
     margin-right: 0;
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #scroll-right-team img {
+    margin: 0;
+  }
+  #scroll-right-team img:nth-of-type(1) {
+    margin-right: 10.14vw;
+  }
+  #scroll-right-team svg {
+    display: none;
   }
 }
 
-#scroll-right-team div:hover {
+#scroll-right-team img:hover {
   -webkit-animation: zoom 0.5s;
           animation: zoom 0.5s;
 }
 
-#scroll-right-team div:active {
+#scroll-right-team img:active {
   -webkit-animation: zoomOut 0.5s;
           animation: zoomOut 0.5s;
 }
