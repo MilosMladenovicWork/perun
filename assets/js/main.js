@@ -17,7 +17,8 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 }
 
 var scrollRight = document.querySelector('#scroll-right-team');
-var scrollRightArrow = document.querySelector('#scroll-right-team img');
+var teamScrollPrev = document.querySelector('#scroll-right-team img:nth-of-type(1)');
+var teamScrollNext = document.querySelector('#scroll-right-team img:nth-of-type(2)');
 var swiper = new Swiper('.swiper-container', {
   grabCursor: true,
   slidesPerView: 1,
@@ -32,12 +33,16 @@ var swiper = new Swiper('.swiper-container', {
   },
   on: {
     reachBeginning: function reachBeginning() {
-      scrollRightArrow.style.transform = 'rotate(0deg)';
+      teamScrollPrev.style.opacity = '0';
       document.querySelector('#scroll-right-team tspan').innerHTML = 'To the Right';
     },
     reachEnd: function reachEnd() {
-      scrollRightArrow.style.transform = 'rotate(180deg)';
+      teamScrollNext.style.opacity = '0';
       document.querySelector('#scroll-right-team tspan').innerHTML = 'To the Left';
+    },
+    fromEdge: function fromEdge() {
+      teamScrollPrev.style.opacity = '1';
+      teamScrollNext.style.opacity = '1';
     }
   }
 });
@@ -72,12 +77,11 @@ ourProductRightArrow.addEventListener('click', function () {
 ourProductLeftArrow.addEventListener('click', function () {
     swiperOurProduct.slidePrev();
 });
-scrollRight.addEventListener('click', function () {
-  if (scrollRightArrow.style.transform === 'rotate(180deg)') {
+teamScrollPrev.addEventListener('click', function () {
     swiper.slidePrev();
-  } else {
+});
+teamScrollNext.addEventListener('click', function () {
     swiper.slideNext();
-  }
 });
 var whyUseScrollRight = document.querySelector('#whyuse-scroll-right img');
 var swiperWhyUse = new Swiper('.swiper-container-whyuse', {
@@ -132,7 +136,6 @@ academicScrollRight.addEventListener('click', function () {
   }
 });
 
-  // This is not internet explorer
   sal({
     threshold: 0.25,
     once: true
