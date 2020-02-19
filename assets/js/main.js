@@ -334,7 +334,8 @@ swiper.on('slideChange', function () {
         _teamMember[index - 1].style.opacity = 1;
       }
     }
-  })})
+  })
+})
 
 swiper.on('slideChange', function () {
   if (window.outerWidth >= 1200) {
