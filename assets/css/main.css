@@ -1575,7 +1575,6 @@ nav #close-menu {
 @media (max-width: 767px) {
   #academic-text p {
     width: 60vw;
-    margin-left: 0;
   }
 }
 

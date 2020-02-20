@@ -117,7 +117,7 @@ var academicScrollRightArrow = document.querySelector('#academic-scroll-right im
 var swiperAcademic = new Swiper('.swiper-container-academic', {
   grabCursor: false,
   slidesPerView: 1,
-  spaceBetween: 100,
+  spaceBetween: 300,
   centeredSlides: true,
   on: {
     reachBeginning: function reachBeginning() {

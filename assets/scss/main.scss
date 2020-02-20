@@ -1252,7 +1252,6 @@ nav{
     }
     @include respond-to(small){
       width:60vw;
-      margin-left:0;
     }
   }
   p:nth-child(4){
