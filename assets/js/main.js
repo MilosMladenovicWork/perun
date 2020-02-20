@@ -322,16 +322,21 @@ swiper.on('slideChange', function () {
   var _teamMember = document.querySelectorAll('.team-member');
   _teamMember.forEach(function(member, index) {
     if(window.outerWidth >= 1200){
-      if(swiper.activeIndex > index){
-        if(index - 1 < 0){
-          return
+      if(swiper.activeIndex === index){
+        if(_teamMember[index - 2] !== undefined){
+          _teamMember[index - 2].style.opacity = 0;
         }
-        _teamMember[index - 1].style.opacity = 0;
-      }else if(swiper.activeIndex === index){
-        if(index - 1 < 0){
-          return
+        if(_teamMember[index - 1] !== undefined){
+          _teamMember[index - 1].style.opacity = 1;
         }
-        _teamMember[index - 1].style.opacity = 1;
+        if(_teamMember[index + 1] !== undefined){
+          _teamMember[index + 1].style.opacity = 1;
+        }
+        if(_teamMember[index + 2] !== undefined){ 
+          _teamMember[index + 2].style.opacity = 0.25;
+        }
+        
+         
       }
     }
   })
