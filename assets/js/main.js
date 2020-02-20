@@ -138,7 +138,7 @@ academicScrollRight.addEventListener('click', function () {
 
   sal({
     threshold: 0.25,
-    once: true
+    once: false
   });
 
 var impressumPopup = document.getElementById('impressum-popup');
