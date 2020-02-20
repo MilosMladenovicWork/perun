@@ -2133,8 +2133,8 @@ nav{
   @include respond-to(small){
     padding-top:32.4vh;
     width:auto;
-    margin-left:sizes(margin) - 7.21vw;
-    margin-right:sizes(margin) - 7.21vw;
+    margin-left:sizes(margin);
+    margin-right:sizes(margin);
     margin-bottom:11.2vh;
     margin-top:0;
   }
