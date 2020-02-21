@@ -621,17 +621,6 @@ if (window.outerWidth <= '767') {
 
   _teamMemberPic3.forEach(function (memberPic, index) {
     _teamMember3[index].addEventListener('click', function () {
-      // teamMemberDesc[index].style.left = '10%';
-      // teamMemberName[index].style.left = '10%';
-      // teamMemberUnderlinePic[index].style.opacity = '1';
-      // teamMemberUnderlinePic[index].style.left = '10%';
-      // teamMemberMoreDescParagraph[index].style.opacity = '1';
-      // teamMemberMoreDescArrow[index].style.opacity = '1';
-      // teamMemberMoreDesc[index].style.opacity = '1';
-      // teamMemberMoreDesc[index].classList.add('paddingTopMobile');
-      // teamMemberMoreDesc[index].style.marginTop = '18.52vh';
-      // teamMemberMoreDesc[index].style.width = '100%';
-      // teamMemberMoreDesc[index].style.maxHeight = '120vh';
       _teamMemberDesc3[index].style.left = '0%';
       _teamMemberDesc3[index].style.transform = 'translate(0%, 0)';
       _teamMemberName3[index].style.left = '0%';
@@ -665,17 +654,6 @@ if (window.outerWidth <= '767') {
     }, 'false');
 
     document.body.addEventListener('click', function () {
-      // teamMemberUnderlinePic[index].style.left = '0';
-      // teamMemberUnderlinePic[index].style.opacity = '0';
-      // teamMemberPic[index].style.cursor = 'pointer';
-      // teamMemberMoreDescParagraph[index].style.opacity = '0';
-      // teamMemberMoreDescArrow[index].style.opacity = '0';
-      // teamMemberDesc[index].style.left = '0vw';
-      // teamMemberName[index].style.left = '0vw';
-      // teamMemberMoreDesc[index].classList.remove('paddingTopMobile');
-      // teamMemberMoreDesc[index].style.marginTop = '8vh';
-      // teamMemberMoreDesc[index].style.opacity = '0';
-      // return teamMemberMoreDesc[index].style.maxHeight = '0vh';
       _teamMemberDescContainer3[index].style.left = '0%';
       _teamMemberDescContainer3[index].style.transform = 'translate(0%, 0)';
       _teamMemberUnderlinePic3[index].style.left = '2.5vw';
@@ -827,20 +805,6 @@ window.addEventListener('load', function (event) {
   observerTechAll = new IntersectionObserver(callbackTechAll, options);
   observerTechAll.observe(techAll);
 }); //
-// const callbackStatechannels = (entries, observer) => {
-//   entries.forEach(entry => {
-//     if(entry.isIntersecting){
-//       sectionCircle.style.transform = 'translateY(-97px)'
-//     }
-//   })
-// }
-// const statechannels = document.querySelector('#statechannels-main');
-// window.addEventListener('load', (event) => {
-//   let observerStatechannels;
-//   observerStatechannels = new IntersectionObserver(callbackStatechannels, options);
-//   observerStatechannels.observe(statechannels);
-// })
-//
 
 var productIllustration = document.querySelector('#ourproduct-illustration');
 
