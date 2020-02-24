@@ -845,7 +845,8 @@ nav #close-menu {
   #ourtechnology-text h1 {
     text-shadow: none;
     border-bottom: none;
-    margin-top: 19.61vh;
+    margin-top: 0;
+    padding-top: 19.61vh;
     margin-bottom: 9.52vh;
   }
 }
@@ -854,7 +855,7 @@ nav #close-menu {
   #ourtechnology-text h1 {
     width: 100vw;
     margin-left: -20.83vw;
-    margin-top: 10vh;
+    padding-top: 14vh;
     word-spacing: 50vw;
   }
 }
@@ -1717,6 +1718,11 @@ nav #close-menu {
   }
 }
 
+#academic-main #academic-slider #academic-scroll-right:hover {
+  -webkit-animation: zoom 0.5s;
+          animation: zoom 0.5s;
+}
+
 #academic-main #academic-slider #academic-scroll-right:active {
   -webkit-animation: zoomOut 0.5s;
           animation: zoomOut 0.5s;
@@ -1934,6 +1940,11 @@ nav #close-menu {
   #whyuse-main #whyuse-slider #whyuse-scroll-right img {
     margin-right: 13vw;
   }
+}
+
+#whyuse-main #whyuse-slider #whyuse-scroll-right div:hover {
+  -webkit-animation: zoom 0.5s;
+          animation: zoom 0.5s;
 }
 
 #whyuse-main #whyuse-slider #whyuse-scroll-right div:active {
@@ -2559,6 +2570,11 @@ nav #close-menu {
   #scroll-right-team svg {
     display: none;
   }
+}
+
+#scroll-right-team img:hover {
+  -webkit-animation: zoom 0.5s;
+          animation: zoom 0.5s;
 }
 
 #scroll-right-team img:active {
@@ -3613,6 +3629,11 @@ nav #close-menu {
   }
 }
 
+.scroll-sign-up:hover {
+  -webkit-animation: zoom 0.5s;
+          animation: zoom 0.5s;
+}
+
 .scroll-sign-up:active {
   -webkit-animation: zoomOut 0.5s;
           animation: zoomOut 0.5s;
@@ -3996,6 +4017,11 @@ footer > p {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+#ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide svg:hover {
+  -webkit-animation: zoom 0.5s;
+          animation: zoom 0.5s;
 }
 
 #ourproduct-main .swiper-container-ourproduct #ourproduct-button-slide svg:active {

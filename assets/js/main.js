@@ -178,7 +178,10 @@ menuCloseButton.addEventListener('click', function(){
 
 menuMobileLinks.forEach(function (link) {
   link.addEventListener('click', function () {
-    menuMobile.style.opacity = 0;
+      menuMobile.style.opacity = 0;
+      setTimeout(function(){
+        menuMobile.style.display = 'none';
+      }, 500)
       menuCloseButton.style.display = 'none';
       menuButton.style.display = 'inline-block';
   });

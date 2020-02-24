@@ -585,13 +585,14 @@ nav{
   @include respond-to(large){
     text-shadow:none;
     border-bottom:none;
-    margin-top:19.61vh;
+    margin-top:0;
+    padding-top:19.61vh;
     margin-bottom:9.52vh;
   }
   @include respond-to(small){
     width:100vw;
     margin-left:- sizes(margin);
-    margin-top:10vh;
+    padding-top:14vh;
     word-spacing:50vw;
   }
 }
