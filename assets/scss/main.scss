@@ -27,6 +27,15 @@ html { font-family: 'Inter', sans-serif; }
   opacity:unset;
 }
 
+::-webkit-scrollbar{
+  width:0.75vw;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius:10px;
+  background-color:colors(text-color);
+}
+
 #no-overflow-wrapper{
   visibility: hidden;
   padding-top:0;
