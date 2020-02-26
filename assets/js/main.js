@@ -1020,7 +1020,7 @@ var secondIllustration = document.querySelector('#big-illustration img:first-chi
 
 const formButton = document.querySelector('#form-button')
 formButton.addEventListener('click', function(e) {
-  e.preventDefault();
+  // e.preventDefault();
 })
 
 Pace.options = {
